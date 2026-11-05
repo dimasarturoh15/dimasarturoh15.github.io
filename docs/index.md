@@ -7,7 +7,7 @@ hide:
 
 # dimasarturoh15
 
-Halo, saya mahasiswa informatika. Situs ini adalah catatan kerja terbuka untuk merekam proses belajar saya di GitHub, dimulai dari 5 November 2026.
+Halo, saya mahasiswa informatika. Situs ini adalah catatan kerja terbuka untuk merekam proses belajar saya di GitHub.
 
 <div class="index-list">
   <a class="index-row" href="projects/"><span><span class="name">Proyek</span><span class="desc">— Repositori dan eksperimen yang saya kerjakan</span></span><span class="arrow">→</span></a>
