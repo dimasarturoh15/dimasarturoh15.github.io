@@ -12,7 +12,6 @@ Situs dokumentasi berbasis **MkDocs (tema Material)**, dipublikasikan otomatis k
 │   ├── index.md                # beranda
 │   ├── projects/               # halaman proyek
 │   ├── journal/                # jurnal belajar
-│   └── notes/                  # catatan teknis
 └── .github/workflows/deploy.yml  # publikasi otomatis
 ```
 

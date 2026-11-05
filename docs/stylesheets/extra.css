@@ -404,6 +404,40 @@
 .md-typeset ul.dated-list a { color: var(--md-default-fg-color); }
 .md-typeset ul.dated-list a:hover { color: var(--accent-hover); }
 
+/* Daftar proyek: baris bergaris tipis, aman di layar sempit */
+.project-list {
+  margin: 16px 0 8px;
+  border-top: 1px solid var(--border);
+}
+.md-typeset a.project-card {
+  display: block;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--md-default-fg-color);
+  text-decoration: none;
+}
+.project-card > span { display: block; }
+.project-card .project-name {
+  font-family: var(--mono);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--md-typeset-a-color);
+  overflow-wrap: anywhere;
+}
+.project-card .project-desc {
+  margin-top: 6px;
+  font-size: 15px;
+  line-height: 24px;
+}
+.project-card .project-meta {
+  margin-top: 8px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--md-default-fg-color--lighter);
+}
+.project-card .sep { margin: 0 8px; color: var(--subtle); }
+.md-typeset a.project-card:hover .project-name { text-decoration: underline; text-underline-offset: 3px; }
+
 .contact {
   font-family: var(--mono);
   font-size: 14px;

@@ -1,13 +1,10 @@
 site_name: dimasarturoh15
-site_description: Proyek, jurnal belajar, dan catatan teknis saya.
-site_author: Nama Anda
+site_description: Proyek otomasi Python dan jurnal belajar saya.
+site_author: dimasarturoh15
 
 site_url: https://dimasarturoh15.github.io/dokumentasi-github/
-repo_url: https://github.com/dimasarturoh15/dokumentasi-github
-repo_name: dimasarturoh15/dokumentasi-github
-edit_uri: edit/main/docs/
 
-copyright: Copyright &copy; 2026 Dimas Arturoh
+copyright: "&copy; 2026 dimasarturoh15"
 
 theme:
   name: material
@@ -29,8 +26,6 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Ganti ke mode terang
-  icon:
-    repo: fontawesome/brands/github
   features:
     - navigation.tabs
     - navigation.top
@@ -41,8 +36,6 @@ theme:
     - navigation.path
     - navigation.footer
     - toc.follow
-    - search.highlight
-    - search.suggest
     - content.code.copy
 
 extra_css:
@@ -50,6 +43,7 @@ extra_css:
   - stylesheets/extra.css
 
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/dimasarturoh15
@@ -66,12 +60,8 @@ nav:
       - "5 Nov 2026: Hari pertama": journal/2026-11-05.md
       - "5 Nov 2026: Proyek pertama": journal/2026-11-05-proyek-pertama.md
       - "5 Nov 2026: Proyek kedua": journal/2026-11-05-proyek-kedua.md
-  - Catatan Teknis:
-      - notes/index.md
-      - Git dasar: notes/git-dasar.md
 
-plugins:
-  - search
+plugins: []
 
 markdown_extensions:
   - admonition
