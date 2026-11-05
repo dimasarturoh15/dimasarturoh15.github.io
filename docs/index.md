@@ -42,4 +42,4 @@ Saya mahasiswa informatika yang sedang membangun portofolio di GitHub dari nol. 
 
 ## Kontak
 
-<p class="contact">GitHub: <a href="https://github.com/dimasarturoh15">github.com/dimasarturoh15</a><span class="sep">•</span>Email: <a href="mailto:email-anda@contoh.com">email-anda@contoh.com</a></p>
+<p class="contact">GitHub: <a href="https://github.com/dimasarturoh15">github.com/dimasarturoh15</a><span class="sep">•</span>Email: <a href="mailto:email-anda@contoh.com">dimasarturoh15@gmail.com</a></p>
