@@ -5,7 +5,7 @@ hide:
   - toc
 ---
 
-# Dokumentasi GitHub Saya
+# dimasarturoh15
 
 Halo, saya mahasiswa informatika. Situs ini adalah catatan kerja terbuka untuk merekam proses belajar saya di GitHub, dimulai dari 5 November 2026.
 
@@ -33,7 +33,7 @@ Halo, saya mahasiswa informatika. Situs ini adalah catatan kerja terbuka untuk m
 
 ## Tentang
 
-Tulis 2-3 kalimat tentang latar belakang Anda, apa yang sedang dipelajari, dan tujuan Anda dengan portofolio ini. Gunakan kalimat yang spesifik dan jujur, misalnya bahasa atau topik yang benar-benar sedang Anda tekuni.
+Saya mahasiswa informatika yang sedang membangun portofolio di GitHub dari nol. Di sini saya mencatat proyek, perkembangan belajar, dan hal-hal teknis yang saya pelajari.
 
 ## Kontak
 

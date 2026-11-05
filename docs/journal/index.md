@@ -12,6 +12,3 @@ Catatan harian mengenai konsep yang dipelajari, kendala teknis, dan milestone. E
     </div>
   </li>
 </ol>
-
-!!! note "Menambah entri"
-    Buat file `TAHUN-BULAN-TANGGAL.md` di folder ini, daftarkan di `nav` pada `mkdocs.yml`, lalu tambahkan satu blok `<li>` baru di bagian atas daftar di halaman ini.

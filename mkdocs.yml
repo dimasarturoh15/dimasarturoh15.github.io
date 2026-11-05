@@ -1,5 +1,5 @@
-site_name: Dokumentasi GitHub Saya
-site_description: Catatan perjalanan, proyek, dan hal-hal yang saya pelajari di GitHub.
+site_name: dimasarturoh15
+site_description: Proyek, jurnal belajar, dan catatan teknis saya.
 site_author: Nama Anda
 
 site_url: https://dimasarturoh15.github.io/dokumentasi-github/
@@ -57,9 +57,7 @@ extra:
 
 nav:
   - Beranda: index.md
-  - Proyek:
-      - projects/index.md
-      - Template proyek: projects/template.md
+  - Proyek: projects/index.md
   - Jurnal Belajar:
       - journal/index.md
       - "5 Nov 2026: Hari pertama": journal/2026-11-05.md
