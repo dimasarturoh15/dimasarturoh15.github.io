@@ -2,49 +2,68 @@ site_name: Dokumentasi GitHub Saya
 site_description: Catatan perjalanan, proyek, dan hal-hal yang saya pelajari di GitHub.
 site_author: Nama Anda
 
-# Ganti USERNAME dengan username GitHub Anda, dan REPO dengan nama repo ini.
 site_url: https://dimasarturoh15.github.io/dokumentasi-github/
 repo_url: https://github.com/dimasarturoh15/dokumentasi-github
 repo_name: dimasarturoh15/dokumentasi-github
 edit_uri: edit/main/docs/
 
+copyright: Copyright &copy; 2026 Nama Anda
+
 theme:
   name: material
   language: id
+  # Font dimuat lewat extra_css agar bobot 500 dan 600 tersedia.
+  font: false
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: teal
-      accent: teal
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: Ganti ke mode gelap
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: teal
-      accent: teal
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: Ganti ke mode terang
+  icon:
+    repo: fontawesome/brands/github
   features:
     - navigation.tabs
     - navigation.top
     - navigation.sections
     - navigation.indexes
+    - navigation.instant
+    - navigation.tracking
+    - navigation.path
+    - navigation.footer
+    - toc.follow
     - search.highlight
     - search.suggest
     - content.code.copy
-    - content.action.edit
+
+extra_css:
+  - https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dimasarturoh15
+      name: GitHub saya
 
 nav:
   - Beranda: index.md
   - Proyek:
       - projects/index.md
       - Template proyek: projects/template.md
-  - Jurnal:
+  - Jurnal Belajar:
       - journal/index.md
       - "5 Nov 2026: Hari pertama": journal/2026-11-05.md
-  - Catatan:
+  - Catatan Teknis:
       - notes/index.md
       - Git dasar: notes/git-dasar.md
 
@@ -55,11 +74,15 @@ markdown_extensions:
   - admonition
   - tables
   - attr_list
+  - md_in_html
   - toc:
-      permalink: true
+      permalink: false
   - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg

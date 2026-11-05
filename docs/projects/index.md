@@ -1,14 +1,28 @@
 # Proyek
 
-Daftar proyek yang saya kerjakan. Setiap proyek punya halaman sendiri dengan format yang sama supaya mudah dibaca.
+Daftar repositori dan eksperimen kode yang saya kerjakan. Setiap proyek punya halaman sendiri dengan format yang sama supaya mudah dibaca.
 
-| Proyek | Ringkasan | Teknologi | Status |
-|--------|-----------|-----------|--------|
-| [Template proyek](template.md) | Contoh format halaman proyek | Markdown | Contoh |
+!!! info "Cara menambah proyek"
+    Salin `template.md` menjadi file baru (misalnya `nama-proyek.md`), isi semua bagiannya, daftarkan di bagian `nav` pada `mkdocs.yml`, lalu tambahkan satu baris di katalog di bawah.
 
-## Cara menambah proyek baru
+## Katalog repositori
 
-1. Salin `template.md` menjadi file baru, misalnya `nama-proyek.md`.
-2. Isi semua bagiannya.
-3. Daftarkan halaman itu di bagian `nav` pada `mkdocs.yml`.
-4. Tambahkan satu baris di tabel di atas.
+| Proyek | Ringkasan | Stack | Status | Tahun |
+|--------|-----------|-------|--------|-------|
+| [`template`](template.md) | Contoh format halaman proyek | Markdown | Contoh | 2026 |
+
+## Format halaman proyek
+
+Setiap halaman proyek memakai urutan bagian yang sama:
+
+```markdown title="docs/projects/nama-proyek.md"
+# Nama Proyek
+
+> Satu kalimat tentang proyek ini.
+
+## Masalah yang diselesaikan
+## Teknologi
+## Cara menjalankan
+## Hasil
+## Yang saya pelajari
+```

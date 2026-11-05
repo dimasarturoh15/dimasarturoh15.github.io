@@ -1,23 +1,40 @@
+---
+title: Beranda
+hide:
+  - navigation
+  - toc
+---
+
 # Dokumentasi GitHub Saya
 
-Selamat datang. Situs ini adalah catatan perjalanan saya membangun portofolio di GitHub, dimulai dari **5 November 2026**.
+Halo, saya mahasiswa informatika. Situs ini adalah catatan kerja terbuka untuk merekam proses belajar saya di GitHub, dimulai dari 5 November 2026.
 
-## Tentang saya
+<div class="index-list">
+  <a class="index-row" href="projects/"><span><span class="name">Proyek</span><span class="desc">— Repositori dan eksperimen yang saya kerjakan</span></span><span class="arrow">→</span></a>
+  <a class="index-row" href="journal/"><span><span class="name">Jurnal Belajar</span><span class="desc">— Catatan harian, kendala teknis, dan konsep baru</span></span><span class="arrow">→</span></a>
+  <a class="index-row" href="notes/"><span><span class="name">Catatan Teknis</span><span class="desc">— Ringkasan konsep dan perintah yang saya pelajari</span></span><span class="arrow">→</span></a>
+</div>
 
-Hi, I'm Dimas Arturoh, an Informatics undergraduate at Sanata Dharma University passionate about Artificial Intelligence and Computer Networking, dedicated to building smart, connected, and efficient digital systems.
+## Terbaru
 
-## Isi situs ini
+<p class="label-mono">Jurnal terkini</p>
+<ul class="dated-list">
+  <li><span class="date">[2026-11-05]</span><a href="journal/2026-11-05/">Hari pertama: memulai dokumentasi</a></li>
+</ul>
 
-| Bagian | Isinya |
-|--------|--------|
-| [Proyek](projects/index.md) | Satu halaman per proyek: masalah, teknologi, cara menjalankan, hasil |
-| [Jurnal](journal/index.md) | Catatan belajar berurutan waktu sejak hari pertama |
-| [Catatan](notes/index.md) | Ringkasan konsep dan perintah yang saya pelajari |
+<p class="label-mono">Proyek terkini</p>
+<p class="muted">Belum ada proyek. Proyek pertama akan muncul di sini.</p>
 
-## Tautan
+## Sedang dipelajari
 
-- GitHub: [github.com/dimasarturoh15](https://github.com/dimasarturoh15)
-- Email: dimasarturoh15@gmail.com
+- [x] Menyiapkan situs dokumentasi ini
+- [ ] Alur kerja Git: add, commit, push
+- [ ] Membuat proyek kecil pertama
 
-!!! tip "Cara memperbarui"
-    Tambahkan atau ubah file `.md` di folder `docs/`, lalu commit dan push. Situs akan diperbarui otomatis dalam beberapa menit.
+## Tentang
+
+Tulis 2-3 kalimat tentang latar belakang Anda, apa yang sedang dipelajari, dan tujuan Anda dengan portofolio ini. Gunakan kalimat yang spesifik dan jujur, misalnya bahasa atau topik yang benar-benar sedang Anda tekuni.
+
+## Kontak
+
+<p class="contact">GitHub: <a href="https://github.com/dimasarturoh15">github.com/dimasarturoh15</a><span class="sep">•</span>Email: <a href="mailto:email-anda@contoh.com">email-anda@contoh.com</a></p>
