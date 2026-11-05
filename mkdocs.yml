@@ -1,0 +1,65 @@
+site_name: Dokumentasi GitHub Saya
+site_description: Catatan perjalanan, proyek, dan hal-hal yang saya pelajari di GitHub.
+site_author: Nama Anda
+
+# Ganti USERNAME dengan username GitHub Anda, dan REPO dengan nama repo ini.
+site_url: https://dimasarturoh15.github.io/dokumentasi-github/
+repo_url: https://github.com/dimasarturoh15/dokumentasi-github
+repo_name: dimasarturoh15/dokumentasi-github
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: id
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Ganti ke mode gelap
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Ganti ke mode terang
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.sections
+    - navigation.indexes
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.action.edit
+
+nav:
+  - Beranda: index.md
+  - Proyek:
+      - projects/index.md
+      - Template proyek: projects/template.md
+  - Jurnal:
+      - journal/index.md
+      - "5 Nov 2026: Hari pertama": journal/2026-11-05.md
+  - Catatan:
+      - notes/index.md
+      - Git dasar: notes/git-dasar.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
