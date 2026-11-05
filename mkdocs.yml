@@ -1,10 +1,10 @@
-site_name: dimasarturoh15
+site_name: Dimas Arturoh
 site_description: Proyek otomasi Python dan jurnal belajar saya.
-site_author: dimasarturoh15
+site_author: Dimas Arturoh
 
-site_url: https://dimasarturoh15.github.io/dokumentasi-github/
+site_url: https://dimasarturoh15.github.io/
 
-copyright: "&copy; 2026 dimasarturoh15"
+copyright: "&copy; 2026 Dimas Arturoh"
 
 theme:
   name: material
@@ -60,6 +60,7 @@ nav:
       - "5 Nov 2026: Hari pertama": journal/2026-11-05.md
       - "5 Nov 2026: Proyek pertama": journal/2026-11-05-proyek-pertama.md
       - "5 Nov 2026: Proyek kedua": journal/2026-11-05-proyek-kedua.md
+      - "5 Nov 2026: Merapikan portofolio": journal/2026-11-05-merapikan-portofolio.md
 
 plugins: []
 

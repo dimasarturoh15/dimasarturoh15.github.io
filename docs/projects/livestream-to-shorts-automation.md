@@ -2,6 +2,14 @@
 
 > Pipeline otomatis yang mengubah rekaman live Misa menjadi satu video YouTube Shorts vertikal 9:16 berisi homili, tepat 60 detik. Nama internal di Komsos Paroki Minomartani: **Komsos Shorts AI**.
 
+[Lihat kode di GitHub](https://github.com/dimasarturoh15/livestream-to-shorts-automation){ .md-button .md-button--primary }
+
+## Dampak
+
+| | Sebelum | Sesudah |
+|---|---|---|
+| Membuat satu Shorts homili | Sekitar 2 jam kerja manual | Otomatis, tanpa campur tangan manusia |
+
 ## Masalah yang diselesaikan
 
 Mengubah rekaman Misa yang panjang menjadi satu video pendek berisi homili membutuhkan banyak langkah manual: mencari bagian homili, memotong, memberi subtitel, dan menata ulang ke format vertikal. Sistem ini memantau live streaming Misa di YouTube, lalu mengerjakan seluruh alurnya setelah Misa selesai.
@@ -17,7 +25,19 @@ Satu video Shorts 9:16 berdurasi tepat 60 detik, dengan susunan:
 - musik latar pelan,
 - outro 3 detik.
 
-Secara bawaan `AUTO_UPLOAD = false`: video dan teks judul serta deskripsi disimpan di folder `output\`, lalu diunggah manual setelah dicek.
+Unggahan ke YouTube dapat dimatikan lewat `AUTO_UPLOAD = false`. Dalam mode itu, video beserta judul dan deskripsinya disimpan di folder `output\` untuk dicek sebelum diunggah.
+
+## Hasil di lapangan
+
+<figure markdown="span">
+  ![Tab Shorts kanal YouTube Komsos Minomartani berisi dua Shorts homili dengan subtitel per kata](../assets/img/shorts-channel.jpg){ loading=lazy }
+  <figcaption>Shorts homili hasil pipeline di kanal Komsos Minomartani, lengkap dengan subtitel per kata.</figcaption>
+</figure>
+
+<figure markdown="span">
+  ![Daftar siaran live Perayaan Ekaristi Harian di kanal YouTube](../assets/img/shorts-sumber-live.jpg){ loading=lazy }
+  <figcaption>Sumbernya: siaran live Misa harian di kanal yang sama.</figcaption>
+</figure>
 
 ## Alur kerja
 
@@ -71,7 +91,7 @@ setup.bat
 - Penanda liturgi baru diuji pada transkrip Misa arwah. Misa Minggu perlu diuji terpisah.
 - Crop dari sumber 1080p diperbesar sekitar 1,78 kali, sehingga gambar sedikit lebih lembut.
 - Video yang diunggah lewat API dari project yang belum lolos audit YouTube akan terkunci *private*.
-- Kode sudah diuji di Linux, tetapi bagian yang membutuhkan GPU NVIDIA, Windows, serta akses YouTube dan Gemini baru bisa diverifikasi di PC komsos.
+- Bagian yang membutuhkan GPU NVIDIA dan Windows hanya berjalan di PC komsos.
 
 ## Keamanan dan lisensi
 

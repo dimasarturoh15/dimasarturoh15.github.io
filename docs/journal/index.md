@@ -6,6 +6,14 @@ Catatan harian mengenai konsep yang dipelajari, kendala teknis, dan milestone. E
   <li>
     <div><time datetime="2026-11-05">2026-11-05</time></div>
     <div>
+      <span class="log-title"><a href="2026-11-05-merapikan-portofolio/">Merapikan portofolio dari hasil penilaian</a></span>
+      <p>Menghapus placeholder dan elemen bawaan template, menambah angka dampak dan screenshot proyek, lalu memindahkan situs ke alamat utama.</p>
+      <div class="tags"><span>#portofolio</span><span>#desain</span></div>
+    </div>
+  </li>
+  <li>
+    <div><time datetime="2026-11-05">2026-11-05</time></div>
+    <div>
       <span class="log-title"><a href="2026-11-05-proyek-kedua/">Proyek kedua masuk portofolio</a></span>
       <p>Menambahkan Livestream to Shorts Automation, pipeline yang mengubah rekaman live Misa menjadi Shorts homili.</p>
       <div class="tags"><span>#python</span><span>#whisper</span><span>#ffmpeg</span></div>

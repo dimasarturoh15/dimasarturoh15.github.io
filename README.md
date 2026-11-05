@@ -1,4 +1,4 @@
-# dimasarturoh15
+# Dimas Arturoh: portofolio
 
 Situs dokumentasi berbasis **MkDocs (tema Material)**, dipublikasikan otomatis ke **GitHub Pages** lewat GitHub Actions.
 
@@ -17,13 +17,13 @@ Situs dokumentasi berbasis **MkDocs (tema Material)**, dipublikasikan otomatis k
 
 ## Langkah pertama kali
 
-1. **Edit `mkdocs.yml`**: ganti `USERNAME` dan `REPO` di `site_url`, `repo_url`, dan `repo_name`, serta `site_author`.
+1. **Edit `mkdocs.yml`**: sesuaikan `site_name`, `site_author`, dan `site_url`.
 2. **Edit `docs/index.md`**: isi data diri dan tautan Anda.
-3. **Buat repo baru** di GitHub (misalnya `dokumentasi-github`), lalu unggah semua file di folder ini.
+3. **Buat repo baru** di GitHub bernama `USERNAME.github.io`, lalu unggah semua file di folder ini.
 4. **Beri izin Actions menulis**: buka *Settings > Actions > General > Workflow permissions*, pilih **Read and write permissions**, lalu simpan.
 5. **Jalankan workflow**: buka tab *Actions*, pilih workflow "Deploy dokumentasi", klik *Run workflow* (atau cukup push ke branch `main`).
 6. **Aktifkan Pages**: setelah workflow selesai, buka *Settings > Pages*, pada *Source* pilih **Deploy from a branch**, branch `gh-pages`, folder `/ (root)`, lalu simpan.
-7. Situs aktif di `https://USERNAME.github.io/REPO/`.
+7. Situs aktif di `https://USERNAME.github.io/`.
 
 ## Mencoba di komputer sendiri (opsional)
 

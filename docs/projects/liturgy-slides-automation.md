@@ -4,6 +4,12 @@
 
 [Lihat kode di GitHub](https://github.com/dimasarturoh15/liturgy-slides-automation){ .md-button .md-button--primary }
 
+## Dampak
+
+| | Sebelum | Sesudah |
+|---|---|---|
+| Menyiapkan slide Misa | Sekitar 1 jam kerja manual | Otomatis, tanpa campur tangan manusia |
+
 ## Masalah yang diselesaikan
 
 Materi Misa harian, Misa Minggu, dan layar proyektor perlu disiapkan berulang kali dengan tanggal, lagu, dan bacaan yang berbeda, sementara tampilannya harus tetap sama dengan template paroki. Sistem ini mengerjakannya otomatis dengan satu aturan utama:
@@ -19,6 +25,18 @@ Setiap hari sistem membaca Teks Misa dari Google Drive, mengambil bacaan harian,
 | PPTX harian | Senin sampai Sabtu, dibuat saat PC menyala (coba ulang sampai 05:40) | Slide streaming Misa harian |
 | PPTX Minggu | Sabtu pagi (coba ulang sampai 06:15) | Slide streaming Misa Minggu |
 | PPTX proyektor | Sabtu pagi (coba ulang sampai 06:15) | Slide untuk layar di gereja |
+
+## Hasil di lapangan
+
+<figure markdown="span">
+  ![Slide doa berlatar hijau di Google Slides, hasil pengisian master otomatis](../assets/img/liturgy-slide.jpg){ loading=lazy }
+  <figcaption>Slide streaming Misa harian hasil otomasi. Latar hijau dipakai untuk chroma key saat siaran.</figcaption>
+</figure>
+
+<figure markdown="span">
+  ![Folder Google Drive berisi file intensi, slide, dan thumbnail untuk Kamis, 5 November 2026](../assets/img/liturgy-drive.jpg){ loading=lazy }
+  <figcaption>Hasil yang diunggah ke Google Drive: intensi, slide, dan thumbnail siaran.</figcaption>
+</figure>
 
 ## Fitur utama
 

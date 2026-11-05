@@ -511,3 +511,23 @@
   border-radius: 4px;
   box-shadow: none;
 }
+
+/* ---------- Gambar dengan keterangan ---------- */
+.md-typeset figure { margin: 24px 0; max-width: 100%; }
+.md-typeset figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.md-typeset figcaption {
+  max-width: none;
+  margin: 8px 0 0;
+  font-size: 13px;
+  line-height: 20px;
+  font-style: normal;
+  text-align: left;
+  color: var(--md-default-fg-color--lighter);
+}
+.md-typeset figure > br { display: none; }
