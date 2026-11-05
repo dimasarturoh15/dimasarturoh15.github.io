@@ -1,13 +1,13 @@
 site_name: dimasarturoh15
 site_description: Proyek, jurnal belajar, dan catatan teknis saya.
-site_author: Dimas Arturoh
+site_author: Nama Anda
 
 site_url: https://dimasarturoh15.github.io/dokumentasi-github/
 repo_url: https://github.com/dimasarturoh15/dokumentasi-github
 repo_name: dimasarturoh15/dokumentasi-github
 edit_uri: edit/main/docs/
 
-copyright: Copyright &copy; 2026 Dimas Arturoh
+copyright: Copyright &copy; 2026 Nama Anda
 
 theme:
   name: material
@@ -57,10 +57,13 @@ extra:
 
 nav:
   - Beranda: index.md
-  - Proyek: projects/index.md
+  - Proyek:
+      - projects/index.md
+      - Liturgy Slides Automation: projects/liturgy-slides-automation.md
   - Jurnal Belajar:
       - journal/index.md
       - "5 Nov 2026: Hari pertama": journal/2026-11-05.md
+      - "5 Nov 2026: Proyek pertama": journal/2026-11-05-proyek-pertama.md
   - Catatan Teknis:
       - notes/index.md
       - Git dasar: notes/git-dasar.md

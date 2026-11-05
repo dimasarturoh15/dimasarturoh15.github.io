@@ -6,6 +6,14 @@ Catatan harian mengenai konsep yang dipelajari, kendala teknis, dan milestone. E
   <li>
     <div><time datetime="2026-11-05">2026-11-05</time></div>
     <div>
+      <span class="log-title"><a href="2026-11-05-proyek-pertama/">Proyek pertama masuk portofolio</a></span>
+      <p>Menambahkan Liturgy Slides Automation ke situs dan merangkum fitur, arsitektur, serta batasannya.</p>
+      <div class="tags"><span>#python</span><span>#otomasi</span><span>#portofolio</span></div>
+    </div>
+  </li>
+  <li>
+    <div><time datetime="2026-11-05">2026-11-05</time></div>
+    <div>
       <span class="log-title"><a href="2026-11-05/">Hari pertama: memulai dokumentasi</a></span>
       <p>Memutuskan mendokumentasikan GitHub dari nol, memilih MkDocs dan GitHub Pages, lalu menyiapkan kerangka situs ini.</p>
       <div class="tags"><span>#git</span><span>#milestone</span><span>#init</span></div>
