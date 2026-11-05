@@ -19,12 +19,14 @@ Halo, saya mahasiswa informatika. Situs ini adalah catatan kerja terbuka untuk m
 
 <p class="label-mono">Jurnal terkini</p>
 <ul class="dated-list">
+  <li><span class="date">[2026-11-05]</span><a href="journal/2026-11-05-proyek-kedua/">Proyek kedua masuk portofolio</a></li>
   <li><span class="date">[2026-11-05]</span><a href="journal/2026-11-05-proyek-pertama/">Proyek pertama masuk portofolio</a></li>
   <li><span class="date">[2026-11-05]</span><a href="journal/2026-11-05/">Hari pertama: memulai dokumentasi</a></li>
 </ul>
 
 <p class="label-mono">Proyek terkini</p>
 <ul class="dated-list">
+  <li><span class="date">[2026]</span><a href="projects/livestream-to-shorts-automation/">livestream-to-shorts-automation</a><span class="muted">— Rekaman live Misa menjadi Shorts homili</span></li>
   <li><span class="date">[2026]</span><a href="projects/liturgy-slides-automation/">liturgy-slides-automation</a><span class="muted">— Otomasi slide Misa untuk streaming dan proyektor</span></li>
 </ul>
 

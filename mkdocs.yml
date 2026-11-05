@@ -60,10 +60,12 @@ nav:
   - Proyek:
       - projects/index.md
       - Liturgy Slides Automation: projects/liturgy-slides-automation.md
+      - Livestream to Shorts Automation: projects/livestream-to-shorts-automation.md
   - Jurnal Belajar:
       - journal/index.md
       - "5 Nov 2026: Hari pertama": journal/2026-11-05.md
       - "5 Nov 2026: Proyek pertama": journal/2026-11-05-proyek-pertama.md
+      - "5 Nov 2026: Proyek kedua": journal/2026-11-05-proyek-kedua.md
   - Catatan Teknis:
       - notes/index.md
       - Git dasar: notes/git-dasar.md

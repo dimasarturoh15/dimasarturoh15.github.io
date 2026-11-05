@@ -6,6 +6,14 @@ Catatan harian mengenai konsep yang dipelajari, kendala teknis, dan milestone. E
   <li>
     <div><time datetime="2026-11-05">2026-11-05</time></div>
     <div>
+      <span class="log-title"><a href="2026-11-05-proyek-kedua/">Proyek kedua masuk portofolio</a></span>
+      <p>Menambahkan Livestream to Shorts Automation, pipeline yang mengubah rekaman live Misa menjadi Shorts homili.</p>
+      <div class="tags"><span>#python</span><span>#whisper</span><span>#ffmpeg</span></div>
+    </div>
+  </li>
+  <li>
+    <div><time datetime="2026-11-05">2026-11-05</time></div>
+    <div>
       <span class="log-title"><a href="2026-11-05-proyek-pertama/">Proyek pertama masuk portofolio</a></span>
       <p>Menambahkan Liturgy Slides Automation ke situs dan merangkum fitur, arsitektur, serta batasannya.</p>
       <div class="tags"><span>#python</span><span>#otomasi</span><span>#portofolio</span></div>
