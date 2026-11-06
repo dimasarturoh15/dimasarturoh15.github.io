@@ -53,6 +53,7 @@ nav:
   - Beranda: index.md
   - Proyek:
       - projects/index.md
+      - ChoraleStudio: projects/choralestudio.md
       - Liturgy Slides Automation: projects/liturgy-slides-automation.md
       - Livestream to Shorts Automation: projects/livestream-to-shorts-automation.md
   - Jurnal Belajar:
