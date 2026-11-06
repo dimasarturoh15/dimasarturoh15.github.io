@@ -7,3 +7,4 @@
 | Waktu | Hash | Ringkasan Perubahan |
 |---|---|---|
 | 2026-11-06 16:53 | `7a0fd9e` | Segmen 6: kerangka UI, daftar proyek, pengaturan |
+| 2026-11-06 18:26 | `7242174` | Segmen 7: layar utama perekaman |
