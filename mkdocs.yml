@@ -40,7 +40,8 @@ theme:
 
 extra_css:
   - https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap
-  - stylesheets/extra.css
+  # Ganti nilai v setiap kali extra.css diubah agar browser tidak memakai versi lama dari cache.
+  - stylesheets/extra.css?v=2026-11-07b
 
 extra:
   generator: false
