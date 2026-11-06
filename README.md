@@ -41,6 +41,20 @@ Lalu buka `http://127.0.0.1:8000`. Setiap perubahan file langsung terlihat.
 2. Daftarkan di bagian `nav` pada `mkdocs.yml`.
 3. Commit dan push. Situs diperbarui otomatis dalam 1-2 menit.
 
+## Jurnal otomatis dari commit
+
+`tools/sync_commit.py` menyusun ulang dari riwayat Git: tabel "Log Pengerjaan" di halaman proyek, halaman jurnal harian `docs/journal/<tanggal>-<slug>-commit.md`, indeks jurnal, navigasi, dan daftar jurnal di beranda. Skrip aman dijalankan berulang kali.
+
+Agar berjalan setiap commit, salin `tools/post-commit-hook.sh` ke `.git/hooks/post-commit` di repositori proyek, lalu sesuaikan `SLUG` dan `NAME`. Hook membuat commit `docs: sync <proyek> commit <hash>` di repo ini dan mengunggahnya di latar. Catatan proses ada di `.git/sync-commit.log`.
+
+Menjalankan manual (misalnya untuk tanggal tertentu):
+
+```bash
+python tools/sync_commit.py --repo "D:/My Project/ChoraleStudio" --slug choralestudio --name ChoraleStudio --tanggal 2026-11-06
+```
+
+Hook hanya berjalan untuk commit yang dibuat di laptop ini. Commit lewat situs GitHub atau komputer lain baru tercatat pada commit lokal berikutnya.
+
 ## Masalah umum
 
 - **Workflow gagal dengan error izin**: pastikan langkah 4 sudah dilakukan.
