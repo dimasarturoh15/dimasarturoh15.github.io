@@ -30,7 +30,7 @@ done
 
 {
   echo "== $(date '+%Y-%m-%d %H:%M:%S') $NAME $HASH"
-  FILES=$("$PY" "$DOCS_DIR/tools/sync_commit.py" --repo "$REPO" --slug "$SLUG" --name "$NAME")
+  FILES=$("$PY" "$DOCS_DIR/tools/sync_commit.py" --repo "$REPO" --slug "$SLUG" --name "$NAME" | tr -d '\r')
   if [ -n "$FILES" ]; then
     (cd "$DOCS_DIR" && echo "$FILES" | xargs git add --)
     if ! git -C "$DOCS_DIR" diff --cached --quiet; then
