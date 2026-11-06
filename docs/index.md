@@ -7,11 +7,16 @@ hide:
 
 # Dimas Arturoh
 
-Mahasiswa informatika. Saya membangun otomasi dengan Python untuk kebutuhan nyata, seperti slide Misa dan video Shorts homili untuk Komsos Paroki Minomartani.
+Mahasiswa informatika. Saya membangun otomasi dan aplikasi dengan Python untuk kebutuhan nyata, seperti slide Misa dan video Shorts homili untuk Komsos Paroki Minomartani, serta aplikasi rekam paduan suara.
 
 ## Proyek
 
 <div class="project-list">
+  <a class="project-card" href="projects/choralestudio/">
+    <span class="project-name">ChoraleStudio</span>
+    <span class="project-desc">Aplikasi desktop Windows untuk merekam paduan suara SATB dan piano secara bergiliran, lalu membuat master siap YouTube dengan satu klik. Lagu 4 menit selesai diproses dalam 34 detik.</span>
+    <span class="project-meta">Python · PySide6 · pedalboard · FFmpeg<span class="sep">/</span>Aktif<span class="sep">/</span>2026</span>
+  </a>
   <a class="project-card" href="projects/livestream-to-shorts-automation/">
     <span class="project-name">livestream-to-shorts-automation</span>
     <span class="project-desc">Mengubah rekaman live Misa menjadi Shorts homili 9:16 berdurasi 60 detik, lengkap dengan subtitel dan crop yang mengikuti pembicara. Dulu 2 jam kerja manual, kini otomatis.</span>
@@ -27,6 +32,9 @@ Mahasiswa informatika. Saya membangun otomasi dengan Python untuk kebutuhan nyat
 ## Jurnal terkini
 
 <ul class="dated-list">
+  <li><span class="date">[2026-11-06]</span><a href="journal/2026-11-06-pemaketan-dan-uji/">Pemaketan, lisensi, dan temuan saat uji</a></li>
+  <li><span class="date">[2026-11-06]</span><a href="journal/2026-11-06-audio-realtime-dan-mastering/">Belajar audio real-time dan standar YouTube</a></li>
+  <li><span class="date">[2026-11-06]</span><a href="journal/2026-11-06-chorale-dari-prd-ke-installer/">ChoraleStudio dari PRD ke installer</a></li>
   <li><span class="date">[2026-11-05]</span><a href="journal/2026-11-05-merapikan-portofolio/">Merapikan portofolio dari hasil penilaian</a></li>
   <li><span class="date">[2026-11-05]</span><a href="journal/2026-11-05-proyek-kedua/">Proyek kedua masuk portofolio</a></li>
   <li><span class="date">[2026-11-05]</span><a href="journal/2026-11-05-proyek-pertama/">Proyek pertama masuk portofolio</a></li>

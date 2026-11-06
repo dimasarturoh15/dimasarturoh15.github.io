@@ -5,8 +5,8 @@ Repositori yang saya kerjakan, dari yang terbaru.
 <div class="project-list">
   <a class="project-card" href="choralestudio/">
     <span class="project-name">ChoraleStudio</span>
-    <span class="project-desc">Studio vokal dan paduan suara digital. Log pengerjaan dan pembaruan dicatat otomatis dari komit Git.</span>
-    <span class="project-meta">Aktif<span class="sep">/</span>Dalam Pengerjaan<span class="sep">/</span>2026</span>
+    <span class="project-desc">Aplikasi desktop Windows untuk merekam paduan suara SATB dan piano secara bergiliran, lalu membuat master siap YouTube dengan satu klik. Lagu 4 menit selesai diproses dalam 34 detik.</span>
+    <span class="project-meta">Python · PySide6 · pedalboard · FFmpeg<span class="sep">/</span>Aktif<span class="sep">/</span>2026</span>
   </a>
   <a class="project-card" href="livestream-to-shorts-automation/">
     <span class="project-name">livestream-to-shorts-automation</span>

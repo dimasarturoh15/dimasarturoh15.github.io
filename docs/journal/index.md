@@ -4,6 +4,30 @@ Catatan harian mengenai konsep yang dipelajari, kendala teknis, dan milestone. E
 
 <ol class="log">
   <li>
+    <div><time datetime="2026-11-06">2026-11-06</time></div>
+    <div>
+      <span class="log-title"><a href="2026-11-06-pemaketan-dan-uji/">Pemaketan, lisensi, dan temuan saat uji</a></span>
+      <p>Membuat Setup.exe, mempercepat waktu buka dari sekitar 26 ke 10 detik, dan menemukan konsekuensi lisensi GPL v3.</p>
+      <div class="tags"><span>#pyinstaller</span><span>#lisensi</span><span>#performa</span></div>
+    </div>
+  </li>
+  <li>
+    <div><time datetime="2026-11-06">2026-11-06</time></div>
+    <div>
+      <span class="log-title"><a href="2026-11-06-audio-realtime-dan-mastering/">Belajar audio real-time dan standar YouTube</a></span>
+      <p>Mengapa callback audio tidak boleh menulis ke disk, dan beda LUFS, True Peak, serta LRA dalam mastering.</p>
+      <div class="tags"><span>#audio</span><span>#dsp</span><span>#youtube</span></div>
+    </div>
+  </li>
+  <li>
+    <div><time datetime="2026-11-06">2026-11-06</time></div>
+    <div>
+      <span class="log-title"><a href="2026-11-06-chorale-dari-prd-ke-installer/">ChoraleStudio dari PRD ke installer</a></span>
+      <p>Mengerjakan aplikasi rekam paduan suara per segmen sampai Setup.exe, dengan tes dan catatan kemajuan di setiap langkah.</p>
+      <div class="tags"><span>#choralestudio</span><span>#python</span><span>#milestone</span></div>
+    </div>
+  </li>
+  <li>
     <div><time datetime="2026-11-05">2026-11-05</time></div>
     <div>
       <span class="log-title"><a href="2026-11-05-merapikan-portofolio/">Merapikan portofolio dari hasil penilaian</a></span>
