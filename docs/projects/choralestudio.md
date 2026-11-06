@@ -10,3 +10,4 @@
 | 2026-11-06 18:26 | `7242174` | Segmen 7: layar utama perekaman |
 | 2026-11-06 20:26 | `4574a16` | Segmen 8: proses produksi dan hasil |
 | 2026-11-06 21:56 | `7fdccd7` | Segmen 9: installer dan dokumen uji lapangan |
+| 2026-11-06 22:07 | `3cc0519` | Segmen 9: Setup.exe dibuat dan diuji di laptop |
