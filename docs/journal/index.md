@@ -6,8 +6,8 @@ Catatan harian mengenai konsep yang dipelajari, kendala teknis, dan milestone. E
   <li>
     <div><time datetime="2026-11-06">2026-11-06</time></div>
     <div>
-      <span class="log-title"><a href="2026-11-06-choralestudio-commit/">Catatan commit ChoraleStudio (8 commit)</a></span>
-      <p>Dicatat otomatis dari Git: Segmen 8: proses produksi dan hasil; Segmen 9: installer dan dokumen uji lapangan; Segmen 9: Setup.exe dibuat dan diuji di laptop dan 5 lainnya.</p>
+      <span class="log-title"><a href="2026-11-06-choralestudio-commit/">Catatan commit ChoraleStudio (9 commit)</a></span>
+      <p>Dicatat otomatis dari Git: Segmen 9: installer dan dokumen uji lapangan; Segmen 9: Setup.exe dibuat dan diuji di laptop; Dokumentasi repositori lengkap untuk rilis publik dan 6 lainnya.</p>
       <div class="tags"><span>#choralestudio</span><span>#commit</span><span>#otomatis</span></div>
     </div>
   </li>

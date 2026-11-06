@@ -1,12 +1,12 @@
-# 6 November 2026: Catatan commit ChoraleStudio (8 commit)
+# 6 November 2026: Catatan commit ChoraleStudio (9 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [ChoraleStudio](../projects/choralestudio.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 8
-- Perubahan: 234 berkas, +19322 / -322 baris
-- Rentang waktu: 14:11 sampai 22:07
+- Jumlah commit: 9
+- Perubahan: 248 berkas, +20533 / -374 baris
+- Rentang waktu: 14:11 sampai 23:39
 
 ## Yang dikerjakan
 
@@ -119,3 +119,14 @@ Commit [`7fdccd7`](https://github.com/dimasarturoh15/ChoraleStudio/commit/7fdccd
 ### 22:07 · Segmen 9: Setup.exe dibuat dan diuji di laptop
 
 Commit [`3cc0519`](https://github.com/dimasarturoh15/ChoraleStudio/commit/3cc0519d200e02e8ba97056d83f69d99608d8f26) · 1 berkas, +10 / -4 baris
+
+### 23:39 · Dokumentasi repositori lengkap untuk rilis publik
+
+Commit [`fba9626`](https://github.com/dimasarturoh15/ChoraleStudio/commit/fba9626e7184c24574cdee5bedab0c0b1be69493) · 14 berkas, +1211 / -52 baris
+
+- README ditulis ulang: fitur, tangkapan layar, cara kerja, kebutuhan sistem,
+  instalasi, pengembangan, status kriteria penerimaan, batasan, hak cipta
+- Dokumen baru: ARCHITECTURE, CLI, CONTRIBUTING, CHANGELOG, SECURITY,
+  THIRD_PARTY_NOTICES, templat Issue dan pull request
+- installer/harmonisatb.spec kini ikut di repositori (sebelumnya
+  terabaikan oleh aturan *.spec di .gitignore)
