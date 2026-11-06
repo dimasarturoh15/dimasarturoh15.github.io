@@ -2,6 +2,8 @@
 
 > Aplikasi desktop Windows untuk merekam paduan suara empat suara (Sopran, Alto, Tenor, Bass) bersama piano secara bergiliran, lalu membuat master audio siap YouTube dengan satu klik. Nama aplikasinya **HarmoniSATB Studio**. Dibuat untuk paduan suara gereja, komunitas vokal, dan sekolah yang tidak punya studio maupun teknisi audio.
 
+<p class="page-meta">Python / PySide6 / pedalboard / FFmpeg · Aktif · 2026</p>
+
 [Lihat kode di GitHub](https://github.com/dimasarturoh15/ChoraleStudio){ .md-button .md-button--primary }
 
 ## Dampak
@@ -34,6 +36,8 @@ Ekor reverb tidak dipotong: berkas diperpanjang sampai ekor turun di bawah -60 d
 
 ## Hasil di aplikasi
 
+<div class="figure-grid" markdown>
+
 <figure markdown="span">
   ![Layar utama perekaman dengan lima track: Piano, Bass, Tenor, Alto, Sopran](../assets/img/chorale-layar-rekam.png){ loading=lazy }
   <figcaption>Layar perekaman: lima track dengan bentuk gelombang dari audio asli, metronom, serta pilihan ruang dan jumlah reverb.</figcaption>
@@ -63,6 +67,8 @@ Ekor reverb tidak dipotong: berkas diperpanjang sampai ekor turun di bawah -60 d
   ![Layar Hasil Produksi berisi hasil pengukuran dan pembanding mentah dengan master](../assets/img/chorale-hasil.png){ loading=lazy }
   <figcaption>Hasil Produksi: angka kelantangan dan puncak, serta pemutar Mentah dan Master dengan volume yang disamakan.</figcaption>
 </figure>
+
+</div>
 
 ## Alur kerja pengguna
 

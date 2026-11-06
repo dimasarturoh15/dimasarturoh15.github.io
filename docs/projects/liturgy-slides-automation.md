@@ -2,6 +2,8 @@
 
 > Otomasi pembuatan slide PowerPoint untuk streaming Misa dan proyektor gereja, dibuat untuk Komsos Paroki Minomartani.
 
+<p class="page-meta">Python / n8n / Google Drive · Aktif · 2026</p>
+
 [Lihat kode di GitHub](https://github.com/dimasarturoh15/liturgy-slides-automation){ .md-button .md-button--primary }
 
 ## Dampak
@@ -28,6 +30,8 @@ Setiap hari sistem membaca Teks Misa dari Google Drive, mengambil bacaan harian,
 
 ## Hasil di lapangan
 
+<div class="figure-grid" markdown>
+
 <figure markdown="span">
   ![Slide doa berlatar hijau di Google Slides, hasil pengisian master otomatis](../assets/img/liturgy-slide.jpg){ loading=lazy }
   <figcaption>Slide streaming Misa harian hasil otomasi. Latar hijau dipakai untuk chroma key saat siaran.</figcaption>
@@ -37,6 +41,8 @@ Setiap hari sistem membaca Teks Misa dari Google Drive, mengambil bacaan harian,
   ![Folder Google Drive berisi file intensi, slide, dan thumbnail untuk Kamis, 5 November 2026](../assets/img/liturgy-drive.jpg){ loading=lazy }
   <figcaption>Hasil yang diunggah ke Google Drive: intensi, slide, dan thumbnail siaran.</figcaption>
 </figure>
+
+</div>
 
 ## Fitur utama
 

@@ -2,6 +2,8 @@
 
 > Pipeline otomatis yang mengubah rekaman live Misa menjadi satu video YouTube Shorts vertikal 9:16 berisi homili, tepat 60 detik. Nama internal di Komsos Paroki Minomartani: **Komsos Shorts AI**.
 
+<p class="page-meta">Python / Whisper / Gemini / FFmpeg · Aktif · 2026</p>
+
 [Lihat kode di GitHub](https://github.com/dimasarturoh15/livestream-to-shorts-automation){ .md-button .md-button--primary }
 
 ## Dampak
@@ -29,6 +31,8 @@ Unggahan ke YouTube dapat dimatikan lewat `AUTO_UPLOAD = false`. Dalam mode itu,
 
 ## Hasil di lapangan
 
+<div class="figure-grid" markdown>
+
 <figure markdown="span">
   ![Tab Shorts kanal YouTube Komsos Minomartani berisi dua Shorts homili dengan subtitel per kata](../assets/img/shorts-channel.jpg){ loading=lazy }
   <figcaption>Shorts homili hasil pipeline di kanal Komsos Minomartani, lengkap dengan subtitel per kata.</figcaption>
@@ -38,6 +42,8 @@ Unggahan ke YouTube dapat dimatikan lewat `AUTO_UPLOAD = false`. Dalam mode itu,
   ![Daftar siaran live Perayaan Ekaristi Harian di kanal YouTube](../assets/img/shorts-sumber-live.jpg){ loading=lazy }
   <figcaption>Sumbernya: siaran live Misa harian di kanal yang sama.</figcaption>
 </figure>
+
+</div>
 
 ## Alur kerja
 

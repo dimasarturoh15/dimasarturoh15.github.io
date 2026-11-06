@@ -158,37 +158,72 @@ def write_journal_page(day: str, slug: str, name: str, todays: list[Commit], url
 
 # 3. Indeks jurnal ----------------------------------------------------------------------
 
-LI = re.compile(r"  <li>\n.*?\n  </li>\n", re.S)
+INDEX_FRONT = "---\nhide:\n  - toc\n---\n\n"
 
 
-def li_date(block: str) -> str:
-    m = re.search(r'datetime="(\d{4}-\d{2}-\d{2})"', block)
-    return m.group(1) if m else "0000-00-00"
+@dataclass
+class Entry:
+    date: str
+    href: str
+    title: str  # sudah berupa HTML (di-escape)
+    summary: str
+    tags: list[str]
+
+
+def parse_journal_index(text: str) -> tuple[str, list[Entry]]:
+    """Bagian pembuka (judul + pengantar) dan semua entri, dari format lama maupun berkelompok."""
+    starts = [i for i in (text.find('<div class="log-day"'), text.find('<ol class="log">')) if i >= 0]
+    head = text[: min(starts)] if starts else text
+    entries = []
+    current = "0000-00-00"
+    for m in re.finditer(r'data-date="(\d{4}-\d{2}-\d{2})"|<li>.*?</li>', text[len(head):], re.S):
+        if m.group(1):
+            current = m.group(1)
+            continue
+        block = m.group(0)
+        own = re.search(r'datetime="(\d{4}-\d{2}-\d{2})"', block)
+        link = re.search(r'<a (?:class="log-title" )?href="([^"]+)">(.*?)</a>', block, re.S)
+        summary = re.search(r"<p>(.*?)</p>", block, re.S)
+        if link:
+            entries.append(Entry(own.group(1) if own else current, link.group(1), link.group(2),
+                                 summary.group(1) if summary else "", re.findall(r"<span>(#[^<]+)</span>", block)))
+    return head, entries
+
+
+def render_journal_index(head: str, entries: list[Entry]) -> str:
+    """Entri dikelompokkan per tanggal (terbaru di atas); urutan di dalam satu tanggal dipertahankan."""
+    if not head.startswith("---"):
+        head = INDEX_FRONT + head.lstrip()
+    out = [head.rstrip("\n") + "\n"]
+    for day in sorted({e.date for e in entries}, reverse=True):
+        rows = []
+        for e in (e for e in entries if e.date == day):
+            tags = "".join(f"<span>{t}</span>" for t in e.tags)
+            rows.append(f'  <li>\n    <a class="log-title" href="{e.href}">{e.title}</a>\n'
+                        f'    <span class="tags">{tags}</span>\n    <p>{e.summary}</p>\n  </li>')
+        out.append(f'\n<div class="log-day" data-date="{day}">\n'
+                   f'<h2 class="log-date"><time datetime="{day}">{long_date(day)}</time></h2>\n'
+                   f'<ol class="log">\n' + "\n".join(rows) + "\n</ol>\n</div>\n")
+    return "".join(out)
 
 
 def update_journal_index(day: str, slug: str, name: str, todays: list[Commit]) -> Path:
     index = DOCS / "journal" / "index.md"
-    text = index.read_text(encoding="utf-8")
+    head, entries = parse_journal_index(index.read_text(encoding="utf-8"))
     href = f"{journal_slug(day, slug)}/"
     subjects = "; ".join(c.subject for c in todays[-3:])
     more = f" dan {len(todays) - 3} lainnya" if len(todays) > 3 else ""
-    block = (f'  <li>\n    <div><time datetime="{day}">{day}</time></div>\n    <div>\n'
-             f'      <span class="log-title"><a href="{href}">{html.escape(journal_title(name, len(todays)))}</a></span>\n'
-             f'      <p>Dicatat otomatis dari Git: {html.escape(subjects)}{more}.</p>\n'
-             f'      <div class="tags"><span>#{slug}</span><span>#commit</span><span>#otomatis</span></div>\n'
-             f'    </div>\n  </li>\n')
-    existing = [m for m in LI.finditer(text) if f'href="{href}"' in m.group(0)]
-    if existing:
-        m = existing[0]
-        text = text[: m.start()] + block + text[m.end():]
+    entry = Entry(day, href, html.escape(journal_title(name, len(todays))),
+                  f"Dicatat otomatis dari Git: {html.escape(subjects)}{more}.",
+                  [f"#{slug}", "#commit", "#otomatis"])
+    pos = next((i for i, e in enumerate(entries) if e.href == href), None)
+    if pos is not None:
+        entries[pos] = entry
     else:
-        # Sisipkan di atas entri pertama yang tanggalnya sama atau lebih lama (entri terbaru di atas).
-        target = next((m for m in LI.finditer(text) if li_date(m.group(0)) <= day), None)
-        if target is not None:
-            text = text[: target.start()] + block + text[target.start():]
-        else:
-            text = text.replace("</ol>", block + "</ol>", 1)
-    index.write_text(text, encoding="utf-8")
+        # Entri terbaru di atas: sisipkan sebelum entri pertama yang tanggalnya sama atau lebih lama.
+        pos = next((i for i, e in enumerate(entries) if e.date <= day), len(entries))
+        entries.insert(pos, entry)
+    index.write_text(render_journal_index(head, entries), encoding="utf-8")
     return index
 
 
@@ -218,13 +253,10 @@ def update_nav(day: str, slug: str, name: str) -> Path:
 def update_home() -> Path:
     home = DOCS / "index.md"
     text = home.read_text(encoding="utf-8")
-    index = (DOCS / "journal" / "index.md").read_text(encoding="utf-8")
-    items = []
-    for m in list(LI.finditer(index))[:HOME_ITEMS]:
-        link = re.search(r'<a href="([^"]+)">(.*?)</a>', m.group(0))
-        if link:
-            items.append(f'  <li><span class="date">[{li_date(m.group(0))}]</span>'
-                         f'<a href="journal/{link.group(1)}">{link.group(2)}</a></li>\n')
+    _, entries = parse_journal_index((DOCS / "journal" / "index.md").read_text(encoding="utf-8"))
+    entries.sort(key=lambda e: e.date, reverse=True)  # stabil: urutan dalam satu tanggal tetap
+    items = [f'  <li><span class="date">{e.date}</span><a href="journal/{e.href}">{e.title}</a></li>\n'
+             for e in entries[:HOME_ITEMS]]
     new = '<ul class="dated-list">\n' + "".join(items) + "</ul>"
     text = re.sub(r'<ul class="dated-list">\n.*?</ul>', lambda _: new, text, count=1, flags=re.S)
     home.write_text(text, encoding="utf-8")

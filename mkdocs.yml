@@ -8,6 +8,7 @@ copyright: "&copy; 2026 Dimas Arturoh"
 
 theme:
   name: material
+  custom_dir: overrides
   language: id
   # Font dimuat lewat extra_css agar bobot 500 dan 600 tersedia.
   font: false
@@ -33,7 +34,6 @@ theme:
     - navigation.indexes
     - navigation.instant
     - navigation.tracking
-    - navigation.path
     - navigation.footer
     - toc.follow
     - content.code.copy
