@@ -32,13 +32,12 @@ Mahasiswa informatika. Saya membangun otomasi dan aplikasi dengan Python untuk k
 ## Jurnal terkini
 
 <ul class="dated-list">
+  <li><span class="date">[2026-11-06]</span><a href="journal/2026-11-06-choralestudio-commit/">Catatan commit ChoraleStudio (8 commit)</a></li>
   <li><span class="date">[2026-11-06]</span><a href="journal/2026-11-06-pemaketan-dan-uji/">Pemaketan, lisensi, dan temuan saat uji</a></li>
   <li><span class="date">[2026-11-06]</span><a href="journal/2026-11-06-audio-realtime-dan-mastering/">Belajar audio real-time dan standar YouTube</a></li>
   <li><span class="date">[2026-11-06]</span><a href="journal/2026-11-06-chorale-dari-prd-ke-installer/">ChoraleStudio dari PRD ke installer</a></li>
   <li><span class="date">[2026-11-05]</span><a href="journal/2026-11-05-merapikan-portofolio/">Merapikan portofolio dari hasil penilaian</a></li>
   <li><span class="date">[2026-11-05]</span><a href="journal/2026-11-05-proyek-kedua/">Proyek kedua masuk portofolio</a></li>
-  <li><span class="date">[2026-11-05]</span><a href="journal/2026-11-05-proyek-pertama/">Proyek pertama masuk portofolio</a></li>
-  <li><span class="date">[2026-11-05]</span><a href="journal/2026-11-05/">Hari pertama: memulai dokumentasi</a></li>
 </ul>
 
 <p><a href="journal/">Semua entri jurnal →</a></p>

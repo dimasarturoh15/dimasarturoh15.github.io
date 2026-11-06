@@ -6,6 +6,14 @@ Catatan harian mengenai konsep yang dipelajari, kendala teknis, dan milestone. E
   <li>
     <div><time datetime="2026-11-06">2026-11-06</time></div>
     <div>
+      <span class="log-title"><a href="2026-11-06-choralestudio-commit/">Catatan commit ChoraleStudio (8 commit)</a></span>
+      <p>Dicatat otomatis dari Git: Segmen 8: proses produksi dan hasil; Segmen 9: installer dan dokumen uji lapangan; Segmen 9: Setup.exe dibuat dan diuji di laptop dan 5 lainnya.</p>
+      <div class="tags"><span>#choralestudio</span><span>#commit</span><span>#otomatis</span></div>
+    </div>
+  </li>
+  <li>
+    <div><time datetime="2026-11-06">2026-11-06</time></div>
+    <div>
       <span class="log-title"><a href="2026-11-06-pemaketan-dan-uji/">Pemaketan, lisensi, dan temuan saat uji</a></span>
       <p>Membuat Setup.exe, mempercepat waktu buka dari sekitar 26 ke 10 detik, dan menemukan konsekuensi lisensi GPL v3.</p>
       <div class="tags"><span>#pyinstaller</span><span>#lisensi</span><span>#performa</span></div>
