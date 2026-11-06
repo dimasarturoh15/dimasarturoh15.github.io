@@ -7,6 +7,7 @@ hide:
 
 Repositori yang saya kerjakan, dari yang terbaru.
 
+<div class="panel">
 <div class="project-list">
   <a class="project-row" href="choralestudio/">
     <span class="project-name">ChoraleStudio</span>
@@ -26,4 +27,5 @@ Repositori yang saya kerjakan, dari yang terbaru.
     <span class="project-stack">Python / n8n / Google Drive</span>
     <span class="project-status">Aktif · 2026</span>
   </a>
+</div>
 </div>

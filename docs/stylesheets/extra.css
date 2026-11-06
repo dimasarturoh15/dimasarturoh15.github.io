@@ -84,8 +84,8 @@
   border-radius: 2px;
 }
 
-/* ---------- Kerangka: lebar 1200px, sidebar 220/200px ---------- */
-.md-grid { max-width: 1200px; }
+/* ---------- Kerangka: maks 1440px, sidebar 240/220px ---------- */
+.md-grid { max-width: 1440px; }
 .md-main__inner { margin-top: 24px; }
 .md-content__inner {
   max-width: none;
@@ -94,8 +94,8 @@
 }
 .md-content__inner::before { height: 0; }
 @media (min-width: 76.25em) {
-  .md-sidebar--primary { width: 220px; }
-  .md-sidebar--secondary { width: 200px; }
+  .md-sidebar--primary { width: 240px; }
+  .md-sidebar--secondary { width: 220px; }
   .md-content__inner { margin: 0 32px 24px; }
 }
 
@@ -392,42 +392,79 @@
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='none' stroke='%23111315' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round' d='M5 12.5l4.5 4.5L19 7.5'/></svg>");
 }
 
-/* ---------- Beranda: perkenalan + jurnal di atas, proyek selebar halaman ---------- */
-.home-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-  grid-template-areas:
-    "intro journal"
-    "projects projects";
-  column-gap: 48px;
-  row-gap: 32px;
+/* ---------- Panel: permukaan putih bergaris tipis untuk mengelompokkan daftar ---------- */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0 20px;
 }
-.home-intro { grid-area: intro; }
-.home-journal { grid-area: journal; }
+.panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 14px 0 10px;
+  border-bottom: 1px solid var(--border);
+}
+.md-typeset .panel-head h2 { margin: 0; font-size: 17px; line-height: 24px; }
+.md-typeset .panel-head a { font-size: 13px; font-weight: 500; white-space: nowrap; }
+
+/* ---------- Beranda: pita perkenalan, lalu Proyek (2/3) dan Jurnal terkini (1/3) ---------- */
+.home {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  grid-template-areas:
+    "intro intro"
+    "projects journal";
+  gap: 24px;
+  align-items: start;
+}
+.home-intro {
+  grid-area: intro;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 48px;
+  align-items: end;
+  padding: 8px 0 24px;
+  border-bottom: 1px solid var(--border);
+}
 .home-projects { grid-area: projects; }
-.md-typeset .home-grid h1 { font-size: 36px; line-height: 44px; margin: 4px 0 12px; }
-.md-typeset .home-grid h2 { margin: 0 0 12px; }
+.home-journal { grid-area: journal; }
+.md-typeset .home-intro h1 { font-size: 40px; line-height: 48px; margin: 0 0 12px; }
 .md-typeset .home-intro p {
-  margin: 0 0 12px;
-  font-size: 16px;
-  line-height: 26px;
+  margin: 0;
+  max-width: 760px;
+  font-size: 17px;
+  line-height: 28px;
   color: var(--md-default-fg-color--light);
 }
-.md-typeset .home-intro .contact {
+.md-typeset dl.home-contact {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  margin: 0;
+  border-top: 1px solid var(--border);
   font-family: var(--mono);
   font-size: 13px;
   line-height: 20px;
 }
-.contact a { display: inline-block; }
-.contact .sep { margin: 0 8px; color: var(--subtle); }
-.md-typeset .more { margin: 12px 0 0; font-size: 14px; font-weight: 500; }
+.md-typeset dl.home-contact dt,
+.md-typeset dl.home-contact dd {
+  margin: 0;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+.md-typeset dl.home-contact dt { font-weight: 400; color: var(--md-default-fg-color--lighter); }
+.md-typeset dl.home-contact dd { overflow-wrap: anywhere; }
 
 @media (max-width: 60em) {
-  .home-grid {
+  .home {
     grid-template-columns: minmax(0, 1fr);
     grid-template-areas: "intro" "projects" "journal";
   }
-  .md-typeset .home-grid h1 { font-size: 30px; line-height: 38px; }
+  .home-intro { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .md-typeset .home-intro h1 { font-size: 30px; line-height: 38px; }
+  .md-typeset .home-intro p { font-size: 16px; line-height: 26px; }
 }
 
 /* Jurnal terkini: tanggal di kiri, judul di kanan */
@@ -435,15 +472,15 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  border-top: 1px solid var(--border);
 }
+.md-typeset ul.dated-list li:last-child { border-bottom: 0; }
 .md-typeset ul.dated-list li {
   display: grid;
-  grid-template-columns: 96px minmax(0, 1fr);
-  gap: 16px;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 12px;
   align-items: baseline;
   margin: 0;
-  padding: 8px 0;
+  padding: 10px 0;
   border-bottom: 1px solid var(--border);
   font-size: 14px;
   line-height: 22px;
@@ -459,22 +496,28 @@
   .md-typeset ul.dated-list li { grid-template-columns: minmax(0, 1fr); gap: 2px; }
 }
 
-/* ---------- Daftar proyek: satu baris per proyek, empat kolom ---------- */
-.project-list { margin: 0; border-top: 1px solid var(--border); }
+/* ---------- Daftar proyek: nama | deskripsi + teknologi | status ---------- */
+.project-list { margin: 0; }
 .md-typeset a.project-row {
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr) 200px 88px;
-  gap: 24px;
+  grid-template-columns: 210px minmax(0, 1fr) auto;
+  grid-template-areas: "name desc status" "name stack status";
+  column-gap: 24px;
+  row-gap: 6px;
   align-items: baseline;
-  margin: 0 -8px;
-  padding: 12px 8px;
+  margin: 0 -20px;
+  padding: 14px 20px;
   border-bottom: 1px solid var(--border);
-  border-radius: 4px;
   color: var(--md-default-fg-color);
   text-decoration: none;
   transition: background-color 150ms;
 }
-.md-typeset a.project-row:hover { background: var(--surface); color: var(--md-default-fg-color); }
+.md-typeset a.project-row:last-child { border-bottom: 0; }
+.md-typeset a.project-row:hover { background: var(--md-default-bg-color); color: var(--md-default-fg-color); }
+.project-row .project-name { grid-area: name; }
+.project-row .project-desc { grid-area: desc; }
+.project-row .project-stack { grid-area: stack; }
+.project-row .project-status { grid-area: status; }
 .md-typeset a.project-row:hover .project-name { text-decoration: underline; text-underline-offset: 3px; }
 .project-row > span { display: block; }
 .project-row .project-name {
@@ -494,23 +537,27 @@
   color: var(--md-default-fg-color--lighter);
 }
 .project-row .project-status { text-align: right; white-space: nowrap; }
-@media (max-width: 76.25em) {
+@media (max-width: 60em) {
   .md-typeset a.project-row {
     grid-template-columns: minmax(0, 1fr) auto;
     grid-template-areas: "name status" "desc desc" "stack stack";
     row-gap: 4px;
     column-gap: 16px;
   }
-  .project-row .project-name { grid-area: name; }
-  .project-row .project-status { grid-area: status; }
-  .project-row .project-desc { grid-area: desc; }
-  .project-row .project-stack { grid-area: stack; }
 }
 
-/* ---------- Jurnal: dikelompokkan per tanggal ---------- */
+/* ---------- Jurnal: satu panel per tanggal ---------- */
+.log-day {
+  margin: 16px 0 0;
+  padding: 0 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.md-typeset .log-day ol.log > li:last-child { border-bottom: 0; }
 .md-typeset h2.log-date {
-  margin: 24px 0 0;
-  padding: 0 0 6px;
+  margin: 0;
+  padding: 12px 0 8px;
   border-bottom: 1px solid var(--border);
   font-family: var(--mono);
   font-size: 13px;
@@ -615,6 +662,29 @@
 .md-copyright a { color: var(--md-default-fg-color--light); }
 .md-social__link svg { fill: var(--md-default-fg-color--lighter); }
 .md-social__link:hover svg { fill: var(--md-typeset-a-color); }
+
+.md-footer__inner { padding: 0; }
+.md-footer-meta__inner { padding: 4px 0; }
+
+/* ---------- Layar lebar (>= 1600px): huruf sedikit lebih besar agar ruang terpakai ---------- */
+@media (min-width: 100em) {
+  .md-typeset { font-size: 16px; line-height: 26px; }
+  .md-typeset h1 { font-size: 32px; line-height: 40px; }
+  .md-typeset h2 { font-size: 21px; line-height: 30px; }
+  .md-nav { font-size: 15px; line-height: 22px; }
+  .md-typeset .home-intro h1 { font-size: 44px; line-height: 52px; }
+  .md-typeset .home-intro p { font-size: 18px; line-height: 30px; }
+  .md-typeset ul.dated-list li,
+  .project-row .project-desc,
+  .md-typeset .log p { font-size: 15px; line-height: 24px; }
+  .md-typeset .log a.log-title { font-size: 16px; }
+}
+
+@media (max-width: 600px) {
+  .panel,
+  .log-day { padding: 0 14px; }
+  .md-typeset a.project-row { margin: 0 -14px; padding: 12px 14px; }
+}
 
 /* Tombol kembali ke atas */
 .md-top {
