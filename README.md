@@ -1,4 +1,4 @@
-# Dimas Arturoh: portofolio
+# Dokumentasi GitHub: portofolio
 
 Situs dokumentasi berbasis **MkDocs (tema Material)**, dipublikasikan otomatis ke **GitHub Pages** lewat GitHub Actions.
 
