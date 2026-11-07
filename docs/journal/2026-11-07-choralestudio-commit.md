@@ -1,12 +1,12 @@
-# 7 November 2026: Catatan commit ChoraleStudio (4 commit)
+# 7 November 2026: Catatan commit ChoraleStudio (5 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [ChoraleStudio](../projects/choralestudio.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 4
-- Perubahan: 53 berkas, +865 / -51 baris
-- Rentang waktu: 18:51 sampai 20:25
+- Jumlah commit: 5
+- Perubahan: 76 berkas, +957 / -73 baris
+- Rentang waktu: 18:51 sampai 23:31
 
 ## Yang dikerjakan
 
@@ -61,3 +61,14 @@ Commit [`8f58c09`](https://github.com/dimasarturoh15/ChoraleStudio/commit/8f58c0
 - JUMP_TOLERANCE 8 -> 24 sampel: klik bernada beda terukur selisih 11
   sampel di hardware dan memicu lompatan palsu; tes regresi ditambah
 - PROGRESS dan README diperbarui
+
+### 23:31 · Rilis 1.2.0: tampilan kalibrasi untuk SC202HD dan installer baru
+
+Commit [`8a0f888`](https://github.com/dimasarturoh15/ChoraleStudio/commit/8a0f888d6fec6d332b7ca64c1ab10a85e942e857) · 23 berkas, +92 / -22 baris
+
+- Kalibrasi Latensi: teks tidak lagi menempel; hasil berubah-ubah tampil
+  "Berubah-ubah" dengan penjelasan bila kanal acuan aktif, atau
+  "Tidak konsisten" (kuning) dengan saran mengaktifkan kanal acuan
+- Versi 1.2.0 di aplikasi, pyproject, skrip Inno Setup, README, panduan
+- build_installer.py melaporkan Setup.exe sesuai versi
+- CHANGELOG 1.2.0; 256 tes lulus; Setup.exe 1.2.0 dipasang dan diuji

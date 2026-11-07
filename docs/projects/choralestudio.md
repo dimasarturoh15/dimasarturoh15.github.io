@@ -219,3 +219,4 @@ Diperbarui otomatis dari riwayat Git setiap kali ada commit.
 | 2026-11-07 19:12 | [`8f2e19c`](https://github.com/dimasarturoh15/ChoraleStudio/commit/8f2e19c935b21d4bc752b8c6983f1518149b1981) | Pilihan 1 SC202HD: target sinkron 3 ms, pemanasan, deteksi lompatan |
 | 2026-11-07 19:37 | [`ac46829`](https://github.com/dimasarturoh15/ChoraleStudio/commit/ac46829b712e8c72311d6257b825b4799d9b8069) | Kanal acuan sinkronisasi untuk take vokal |
 | 2026-11-07 20:25 | [`8f58c09`](https://github.com/dimasarturoh15/ChoraleStudio/commit/8f58c090f36dc0e612c01e213aac08228bbf19f6) | Uji hardware kanal acuan di SC202HD dan perbaikan ambang lompatan |
+| 2026-11-07 23:31 | [`8a0f888`](https://github.com/dimasarturoh15/ChoraleStudio/commit/8a0f888d6fec6d332b7ca64c1ab10a85e942e857) | Rilis 1.2.0: tampilan kalibrasi untuk SC202HD dan installer baru |
