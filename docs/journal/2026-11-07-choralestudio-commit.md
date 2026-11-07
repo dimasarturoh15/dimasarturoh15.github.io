@@ -1,12 +1,12 @@
-# 7 November 2026: Catatan commit ChoraleStudio (2 commit)
+# 7 November 2026: Catatan commit ChoraleStudio (3 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [ChoraleStudio](../projects/choralestudio.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 2
-- Perubahan: 17 berkas, +295 / -32 baris
-- Rentang waktu: 18:51 sampai 19:12
+- Jumlah commit: 3
+- Perubahan: 48 berkas, +800 / -46 baris
+- Rentang waktu: 18:51 sampai 19:37
 
 ## Yang dikerjakan
 
@@ -35,3 +35,17 @@ Commit [`8f2e19c`](https://github.com/dimasarturoh15/ChoraleStudio/commit/8f2e19
   USB selective suspend mati)
 - 5 tes baru; 246 tes lulus. Uji ulang SC202HD: 5,80 ms dan 2,26 ms, jadi
   target 3 ms belum terpenuhi secara andal (dicatat di PROGRESS)
+
+### 19:37 · Kanal acuan sinkronisasi untuk take vokal
+
+Commit [`ac46829`](https://github.com/dimasarturoh15/ChoraleStudio/commit/ac46829b712e8c72311d6257b825b4799d9b8069) · 31 berkas, +505 / -14 baris
+
+- Modul chorale.audio.alignment: ukur latensi sebenarnya tiap take dari
+  kanal acuan (kabel Output -> input lain) dan sejajarkan take per segmen,
+  termasuk lompatan latensi di tengah lagu; tulis ulang atomik
+- AudioSession merekam kanal acuan lewat ring buffer kedua; fallback ke
+  kalibrasi dengan peringatan bila acuan tidak terdeteksi
+- Opsi "Kanal acuan sinkronisasi" di Pengaturan, pengingat di Persiapan
+  Rekam Vokal, sync_test.py --acuan
+- PRD v1.1 rev. 2, ARCHITECTURE, panduan, uji lapangan, CLI, CHANGELOG
+- 8 tes baru; 254 tes lulus. Uji hardware menyusul.

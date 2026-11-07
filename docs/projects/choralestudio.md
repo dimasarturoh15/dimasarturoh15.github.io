@@ -217,3 +217,4 @@ Diperbarui otomatis dari riwayat Git setiap kali ada commit.
 | 2026-11-06 23:39 | [`fba9626`](https://github.com/dimasarturoh15/ChoraleStudio/commit/fba9626e7184c24574cdee5bedab0c0b1be69493) | Dokumentasi repositori lengkap untuk rilis publik |
 | 2026-11-07 18:51 | [`2a0a9d5`](https://github.com/dimasarturoh15/ChoraleStudio/commit/2a0a9d5034b46d121eb55a3887baf82c8905f1f5) | Uji hardware SC202HD: kalibrasi dan sinkronisasi |
 | 2026-11-07 19:12 | [`8f2e19c`](https://github.com/dimasarturoh15/ChoraleStudio/commit/8f2e19c935b21d4bc752b8c6983f1518149b1981) | Pilihan 1 SC202HD: target sinkron 3 ms, pemanasan, deteksi lompatan |
+| 2026-11-07 19:37 | [`ac46829`](https://github.com/dimasarturoh15/ChoraleStudio/commit/ac46829b712e8c72311d6257b825b4799d9b8069) | Kanal acuan sinkronisasi untuk take vokal |
