@@ -41,7 +41,7 @@ theme:
 extra_css:
   - https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap
   # Ganti nilai v setiap kali extra.css diubah agar browser tidak memakai versi lama dari cache.
-  - stylesheets/extra.css?v=2026-11-07b
+  - stylesheets/extra.css?v=2026-11-08b
 
 extra:
   generator: false
@@ -59,7 +59,6 @@ nav:
       - Livestream to Shorts Automation: projects/livestream-to-shorts-automation.md
   - Jurnal Belajar:
       - journal/index.md
-      - "8 Nov 2026: Commit ChoraleStudio": journal/2026-11-08-choralestudio-commit.md
       - "7 Nov 2026: Commit ChoraleStudio": journal/2026-11-07-choralestudio-commit.md
       - "6 Nov 2026: Commit ChoraleStudio": journal/2026-11-06-choralestudio-commit.md
       - "6 Nov 2026: Pemaketan dan uji": journal/2026-11-06-pemaketan-dan-uji.md

@@ -116,18 +116,42 @@
 
 .md-tabs { border-bottom: 1px solid var(--border); }
 .md-tabs__list { margin-left: 0; }
-.md-tabs__item { height: 40px; padding: 0 12px; }
+.md-tabs__item { height: 44px; padding: 0 2px; }
 .md-tabs__link {
-  margin-top: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-top: 0;
+  padding: 0 12px;
   font-size: 14px;
+  font-weight: 500;
   line-height: 20px;
+  letter-spacing: -0.005em;
   opacity: 1;
   color: var(--md-default-fg-color--light);
   transition: color 150ms;
 }
+/* Garis bawah: tumbuh dari tengah saat hover, penuh pada tab aktif. */
+.md-tabs__link::after {
+  content: "";
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 0;
+  height: 2px;
+  border-radius: 2px 2px 0 0;
+  background: var(--subtle);
+  transform: scaleX(0);
+  transition: transform 200ms ease, background-color 150ms;
+}
 .md-tabs__link:hover { color: var(--md-default-fg-color); }
-.md-tabs__item--active .md-tabs__link { color: var(--md-typeset-a-color); font-weight: 500; }
-.md-tabs__item--active { box-shadow: inset 0 -2px 0 var(--md-typeset-a-color); }
+.md-tabs__link:hover::after { transform: scaleX(1); }
+.md-tabs__item--active .md-tabs__link { color: var(--md-typeset-a-color); font-weight: 600; }
+.md-tabs__item--active .md-tabs__link::after { transform: scaleX(1); background: var(--accent); }
+@media (prefers-reduced-motion: reduce) {
+  .md-tabs__link, .md-tabs__link::after { transition: none; }
+}
 
 /* ---------- Tipografi ---------- */
 .md-typeset {
@@ -235,6 +259,25 @@
 }
 .md-nav--secondary .md-nav__link { font-size: 13px; margin-top: 6px; }
 .md-nav--secondary .md-nav__link--active { font-weight: 600; }
+
+/* Pembatas antar item di navigasi samping (Proyek dan Jurnal Belajar). */
+[data-md-color-scheme="default"] { --divider: #d6d3d1; }
+[data-md-color-scheme="slate"] { --divider: #3a4047; }
+@media (min-width: 76.25em) {
+  .md-sidebar--primary .md-nav__item--section > .md-nav > .md-nav__list {
+    margin-top: 10px;
+  }
+  .md-sidebar--primary .md-nav__item--section > .md-nav > .md-nav__list > .md-nav__item:first-child {
+    border-top: 1px solid var(--divider);
+  }
+  .md-sidebar--primary .md-nav__item--section > .md-nav > .md-nav__list > .md-nav__item {
+    border-bottom: 1px solid var(--divider);
+  }
+  .md-sidebar--primary .md-nav__item--section > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link {
+    margin-top: 0;
+    padding: 10px 0;
+  }
+}
 
 /* ---------- Tombol ---------- */
 .md-typeset .md-button {
