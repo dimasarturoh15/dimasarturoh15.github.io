@@ -43,7 +43,7 @@ hide:
 <section class="panel home-journal">
 <div class="panel-head"><h2 id="jurnal-terkini">Jurnal terkini</h2><a href="journal/">Semua entri jurnal</a></div>
 <ul class="dated-list">
-  <li><span class="date">2026-11-07</span><a href="journal/2026-11-07-choralestudio-commit/">Catatan commit ChoraleStudio (1 commit)</a></li>
+  <li><span class="date">2026-11-07</span><a href="journal/2026-11-07-choralestudio-commit/">Catatan commit ChoraleStudio (2 commit)</a></li>
   <li><span class="date">2026-11-06</span><a href="journal/2026-11-06-choralestudio-commit/">Catatan commit ChoraleStudio (9 commit)</a></li>
   <li><span class="date">2026-11-06</span><a href="journal/2026-11-06-pemaketan-dan-uji/">Pemaketan, lisensi, dan temuan saat uji</a></li>
   <li><span class="date">2026-11-06</span><a href="journal/2026-11-06-audio-realtime-dan-mastering/">Belajar audio real-time dan standar YouTube</a></li>
