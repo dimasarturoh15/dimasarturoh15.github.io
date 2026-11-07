@@ -11,9 +11,9 @@ Catatan harian mengenai konsep yang dipelajari, kendala teknis, dan milestone. E
 <h2 class="log-date"><time datetime="2026-11-08">8 November 2026</time></h2>
 <ol class="log">
   <li>
-    <a class="log-title" href="2026-11-08-choralestudio-commit/">Catatan commit ChoraleStudio (1 commit)</a>
+    <a class="log-title" href="2026-11-08-choralestudio-commit/">Catatan commit ChoraleStudio (2 commit)</a>
     <span class="tags"><span>#choralestudio</span><span>#commit</span><span>#otomatis</span></span>
-    <p>Dicatat otomatis dari Git: Cek gain untuk setiap kelompok suara vokal.</p>
+    <p>Dicatat otomatis dari Git: Cek gain untuk setiap kelompok suara vokal; Rilis 1.3.0: cek gain per kelompok suara.</p>
   </li>
 </ol>
 </div>

@@ -221,3 +221,4 @@ Diperbarui otomatis dari riwayat Git setiap kali ada commit.
 | 2026-11-07 20:25 | [`8f58c09`](https://github.com/dimasarturoh15/ChoraleStudio/commit/8f58c090f36dc0e612c01e213aac08228bbf19f6) | Uji hardware kanal acuan di SC202HD dan perbaikan ambang lompatan |
 | 2026-11-07 23:31 | [`8a0f888`](https://github.com/dimasarturoh15/ChoraleStudio/commit/8a0f888d6fec6d332b7ca64c1ab10a85e942e857) | Rilis 1.2.0: tampilan kalibrasi untuk SC202HD dan installer baru |
 | 2026-11-08 00:46 | [`6df99f8`](https://github.com/dimasarturoh15/ChoraleStudio/commit/6df99f8a49b750966cba141ece7e1bb0fadf46a9) | Cek gain untuk setiap kelompok suara vokal |
+| 2026-11-08 01:02 | [`7b3f2be`](https://github.com/dimasarturoh15/ChoraleStudio/commit/7b3f2beda292c6378d33ae89ce03bbcb7031c543) | Rilis 1.3.0: cek gain per kelompok suara |
