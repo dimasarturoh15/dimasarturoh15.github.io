@@ -7,6 +7,17 @@ hide:
 
 Catatan harian mengenai konsep yang dipelajari, kendala teknis, dan milestone. Entri terbaru berada di atas.
 
+<div class="log-day" data-date="2026-11-08">
+<h2 class="log-date"><time datetime="2026-11-08">8 November 2026</time></h2>
+<ol class="log">
+  <li>
+    <a class="log-title" href="2026-11-08-choralestudio-commit/">Catatan commit ChoraleStudio (1 commit)</a>
+    <span class="tags"><span>#choralestudio</span><span>#commit</span><span>#otomatis</span></span>
+    <p>Dicatat otomatis dari Git: Cek gain untuk setiap kelompok suara vokal.</p>
+  </li>
+</ol>
+</div>
+
 <div class="log-day" data-date="2026-11-07">
 <h2 class="log-date"><time datetime="2026-11-07">7 November 2026</time></h2>
 <ol class="log">

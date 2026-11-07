@@ -1,4 +1,4 @@
-site_name: Dimas Arturoh
+site_name: Dokumentasi GitHub
 site_description: Proyek otomasi Python dan jurnal belajar saya.
 site_author: Dimas Arturoh
 
@@ -59,6 +59,7 @@ nav:
       - Livestream to Shorts Automation: projects/livestream-to-shorts-automation.md
   - Jurnal Belajar:
       - journal/index.md
+      - "8 Nov 2026: Commit ChoraleStudio": journal/2026-11-08-choralestudio-commit.md
       - "7 Nov 2026: Commit ChoraleStudio": journal/2026-11-07-choralestudio-commit.md
       - "6 Nov 2026: Commit ChoraleStudio": journal/2026-11-06-choralestudio-commit.md
       - "6 Nov 2026: Pemaketan dan uji": journal/2026-11-06-pemaketan-dan-uji.md

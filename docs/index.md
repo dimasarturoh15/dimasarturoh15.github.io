@@ -9,8 +9,8 @@ hide:
 <div class="home">
 <section class="home-intro">
 <div>
-<h1>Dimas Arturoh</h1>
-<p>Mahasiswa informatika. Saya membangun otomasi dan aplikasi dengan Python untuk kebutuhan nyata, seperti slide Misa dan video Shorts homili untuk Komsos Paroki Minomartani, serta aplikasi rekam paduan suara.</p>
+<h1>Dokumentasi GitHub</h1>
+<p>Mahasiswa informatika yang belajar dengan membangun. Saya membuat otomasi dan aplikasi Python untuk mengubah pekerjaan manual menjadi proses yang cepat dan rapi.</p>
 </div>
 <dl class="home-contact">
 <dt>Email</dt><dd><a href="mailto:dimasarturoh15@gmail.com">dimasarturoh15@gmail.com</a></dd>
@@ -43,12 +43,12 @@ hide:
 <section class="panel home-journal">
 <div class="panel-head"><h2 id="jurnal-terkini">Jurnal terkini</h2><a href="journal/">Semua entri jurnal</a></div>
 <ul class="dated-list">
+  <li><span class="date">2026-11-08</span><a href="journal/2026-11-08-choralestudio-commit/">Catatan commit ChoraleStudio (1 commit)</a></li>
   <li><span class="date">2026-11-07</span><a href="journal/2026-11-07-choralestudio-commit/">Catatan commit ChoraleStudio (5 commit)</a></li>
   <li><span class="date">2026-11-06</span><a href="journal/2026-11-06-choralestudio-commit/">Catatan commit ChoraleStudio (9 commit)</a></li>
   <li><span class="date">2026-11-06</span><a href="journal/2026-11-06-pemaketan-dan-uji/">Pemaketan, lisensi, dan temuan saat uji</a></li>
   <li><span class="date">2026-11-06</span><a href="journal/2026-11-06-audio-realtime-dan-mastering/">Belajar audio real-time dan standar YouTube</a></li>
   <li><span class="date">2026-11-06</span><a href="journal/2026-11-06-chorale-dari-prd-ke-installer/">ChoraleStudio dari PRD ke installer</a></li>
-  <li><span class="date">2026-11-05</span><a href="journal/2026-11-05-merapikan-portofolio/">Merapikan portofolio dari hasil penilaian</a></li>
 </ul>
 </section>
 </div>
