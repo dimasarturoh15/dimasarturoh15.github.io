@@ -1,12 +1,12 @@
-# 7 November 2026: Catatan commit ChoraleStudio (3 commit)
+# 7 November 2026: Catatan commit ChoraleStudio (4 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [ChoraleStudio](../projects/choralestudio.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 3
-- Perubahan: 48 berkas, +800 / -46 baris
-- Rentang waktu: 18:51 sampai 19:37
+- Jumlah commit: 4
+- Perubahan: 53 berkas, +865 / -51 baris
+- Rentang waktu: 18:51 sampai 20:25
 
 ## Yang dikerjakan
 
@@ -49,3 +49,15 @@ Commit [`ac46829`](https://github.com/dimasarturoh15/ChoraleStudio/commit/ac4682
   Rekam Vokal, sync_test.py --acuan
 - PRD v1.1 rev. 2, ARCHITECTURE, panduan, uji lapangan, CLI, CHANGELOG
 - 8 tes baru; 254 tes lulus. Uji hardware menyusul.
+
+### 20:25 · Uji hardware kanal acuan di SC202HD dan perbaikan ambang lompatan
+
+Commit [`8f58c09`](https://github.com/dimasarturoh15/ChoraleStudio/commit/8f58c090f36dc0e612c01e213aac08228bbf19f6) · 5 berkas, +65 / -5 baris
+
+- Stress test 60 menit SC202HD: 0 dropout, tetapi 51 lompatan latensi
+  diam-diam per jam (terdeteksi --loopback)
+- sync_test.py --acuan-satu-kabel: kanal acuan diuji dengan satu kabel;
+  hasil 0,43-0,73 ms (tanpa acuan 0,09-5,8 ms)
+- JUMP_TOLERANCE 8 -> 24 sampel: klik bernada beda terukur selisih 11
+  sampel di hardware dan memicu lompatan palsu; tes regresi ditambah
+- PROGRESS dan README diperbarui
