@@ -1,12 +1,12 @@
-# 9 November 2026: Catatan commit Paroki Minomartani (13 commit)
+# 9 November 2026: Catatan commit Paroki Minomartani (14 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 13
-- Perubahan: 265 berkas, +33837 / -134 baris
-- Rentang waktu: 17:39 sampai 20:40
+- Jumlah commit: 14
+- Perubahan: 266 berkas, +33839 / -136 baris
+- Rentang waktu: 17:39 sampai 20:41
 
 ## Yang dikerjakan
 
@@ -167,3 +167,7 @@ Commit [`0231527`](https://github.com/dimasarturoh15/paroki-minomartani/commit/0
 Decisions by Dimas for week 3-4: office hours replace the old 08.30-14.00 fact
 (DESIGN.md, PRD SKR-12/PAGE-07, Blueprint); clergy names may be shown when
 entered by Sekretariat; two image sizes at upload; in-house block editor.
+
+### 20:41 · docs: tidy decision list in OPEN-QUESTIONS
+
+Commit [`f341883`](https://github.com/dimasarturoh15/paroki-minomartani/commit/f3418839e9858d068f3b315bf3b68e3525657270) · 1 berkas, +2 / -2 baris

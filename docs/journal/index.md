@@ -11,9 +11,9 @@ Catatan harian mengenai konsep yang dipelajari, kendala teknis, dan milestone. E
 <h2 class="log-date"><time datetime="2026-11-09">9 November 2026</time></h2>
 <ol class="log">
   <li>
-    <a class="log-title" href="2026-11-09-paroki-minomartani-commit/">Catatan commit Paroki Minomartani (13 commit)</a>
+    <a class="log-title" href="2026-11-09-paroki-minomartani-commit/">Catatan commit Paroki Minomartani (14 commit)</a>
     <span class="tags"><span>#paroki-minomartani</span><span>#commit</span><span>#otomatis</span></span>
-    <p>Dicatat otomatis dari Git: chore: staging configuration on workers.dev and GitHub Actions CI; chore: staging deployed on parokiminomartani.workers.dev; docs: Sekretariat hours (daily except Tuesday, 08.30-16.00), clergy names allowed dan 10 lainnya.</p>
+    <p>Dicatat otomatis dari Git: chore: staging deployed on parokiminomartani.workers.dev; docs: Sekretariat hours (daily except Tuesday, 08.30-16.00), clergy names allowed; docs: tidy decision list in OPEN-QUESTIONS dan 11 lainnya.</p>
   </li>
 </ol>
 </div>
