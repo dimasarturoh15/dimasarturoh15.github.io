@@ -1,12 +1,12 @@
-# 9 November 2026: Catatan commit Paroki Minomartani (26 commit)
+# 9 November 2026: Catatan commit Paroki Minomartani (27 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 26
-- Perubahan: 510 berkas, +73313 / -224 baris
-- Rentang waktu: 17:39 sampai 23:30
+- Jumlah commit: 27
+- Perubahan: 525 berkas, +77696 / -224 baris
+- Rentang waktu: 17:39 sampai 23:52
 
 ## Yang dikerjakan
 
@@ -342,3 +342,14 @@ NFR-07, INT-29, SKR-18; CLAUDE.md Retention
   sent within 2 days, expired OTP codes, old rate-limit windows (IP), used/expired
   'Ini bukan saya' tokens, audit logs and notifications older than one year
 - Dispatcher records each job's result; two failures in a row notify Super Users
+
+### 23:52 · feat: announcements and obituaries on the home page (week 5-6 package L)
+
+Commit [`d1d49ed`](https://github.com/dimasarturoh15/paroki-minomartani/commit/d1d49ede86940ec5407c83aef9b8644840070159) · 15 berkas, +4383 / -0 baris
+
+FR-WRT ANN-01..03
+- announcements (general/obituary, church scope, WIB display window, published);
+  an obituary needs the family's consent; obituaries first on the home page
+- GET /public/announcements and in /public/home; Sekretariat/Super User screen
+- Tests: API test files run one after another (shared local D1), which fixes
+  intermittent cross-file cleanup races
