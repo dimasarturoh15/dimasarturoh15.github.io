@@ -66,16 +66,14 @@ Biaya operasional ditargetkan di bawah Rp2 juta per tahun, hanya dengan layanan 
 
 ## Status terkini
 
-Diperbarui 9 November 2026. Fondasi dan situs publik inti selesai lebih cepat dari rencana.
+Diperbarui 10 November 2026. Minggu 1–6 dari rencana sudah selesai, sekitar sebulan lebih cepat dari jadwal.
 
-- **Fondasi:** login pengurus dengan kode OTP, sesi per perangkat, peringatan login dari perangkat baru, dan aturan akses per peran yang ditegakkan di API. Lebih dari 670 uji otomatis, termasuk uji untuk setiap peran di setiap endpoint dan uji "unit yang salah".
-- **Jadwal:** misa kedua gereja dibuat otomatis 30 hari ke depan dari aturan rutin, ditambah misa khusus, Sakramen Tobat, dan agenda paroki maupun unit. Ada tombol "Tambah ke kalender".
-- **Halaman profil:** Profil, ARDAS, Sejarah (linimasa), Gereja Kami, Struktur, Kontak dengan status buka/tutup Sekretariat, dan kebijakan. Semuanya diisi lewat editor blok dengan riwayat revisi.
-- **Persembahan Kasih:** rekening dan QRIS hanya berubah setelah disetujui Super User kedua. Data lama tetap tayang sampai disetujui.
-- **Beranda:** slider foto dengan teks di bawah foto, misa terdekat, tombol layanan, dan pencarian situs.
-- **Dashboard:** menu sesuai peran, notifikasi lonceng, unggah foto yang otomatis diperkecil dan dibuang data lokasinya.
-- Versi uji (staging) sudah online di Cloudflare dengan data contoh.
-- **Berikutnya:** intensi misa online, pendaftaran sakramentalia, dan penghapusan data pribadi otomatis.
+- **Fondasi:** login pengurus dengan kode OTP, sesi per perangkat, aturan akses per peran yang ditegakkan di API, dan lebih dari 790 uji otomatis, termasuk uji setiap peran di setiap endpoint dan uji "unit yang salah".
+- **Situs publik inti:** jadwal misa kedua gereja (dibuat otomatis 30 hari ke depan), Sakramen Tobat, agenda, halaman profil dengan editor dan riwayat revisi, Persembahan Kasih dengan persetujuan dua orang, slider, pencarian, dan pengumuman.
+- **Intensi misa online:** formulir 4 langkah dengan batas waktu per misa dan toleransi 15 menit yang diputuskan server, kode acak INT-, bukti transfer di penyimpanan privat, kotak masuk Sekretariat, pemindahan ke misa pengganti dengan pesan WhatsApp siap kirim, teks salin, dan lembar lektor A4.
+- **Sakramentalia:** pembuat formulir dengan pratinjau langsung, pendaftaran awal dengan kode SKR-, dan garis proses yang bisa dicek umat tanpa membuka data pribadi.
+- **Pelindungan data:** data pribadi dari formulir dihapus otomatis 3 bulan setelah selesai, termasuk file; laporan hanya menyimpan angka gabungan.
+- **Berikutnya:** postingan kegiatan unit, halaman unit, Cari Lingkungan, serah terima akun.
 
 ## Rencana kerja
 
