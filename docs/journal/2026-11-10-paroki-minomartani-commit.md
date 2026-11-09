@@ -1,12 +1,12 @@
-# 10 November 2026: Catatan commit Paroki Minomartani (5 commit)
+# 10 November 2026: Catatan commit Paroki Minomartani (6 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 5
-- Perubahan: 85 berkas, +15017 / -65 baris
-- Rentang waktu: 02:09 sampai 03:19
+- Jumlah commit: 6
+- Perubahan: 119 berkas, +21297 / -72 baris
+- Rentang waktu: 02:09 sampai 03:39
 
 ## Yang dikerjakan
 
@@ -64,3 +64,18 @@ liturgical label from the schedule page. ADM-02: Ringkasan cards per role (neare
 masses with intention counts and time left, new registrations, waiting approvals,
 recent posts, unit posts this month). NFR-06: CSP, HSTS, X-Frame-Options, nosniff,
 Referrer-Policy and Permissions-Policy on every web response.
+
+### 03:39 · feat: weekly warta with autosave, Saturday 15.00 WIB publishing, PDF and WhatsApp text (package Q)
+
+Commit [`4d8980a`](https://github.com/dimasarturoh15/paroki-minomartani/commit/4d8980a763f8183f960cc1e534d15d1a874e5238) · 34 berkas, +6280 / -7 baris
+
+WRT-01..10: one edition per Sunday, Draf -> Siap terbit -> Terbit. Flexible sections
+(free text, marriage banns, upcoming agenda, kolekte with public amounts) added,
+edited and reordered, autosaved every 3 seconds with a stale-editor guard. Banns come
+from SKR-17 and appear in three consecutive editions; agenda comes from the published
+agenda of that week; both are frozen at publish. The dispatcher publishes ready
+editions from Saturday 15.00 WIB (staging cron 0 8 * * 6, caught up by any later
+trigger) and reminds Sekretariat once when the edition is still Draf. Reading page
+with table of contents, A4 print to PDF, copy-to-WhatsApp text, Baru label for 48
+hours, searchable archive per month, Warta minggu ini on the home page, and the warta
+status card on Ringkasan. Push (WRT-11) follows with FCM.
