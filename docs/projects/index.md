@@ -9,6 +9,12 @@ Repositori yang saya kerjakan, dari yang terbaru.
 
 <div class="panel">
 <div class="project-list">
+  <a class="project-row" href="paroki-minomartani/">
+    <span class="project-name">Paroki Minomartani</span>
+    <span class="project-desc">Website, dashboard pengurus, dan aplikasi Android resmi Paroki St. Petrus & Paulus Minomartani: jadwal misa, live streaming, warta, intensi misa online, dan sakramentalia untuk dua gereja. Rilis website paling lambat 31 Januari 2027.</span>
+    <span class="project-stack">TypeScript / Hono / Next.js / Cloudflare / Flutter</span>
+    <span class="project-status">Dalam pengerjaan · 2026</span>
+  </a>
   <a class="project-row" href="choralestudio/">
     <span class="project-name">ChoraleStudio</span>
     <span class="project-desc">Aplikasi desktop Windows untuk merekam paduan suara SATB dan piano secara bergiliran, lalu membuat master siap YouTube dengan satu klik. Lagu 4 menit selesai diproses dalam 34 detik.</span>

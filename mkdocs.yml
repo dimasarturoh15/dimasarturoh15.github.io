@@ -54,11 +54,13 @@ nav:
   - Beranda: index.md
   - Proyek:
       - projects/index.md
+      - Paroki Minomartani: projects/paroki-minomartani.md
       - ChoraleStudio: projects/choralestudio.md
       - Liturgy Slides Automation: projects/liturgy-slides-automation.md
       - Livestream to Shorts Automation: projects/livestream-to-shorts-automation.md
   - Jurnal Belajar:
       - journal/index.md
+      - "9 Nov 2026: Commit Paroki Minomartani": journal/2026-11-09-paroki-minomartani-commit.md
       - "8 Nov 2026: Commit ChoraleStudio": journal/2026-11-08-choralestudio-commit.md
       - "7 Nov 2026: Commit ChoraleStudio": journal/2026-11-07-choralestudio-commit.md
       - "6 Nov 2026: Commit ChoraleStudio": journal/2026-11-06-choralestudio-commit.md
@@ -82,7 +84,11 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.emoji:
