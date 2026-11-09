@@ -1,12 +1,12 @@
-# 9 November 2026: Catatan commit Paroki Minomartani (18 commit)
+# 9 November 2026: Catatan commit Paroki Minomartani (19 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 18
-- Perubahan: 388 berkas, +52016 / -170 baris
-- Rentang waktu: 17:39 sampai 21:42
+- Jumlah commit: 19
+- Perubahan: 417 berkas, +56167 / -185 baris
+- Rentang waktu: 17:39 sampai 22:01
 
 ## Yang dikerjakan
 
@@ -237,3 +237,19 @@ FR-WEB DON-01..05, PERM-04, ADM-04
 - Dashboard: propose create/update/deactivate; Persetujuan with old vs new
   comparison, approve/reject with reason
 - Design fix: amber is only for deadlines (removed from dashboard states)
+
+### 22:01 · feat: home slider, site search, loading skeleton, notification bell (week 3-4 packages E and F)
+
+Commit [`7c48036`](https://github.com/dimasarturoh15/paroki-minomartani/commit/7c48036258d343463e9e21e29576a4e144bbaf42) · 29 berkas, +4151 / -15 baris
+
+FR-WEB WEB-02, WEB-03, WEB-06, WEB-08; FR-ADM ADM-03
+- hero_slides with a display window (WIB) and at most 6 active; text below the
+  photo, never on it; fade every 6 s, pauses on hover/focus/touch, no autoplay
+  with reduced motion, dots, previous/next, swipe; slider manager for Super User
+- /public/search over pages, history and agenda (LIKE with escaping, real text
+  hits only); /cari works without JavaScript
+- Grey skeleton while public pages load
+- Bell: GET /auth/notifications, POST /auth/notifications/read (own only),
+  unread count on /auth/me and as a badge in the top bar; /admin/notifikasi
+- Roadmap week 3-4 ticked (home live banner, warta and activities wait for
+  their modules)

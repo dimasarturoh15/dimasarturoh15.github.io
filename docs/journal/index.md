@@ -11,9 +11,9 @@ Catatan harian mengenai konsep yang dipelajari, kendala teknis, dan milestone. E
 <h2 class="log-date"><time datetime="2026-11-09">9 November 2026</time></h2>
 <ol class="log">
   <li>
-    <a class="log-title" href="2026-11-09-paroki-minomartani-commit/">Catatan commit Paroki Minomartani (18 commit)</a>
+    <a class="log-title" href="2026-11-09-paroki-minomartani-commit/">Catatan commit Paroki Minomartani (19 commit)</a>
     <span class="tags"><span>#paroki-minomartani</span><span>#commit</span><span>#otomatis</span></span>
-    <p>Dicatat otomatis dari Git: feat: static pages with block editor and revisions, Profil, Sejarah, Gereja Kami, Struktur, Kontak (week 3-4 package B); feat: schedule page (masses, confession, agenda), calendar export, schedule admin (week 3-4 package C); feat: Persembahan Kasih with two-person approval, approvals screen (week 3-4 package D) dan 15 lainnya.</p>
+    <p>Dicatat otomatis dari Git: feat: schedule page (masses, confession, agenda), calendar export, schedule admin (week 3-4 package C); feat: Persembahan Kasih with two-person approval, approvals screen (week 3-4 package D); feat: home slider, site search, loading skeleton, notification bell (week 3-4 packages E and F) dan 16 lainnya.</p>
   </li>
 </ol>
 </div>
