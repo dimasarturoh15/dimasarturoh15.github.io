@@ -1,12 +1,12 @@
-# 9 November 2026: Catatan commit Paroki Minomartani (19 commit)
+# 9 November 2026: Catatan commit Paroki Minomartani (20 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 19
-- Perubahan: 417 berkas, +56167 / -185 baris
-- Rentang waktu: 17:39 sampai 22:01
+- Jumlah commit: 20
+- Perubahan: 423 berkas, +56330 / -193 baris
+- Rentang waktu: 17:39 sampai 22:14
 
 ## Yang dikerjakan
 
@@ -253,3 +253,15 @@ FR-WEB WEB-02, WEB-03, WEB-06, WEB-08; FR-ADM ADM-03
   unread count on /auth/me and as a badge in the top bar; /admin/notifikasi
 - Roadmap week 3-4 ticked (home live banner, warta and activities wait for
   their modules)
+
+### 22:14 · docs: dark palette approved; drafts of Kebijakan Privasi and Pedoman Publikasi
+
+Commit [`293b5f1`](https://github.com/dimasarturoh15/paroki-minomartani/commit/293b5f19d7e9e335dcfd82ea7bb3f2ca423c7509) · 6 berkas, +163 / -8 baris
+
+- DESIGN.md: dark mode approved by Dimas (9 Nov 2026)
+- docs/drafts: privacy policy (UU PDP 27/2022) and publication guidelines for
+  review by Pastor Paroki and DPP, written from what the system actually does,
+  with reviewer notes on open points (backup retention, intentions on stream,
+  response deadlines, contact person, effective date)
+- Roadmap: daily purge also covers otp_codes, rate_limits, not_me_tokens and
+  audit_logs older than 1 year (PAGE-08, NFR-07)
