@@ -1,12 +1,12 @@
-# 10 November 2026: Catatan commit Paroki Minomartani (3 commit)
+# 10 November 2026: Catatan commit Paroki Minomartani (4 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 3
-- Perubahan: 47 berkas, +11050 / -15 baris
-- Rentang waktu: 02:09 sampai 02:43
+- Jumlah commit: 4
+- Perubahan: 64 berkas, +13717 / -40 baris
+- Rentang waktu: 02:09 sampai 03:02
 
 ## Yang dikerjakan
 
@@ -36,3 +36,18 @@ patron feast, about, meeting schedule, officers, upcoming agenda, gallery from p
 and posts this year; edited by the unit itself (units.profile.write, own unit) with
 wrong-unit tests. ORG-02/08: lingkungan keep their coverage areas; suggestions while
 typing, active once any coverage exists, with a Hubungi Sekretariat fallback.
+
+### 03:02 · feat: structure, accounts, handover, Super User approvals, audit log (week 7-8 package O)
+
+Commit [`a43358d`](https://github.com/dimasarturoh15/paroki-minomartani/commit/a43358d62269292cf5eb80ad48cf4fa1d772700a) · 17 berkas, +2667 / -25 baris
+
+ORG-01..03: manage the unit tree (create, rename, move without cycles, church, order),
+positions and holders; units, positions and accounts are deactivated, never deleted
+(AUTH-10), and refused while active children or accounts remain. AUTH-06: create an
+account with role, position, holder and start date; it can log in at once; roles must
+fit the unit type. AUTH-07: handover requires typing SERAH TERIMA, closes the old term,
+revokes every session of the position's accounts, and shows plus audits the email
+password reminder. AUTH-09: adding or removing a Super User goes through
+approval_requests decided by another Super User, re-validated on apply; the last Super
+User can never be removed. ADM-05: audit log screen filtered by account, module and WIB
+date with paging.

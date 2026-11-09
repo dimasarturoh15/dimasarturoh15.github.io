@@ -11,9 +11,9 @@ Catatan harian mengenai konsep yang dipelajari, kendala teknis, dan milestone. E
 <h2 class="log-date"><time datetime="2026-11-10">10 November 2026</time></h2>
 <ol class="log">
   <li>
-    <a class="log-title" href="2026-11-10-paroki-minomartani-commit/">Catatan commit Paroki Minomartani (3 commit)</a>
+    <a class="log-title" href="2026-11-10-paroki-minomartani-commit/">Catatan commit Paroki Minomartani (4 commit)</a>
     <span class="tags"><span>#paroki-minomartani</span><span>#commit</span><span>#otomatis</span></span>
-    <p>Dicatat otomatis dari Git: docs: backup retention 7/4/3, backups by Worker to R2, kolekte amounts allowed; feat: activity posts with post-publish moderation and undo (week 7-8 package M); feat: unit directory, unit profile pages, Cari Lingkungan Saya (week 7-8 package N).</p>
+    <p>Dicatat otomatis dari Git: feat: activity posts with post-publish moderation and undo (week 7-8 package M); feat: unit directory, unit profile pages, Cari Lingkungan Saya (week 7-8 package N); feat: structure, accounts, handover, Super User approvals, audit log (week 7-8 package O) dan 1 lainnya.</p>
   </li>
 </ol>
 </div>

@@ -124,3 +124,4 @@ Diperbarui otomatis dari riwayat Git setiap kali ada commit.
 | 2026-11-10 02:09 | [`ce4b280`](https://github.com/dimasarturoh15/paroki-minomartani/commit/ce4b280685b0be1efc4601513eac9df1caff3ad0) | docs: backup retention 7/4/3, backups by Worker to R2, kolekte amounts allowed |
 | 2026-11-10 02:27 | [`da5a91e`](https://github.com/dimasarturoh15/paroki-minomartani/commit/da5a91efc841d49494856b35500d9a8ac5e7182e) | feat: activity posts with post-publish moderation and undo (week 7-8 package M) |
 | 2026-11-10 02:43 | [`3be0f1e`](https://github.com/dimasarturoh15/paroki-minomartani/commit/3be0f1e7d43fc0747ecb768018178ba0c6efd7d6) | feat: unit directory, unit profile pages, Cari Lingkungan Saya (week 7-8 package N) |
+| 2026-11-10 03:02 | [`a43358d`](https://github.com/dimasarturoh15/paroki-minomartani/commit/a43358d62269292cf5eb80ad48cf4fa1d772700a) | feat: structure, accounts, handover, Super User approvals, audit log (week 7-8 package O) |
