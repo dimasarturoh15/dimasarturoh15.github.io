@@ -66,15 +66,16 @@ Biaya operasional ditargetkan di bawah Rp2 juta per tahun, hanya dengan layanan 
 
 ## Status terkini
 
-Diperbarui 9 November 2026 (minggu pertama).
+Diperbarui 9 November 2026. Fondasi dan situs publik inti selesai lebih cepat dari rencana.
 
-- Monorepo, API, dan kerangka website berjalan di komputer pengembang. Beranda sudah menampilkan misa terdekat di kedua gereja dari database.
-- Jadwal misa rutin kedua gereja tersimpan sebagai aturan, dan misa per tanggal dibuat otomatis 30 hari ke depan lengkap dengan batas waktu intensi.
-- Login pengurus dengan kode OTP, sesi per perangkat, dan peringatan login dari perangkat baru sudah selesai dan diuji.
-- Aturan akses per peran ditegakkan di API. Setiap endpoint wajib mendeklarasikan izinnya dan diuji untuk setiap peran: lebih dari 370 uji otomatis.
-- Dashboard pengurus: halaman masuk, menu sesuai peran, dan daftar perangkat.
-- Versi uji (staging) sudah online di Cloudflare dengan data contoh, untuk dicoba bersama Sekretariat dan Komsos.
-- Berikutnya: situs publik inti (jadwal, halaman profil, persembahan kasih).
+- **Fondasi:** login pengurus dengan kode OTP, sesi per perangkat, peringatan login dari perangkat baru, dan aturan akses per peran yang ditegakkan di API. Lebih dari 670 uji otomatis, termasuk uji untuk setiap peran di setiap endpoint dan uji "unit yang salah".
+- **Jadwal:** misa kedua gereja dibuat otomatis 30 hari ke depan dari aturan rutin, ditambah misa khusus, Sakramen Tobat, dan agenda paroki maupun unit. Ada tombol "Tambah ke kalender".
+- **Halaman profil:** Profil, ARDAS, Sejarah (linimasa), Gereja Kami, Struktur, Kontak dengan status buka/tutup Sekretariat, dan kebijakan. Semuanya diisi lewat editor blok dengan riwayat revisi.
+- **Persembahan Kasih:** rekening dan QRIS hanya berubah setelah disetujui Super User kedua. Data lama tetap tayang sampai disetujui.
+- **Beranda:** slider foto dengan teks di bawah foto, misa terdekat, tombol layanan, dan pencarian situs.
+- **Dashboard:** menu sesuai peran, notifikasi lonceng, unggah foto yang otomatis diperkecil dan dibuang data lokasinya.
+- Versi uji (staging) sudah online di Cloudflare dengan data contoh.
+- **Berikutnya:** intensi misa online, pendaftaran sakramentalia, dan penghapusan data pribadi otomatis.
 
 ## Rencana kerja
 
