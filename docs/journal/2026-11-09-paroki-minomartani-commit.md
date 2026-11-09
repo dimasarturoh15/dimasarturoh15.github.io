@@ -1,12 +1,12 @@
-# 9 November 2026: Catatan commit Paroki Minomartani (16 commit)
+# 9 November 2026: Catatan commit Paroki Minomartani (17 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 16
-- Perubahan: 338 berkas, +42409 / -154 baris
-- Rentang waktu: 17:39 sampai 21:06
+- Jumlah commit: 17
+- Perubahan: 369 berkas, +48131 / -166 baris
+- Rentang waktu: 17:39 sampai 21:29
 
 ## Yang dikerjakan
 
@@ -203,3 +203,20 @@ FR-WEB PAGE-01..08, FR-ORG ORG-04, ORG-05, ORG-09
   hours (settings.write)
 - Sekretariat hours: every day except Tuesday, 08.30-16.00 (data migration)
 - Role x endpoint tests for every new endpoint
+
+### 21:29 · feat: schedule page (masses, confession, agenda), calendar export, schedule admin (week 3-4 package C)
+
+Commit [`8354ef7`](https://github.com/dimasarturoh15/paroki-minomartani/commit/8354ef7c6cd0b12d0fa23533b3a0cb2ef114829f) · 31 berkas, +5722 / -12 baris
+
+FR-JDW JDW-01..09, PERM-01
+- Public /jadwal: masses for 7 days grouped per day with special masses first,
+  church choice remembered by cookie (no client JS), Sakramen Tobat, agenda per
+  WIB month as list or calendar with unit filter; agenda detail page
+- .ics export (RFC 5545 escaping and folding, no invented durations) and Google
+  Calendar links; proxy forwards Content-Disposition
+- Dashboard: mass rules (each change regenerates 30 days and reports
+  conflicts), special masses with their own intention deadline, confession
+  times, Sekretariat closures, agenda
+- agenda_events: unit roles only create/edit/delete their own unit's rows
+  (first endpoint-level wrong-unit tests); parish-wide roles default to Paroki
+- Fix: semicolons were not escaped in .ics text (caught by lint, now tested)

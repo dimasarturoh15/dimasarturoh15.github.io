@@ -110,3 +110,4 @@ Diperbarui otomatis dari riwayat Git setiap kali ada commit.
 | 2026-11-09 20:41 | [`f341883`](https://github.com/dimasarturoh15/paroki-minomartani/commit/f3418839e9858d068f3b315bf3b68e3525657270) | docs: tidy decision list in OPEN-QUESTIONS |
 | 2026-11-09 20:46 | [`8926cb1`](https://github.com/dimasarturoh15/paroki-minomartani/commit/8926cb19152973e215383dda4c878e50a71d5df2) | feat: photo uploads to R2 in two sizes, public image serving (week 3-4 package A) |
 | 2026-11-09 21:06 | [`1505809`](https://github.com/dimasarturoh15/paroki-minomartani/commit/150580912436c643402d85069c826ef017560ef0) | feat: static pages with block editor and revisions, Profil, Sejarah, Gereja Kami, Struktur, Kontak (week 3-4 package B) |
+| 2026-11-09 21:29 | [`8354ef7`](https://github.com/dimasarturoh15/paroki-minomartani/commit/8354ef7c6cd0b12d0fa23533b3a0cb2ef114829f) | feat: schedule page (masses, confession, agenda), calendar export, schedule admin (week 3-4 package C) |
