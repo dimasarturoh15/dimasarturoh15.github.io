@@ -1,12 +1,12 @@
-# 9 November 2026: Catatan commit Paroki Minomartani (20 commit)
+# 9 November 2026: Catatan commit Paroki Minomartani (21 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 20
-- Perubahan: 423 berkas, +56330 / -193 baris
-- Rentang waktu: 17:39 sampai 22:14
+- Jumlah commit: 21
+- Perubahan: 424 berkas, +56425 / -193 baris
+- Rentang waktu: 17:39 sampai 22:36
 
 ## Yang dikerjakan
 
@@ -265,3 +265,10 @@ Commit [`293b5f1`](https://github.com/dimasarturoh15/paroki-minomartani/commit/2
   response deadlines, contact person, effective date)
 - Roadmap: daily purge also covers otp_codes, rate_limits, not_me_tokens and
   audit_logs older than 1 year (PAGE-08, NFR-07)
+
+### 22:36 · docs: list of materials and decisions needed from the parish
+
+Commit [`10f3f08`](https://github.com/dimasarturoh15/paroki-minomartani/commit/10f3f08804e1363a25d81d259aefd10fc7dd3596) · 1 berkas, +95 / -0 baris
+
+Grouped by provider (Pastor/PGPM, Bendahara, Sekretariat, Komsos, content,
+trial, phase 2) with deadlines; mirrors the shareable checklist page.

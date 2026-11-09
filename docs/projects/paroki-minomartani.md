@@ -115,3 +115,4 @@ Diperbarui otomatis dari riwayat Git setiap kali ada commit.
 | 2026-11-09 21:42 | [`fcffc4c`](https://github.com/dimasarturoh15/paroki-minomartani/commit/fcffc4cb0c7cf5ca9aac03a22cdabd9e31612b9b) | feat: Persembahan Kasih with two-person approval, approvals screen (week 3-4 package D) |
 | 2026-11-09 22:01 | [`7c48036`](https://github.com/dimasarturoh15/paroki-minomartani/commit/7c48036258d343463e9e21e29576a4e144bbaf42) | feat: home slider, site search, loading skeleton, notification bell (week 3-4 packages E and F) |
 | 2026-11-09 22:14 | [`293b5f1`](https://github.com/dimasarturoh15/paroki-minomartani/commit/293b5f19d7e9e335dcfd82ea7bb3f2ca423c7509) | docs: dark palette approved; drafts of Kebijakan Privasi and Pedoman Publikasi |
+| 2026-11-09 22:36 | [`10f3f08`](https://github.com/dimasarturoh15/paroki-minomartani/commit/10f3f08804e1363a25d81d259aefd10fc7dd3596) | docs: list of materials and decisions needed from the parish |
