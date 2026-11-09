@@ -11,9 +11,9 @@ Catatan harian mengenai konsep yang dipelajari, kendala teknis, dan milestone. E
 <h2 class="log-date"><time datetime="2026-11-09">9 November 2026</time></h2>
 <ol class="log">
   <li>
-    <a class="log-title" href="2026-11-09-paroki-minomartani-commit/">Catatan commit Paroki Minomartani (5 commit)</a>
+    <a class="log-title" href="2026-11-09-paroki-minomartani-commit/">Catatan commit Paroki Minomartani (11 commit)</a>
     <span class="tags"><span>#paroki-minomartani</span><span>#commit</span><span>#otomatis</span></span>
-    <p>Dicatat otomatis dari Git: docs: label 16px sesuai aturan teks minimal 16px; chore: monorepo skeleton (api, web, shared) with lint, typecheck, test; feat(api): schema modules A and B, official seed, mass occurrence generator dan 2 lainnya.</p>
+    <p>Dicatat otomatis dari Git: feat(web): admin host routing, API proxy, OTP login, dashboard shell, my devices; feat(api): POST /admin/mass-occurrences/generate for Sekretariat (JDW-03); chore: staging configuration on workers.dev and GitHub Actions CI dan 8 lainnya.</p>
   </li>
 </ol>
 </div>

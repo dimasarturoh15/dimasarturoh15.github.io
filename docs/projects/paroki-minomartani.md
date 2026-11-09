@@ -64,6 +64,17 @@ Biaya operasional ditargetkan di bawah Rp2 juta per tahun, hanya dengan layanan 
 - **Rekening dijaga dua orang.** Perubahan rekening dan QRIS harus disetujui Super User yang berbeda dari pengaju.
 - **Ramah lansia.** Teks dasar 18px, tidak ada teks penting di bawah 16px, tombol minimal 48px, satu huruf (Plus Jakarta Sans) dan satu warna aksen.
 
+## Status terkini
+
+Diperbarui 9 November 2026 (minggu pertama).
+
+- Monorepo, API, dan kerangka website berjalan di komputer pengembang. Beranda sudah menampilkan misa terdekat di kedua gereja dari database.
+- Jadwal misa rutin kedua gereja tersimpan sebagai aturan, dan misa per tanggal dibuat otomatis 30 hari ke depan lengkap dengan batas waktu intensi.
+- Login pengurus dengan kode OTP, sesi per perangkat, dan peringatan login dari perangkat baru sudah selesai dan diuji.
+- Aturan akses per peran ditegakkan di API. Setiap endpoint wajib mendeklarasikan izinnya dan diuji untuk setiap peran: lebih dari 370 uji otomatis.
+- Dashboard pengurus: halaman masuk, menu sesuai peran, dan daftar perangkat.
+- Berikutnya: staging online di Cloudflare, lalu situs publik inti (jadwal, halaman profil, persembahan kasih).
+
 ## Rencana kerja
 
 | Minggu | Isi |
@@ -87,3 +98,9 @@ Diperbarui otomatis dari riwayat Git setiap kali ada commit.
 | 2026-11-09 17:43 | [`c0eeb55`](https://github.com/dimasarturoh15/paroki-minomartani/commit/c0eeb5544765eccf71807cb3d10ac3e089905a4d) | docs: label 16px sesuai aturan teks minimal 16px |
 | 2026-11-09 18:03 | [`dcaa2ad`](https://github.com/dimasarturoh15/paroki-minomartani/commit/dcaa2adbdbf3e6246704d82197abc0879e2a1cb4) | chore: monorepo skeleton (api, web, shared) with lint, typecheck, test |
 | 2026-11-09 18:09 | [`28d02b3`](https://github.com/dimasarturoh15/paroki-minomartani/commit/28d02b33d8ba263fcf94f4fdadae2e16071a4e98) | feat(api): schema modules A and B, official seed, mass occurrence generator |
+| 2026-11-09 18:16 | [`151d380`](https://github.com/dimasarturoh15/paroki-minomartani/commit/151d380df6c1279d25295cde9f2827e253cd4705) | feat(api): OTP login, sessions, devices, new-device alert |
+| 2026-11-09 18:22 | [`e6831cf`](https://github.com/dimasarturoh15/paroki-minomartani/commit/e6831cf163403b8a9e02f1ac2a01d913a9e83aad) | feat(api): policy module can(), declared route permissions, audit logs |
+| 2026-11-09 18:35 | [`bd8c77e`](https://github.com/dimasarturoh15/paroki-minomartani/commit/bd8c77e9550ad6164dbf7763ea0e74cbf8787bf8) | feat(web): design tokens, local fonts, public layout, home skeleton, 404 |
+| 2026-11-09 18:51 | [`908bdfa`](https://github.com/dimasarturoh15/paroki-minomartani/commit/908bdfa8aa869c7a3fbfc53c7b6c025257fdb0c6) | feat(web): admin host routing, API proxy, OTP login, dashboard shell, my devices |
+| 2026-11-09 18:53 | [`d9ba6a0`](https://github.com/dimasarturoh15/paroki-minomartani/commit/d9ba6a0358b76a660f5459d6062b79fc797be933) | feat(api): POST /admin/mass-occurrences/generate for Sekretariat (JDW-03) |
+| 2026-11-09 18:56 | [`b461b1f`](https://github.com/dimasarturoh15/paroki-minomartani/commit/b461b1fe43c6c578dad179caf15365752069c772) | chore: staging configuration on workers.dev and GitHub Actions CI |
