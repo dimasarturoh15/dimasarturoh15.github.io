@@ -66,7 +66,7 @@ Biaya operasional ditargetkan di bawah Rp2 juta per tahun, hanya dengan layanan 
 
 ## Status terkini
 
-Diperbarui 10 November 2026. Minggu 1–6 dari rencana sudah selesai, sekitar sebulan lebih cepat dari jadwal.
+Diperbarui 9 November 2026. Minggu 1–6 dari rencana sudah selesai, sekitar sebulan lebih cepat dari jadwal.
 
 - **Fondasi:** login pengurus dengan kode OTP, sesi per perangkat, aturan akses per peran yang ditegakkan di API, dan lebih dari 790 uji otomatis, termasuk uji setiap peran di setiap endpoint dan uji "unit yang salah".
 - **Situs publik inti:** jadwal misa kedua gereja (dibuat otomatis 30 hari ke depan), Sakramen Tobat, agenda, halaman profil dengan editor dan riwayat revisi, Persembahan Kasih dengan persetujuan dua orang, slider, pencarian, dan pengumuman.
