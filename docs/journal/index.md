@@ -11,9 +11,9 @@ Catatan harian mengenai konsep yang dipelajari, kendala teknis, dan milestone. E
 <h2 class="log-date"><time datetime="2026-11-09">9 November 2026</time></h2>
 <ol class="log">
   <li>
-    <a class="log-title" href="2026-11-09-paroki-minomartani-commit/">Catatan commit Paroki Minomartani (15 commit)</a>
+    <a class="log-title" href="2026-11-09-paroki-minomartani-commit/">Catatan commit Paroki Minomartani (16 commit)</a>
     <span class="tags"><span>#paroki-minomartani</span><span>#commit</span><span>#otomatis</span></span>
-    <p>Dicatat otomatis dari Git: docs: Sekretariat hours (daily except Tuesday, 08.30-16.00), clergy names allowed; docs: tidy decision list in OPEN-QUESTIONS; feat: photo uploads to R2 in two sizes, public image serving (week 3-4 package A) dan 12 lainnya.</p>
+    <p>Dicatat otomatis dari Git: docs: tidy decision list in OPEN-QUESTIONS; feat: photo uploads to R2 in two sizes, public image serving (week 3-4 package A); feat: static pages with block editor and revisions, Profil, Sejarah, Gereja Kami, Struktur, Kontak (week 3-4 package B) dan 13 lainnya.</p>
   </li>
 </ol>
 </div>

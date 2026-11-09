@@ -1,12 +1,12 @@
-# 9 November 2026: Catatan commit Paroki Minomartani (15 commit)
+# 9 November 2026: Catatan commit Paroki Minomartani (16 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 15
-- Perubahan: 284 berkas, +36734 / -136 baris
-- Rentang waktu: 17:39 sampai 20:46
+- Jumlah commit: 16
+- Perubahan: 338 berkas, +42409 / -154 baris
+- Rentang waktu: 17:39 sampai 21:06
 
 ## Yang dikerjakan
 
@@ -184,3 +184,22 @@ CLAUDE.md Files/Images, NFR-07, POST-04 groundwork
 - Web: prepareImage() (canvas re-encode, 1600/800 px, ~250 KB, WebP or JPEG),
   ImageUpload component for the editor and slider
 - Actions media.upload / media.read in the matrix and role tests
+
+### 21:06 · feat: static pages with block editor and revisions, Profil, Sejarah, Gereja Kami, Struktur, Kontak (week 3-4 package B)
+
+Commit [`1505809`](https://github.com/dimasarturoh15/paroki-minomartani/commit/150580912436c643402d85069c826ef017560ef0) · 54 berkas, +5675 / -18 baris
+
+FR-WEB PAGE-01..08, FR-ORG ORG-04, ORG-05, ORG-09
+- pages + page_revisions (every save is a revision; restore = new save with the
+  old content, audited); history_entries; church details; show_on_structure
+- Shared block schema (heading, paragraph, quote, image, points, details,
+  YouTube on Profil only) with a tiny safe inline syntax; images only from our
+  media store; rendered without raw HTML; YouTube as a click-to-load facade
+- Public pages: Profil (quick numbers from data), ARDAS, Sejarah timeline,
+  Gereja Kami (schedule from the mass rules), Struktur (current holders, former
+  pastors, no contact data), Kontak (open/closed status), Kebijakan Privasi,
+  Pedoman Publikasi; empty states instead of invented text
+- Dashboard: block editor, revision history, timeline, church details, office
+  hours (settings.write)
+- Sekretariat hours: every day except Tuesday, 08.30-16.00 (data migration)
+- Role x endpoint tests for every new endpoint
