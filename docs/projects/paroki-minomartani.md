@@ -73,7 +73,8 @@ Diperbarui 9 November 2026 (minggu pertama).
 - Login pengurus dengan kode OTP, sesi per perangkat, dan peringatan login dari perangkat baru sudah selesai dan diuji.
 - Aturan akses per peran ditegakkan di API. Setiap endpoint wajib mendeklarasikan izinnya dan diuji untuk setiap peran: lebih dari 370 uji otomatis.
 - Dashboard pengurus: halaman masuk, menu sesuai peran, dan daftar perangkat.
-- Berikutnya: staging online di Cloudflare, lalu situs publik inti (jadwal, halaman profil, persembahan kasih).
+- Versi uji (staging) sudah online di Cloudflare dengan data contoh, untuk dicoba bersama Sekretariat dan Komsos.
+- Berikutnya: situs publik inti (jadwal, halaman profil, persembahan kasih).
 
 ## Rencana kerja
 
@@ -104,3 +105,4 @@ Diperbarui otomatis dari riwayat Git setiap kali ada commit.
 | 2026-11-09 18:51 | [`908bdfa`](https://github.com/dimasarturoh15/paroki-minomartani/commit/908bdfa8aa869c7a3fbfc53c7b6c025257fdb0c6) | feat(web): admin host routing, API proxy, OTP login, dashboard shell, my devices |
 | 2026-11-09 18:53 | [`d9ba6a0`](https://github.com/dimasarturoh15/paroki-minomartani/commit/d9ba6a0358b76a660f5459d6062b79fc797be933) | feat(api): POST /admin/mass-occurrences/generate for Sekretariat (JDW-03) |
 | 2026-11-09 18:56 | [`b461b1f`](https://github.com/dimasarturoh15/paroki-minomartani/commit/b461b1fe43c6c578dad179caf15365752069c772) | chore: staging configuration on workers.dev and GitHub Actions CI |
+| 2026-11-09 20:13 | [`a8e6342`](https://github.com/dimasarturoh15/paroki-minomartani/commit/a8e6342727a03959e80072f371aafcb9984437a3) | chore: staging deployed on parokiminomartani.workers.dev |

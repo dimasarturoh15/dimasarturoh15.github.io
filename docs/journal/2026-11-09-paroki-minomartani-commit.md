@@ -1,12 +1,12 @@
-# 9 November 2026: Catatan commit Paroki Minomartani (11 commit)
+# 9 November 2026: Catatan commit Paroki Minomartani (12 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 11
-- Perubahan: 258 berkas, +33821 / -117 baris
-- Rentang waktu: 17:39 sampai 18:56
+- Jumlah commit: 12
+- Perubahan: 261 berkas, +33828 / -126 baris
+- Rentang waktu: 17:39 sampai 20:13
 
 ## Yang dikerjakan
 
@@ -147,3 +147,15 @@ Commit [`b461b1f`](https://github.com/dimasarturoh15/paroki-minomartani/commit/b
 - README: one-time setup, secrets, manual deploy, reading OTP from logs
 - Not deployed yet: the account has no workers.dev subdomain and R2 is not
   enabled (both need the Cloudflare dashboard)
+
+### 20:13 · chore: staging deployed on parokiminomartani.workers.dev
+
+Commit [`a8e6342`](https://github.com/dimasarturoh15/paroki-minomartani/commit/a8e6342727a03959e80072f371aafcb9984437a3) · 3 berkas, +7 / -9 baris
+
+- R2 bucket paroki-files-staging bound as FILES; ADMIN_ORIGIN points to the
+  staging dashboard
+- Secrets OTP_PEPPER and INTERNAL_SECRET set with wrangler secret put
+- Verified on staging: /health, home with next masses from D1, robots disallow,
+  noindex, OTP login via the web proxy (code from wrangler tail), new-device
+  alert link, role menu, POST /admin/mass-occurrences/generate (58 masses)
+- Web bundle 1129 KiB gzip, API 186 KiB gzip (free plan limit 3 MiB)
