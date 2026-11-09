@@ -1,12 +1,12 @@
-# 10 November 2026: Catatan commit Paroki Minomartani (6 commit)
+# 10 November 2026: Catatan commit Paroki Minomartani (7 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 6
-- Perubahan: 119 berkas, +21297 / -72 baris
-- Rentang waktu: 02:09 sampai 03:39
+- Jumlah commit: 7
+- Perubahan: 132 berkas, +21872 / -74 baris
+- Rentang waktu: 02:09 sampai 03:58
 
 ## Yang dikerjakan
 
@@ -79,3 +79,17 @@ trigger) and reminds Sekretariat once when the edition is still Draf. Reading pa
 with table of contents, A4 print to PDF, copy-to-WhatsApp text, Baru label for 48
 hours, searchable archive per month, Warta minggu ini on the home page, and the warta
 status card on Ringkasan. Push (WRT-11) follows with FCM.
+
+### 03:58 · feat: daily D1 backups to private R2 with 7/4/3 rotation and a tested restore (package R)
+
+Commit [`e2834f2`](https://github.com/dimasarturoh15/paroki-minomartani/commit/e2834f255aecc790155a5449a9667b2b7e378fc8) · 13 berkas, +575 / -2 baris
+
+NFR-08: after the daily purge (01.00 WIB) the API Worker reads every D1 table and
+writes gzip JSON to private/backup/{daily,weekly,monthly}/ in R2, keeping 7 daily,
+4 weekly (Sundays) and 3 monthly (1st) copies, about three months in line with the
+privacy policy. Tables are listed in foreign-key order. Backups are never served
+over HTTP; Pengaturan lists them and can run one now (Super User). scripts/
+restore-backup.ts turns a backup into SQL for a fresh D1 and scripts/
+verify-restore.ts compares row counts. Restore tested in Vitest (empty and restore,
+identical rows, no FK violations) and for real on staging: 38 tables, 162 rows,
+contents identical (docs/RESTORE.md). External copy deferred.
