@@ -117,3 +117,4 @@ Diperbarui otomatis dari riwayat Git setiap kali ada commit.
 | 2026-11-09 22:14 | [`293b5f1`](https://github.com/dimasarturoh15/paroki-minomartani/commit/293b5f19d7e9e335dcfd82ea7bb3f2ca423c7509) | docs: dark palette approved; drafts of Kebijakan Privasi and Pedoman Publikasi |
 | 2026-11-09 22:36 | [`10f3f08`](https://github.com/dimasarturoh15/paroki-minomartani/commit/10f3f08804e1363a25d81d259aefd10fc7dd3596) | docs: list of materials and decisions needed from the parish |
 | 2026-11-09 22:46 | [`1ad5fae`](https://github.com/dimasarturoh15/paroki-minomartani/commit/1ad5fae5c66a2f4aeeac0b2ffe92f96b3bea13c4) | docs: week 5-6 decisions (optional stipend proof, intention status model, Turnstile test keys) |
+| 2026-11-09 22:54 | [`113ddd1`](https://github.com/dimasarturoh15/paroki-minomartani/commit/113ddd1184b62d1b243ccfc6b225d4defef54c44) | feat: public mass intention form, transfer proof upload, status lookup (week 5-6 package G) |

@@ -1,12 +1,12 @@
-# 9 November 2026: Catatan commit Paroki Minomartani (22 commit)
+# 9 November 2026: Catatan commit Paroki Minomartani (23 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 22
-- Perubahan: 428 berkas, +56431 / -198 baris
-- Rentang waktu: 17:39 sampai 22:46
+- Jumlah commit: 23
+- Perubahan: 455 berkas, +61754 / -198 baris
+- Rentang waktu: 17:39 sampai 22:54
 
 ## Yang dikerjakan
 
@@ -276,3 +276,23 @@ trial, phase 2) with deadlines; mirrors the shareable checklist page.
 ### 22:46 · docs: week 5-6 decisions (optional stipend proof, intention status model, Turnstile test keys)
 
 Commit [`1ad5fae`](https://github.com/dimasarturoh15/paroki-minomartani/commit/1ad5fae5c66a2f4aeeac0b2ffe92f96b3bea13c4) · 4 berkas, +6 / -5 baris
+
+### 22:54 · feat: public mass intention form, transfer proof upload, status lookup (week 5-6 package G)
+
+Commit [`113ddd1`](https://github.com/dimasarturoh15/paroki-minomartani/commit/113ddd1184b62d1b243ccfc6b225d4defef54c44) · 27 berkas, +5323 / -0 baris
+
+FR-INT INT-01..11; CLAUDE.md Codes
+- intention_types (fixed order, fields_schema), intentions (one row per mass,
+  shared code for repeats), proof_uploads; purge_after = mass + 3 months
+- GET /public/intentions/form with a signed form-open token; submissions are
+  accepted until the deadline, or within 15 minutes after it when the form was
+  opened before it (decided by the server); closed masses return the next open
+  ones of the same church
+- Stipend voluntary: transfer needs an uploaded proof (private R2, single use,
+  re-encoded image, EXIF refused), cash or none need nothing; amounts never stored
+- INT- codes: 6 unbiased random characters from the unambiguous alphabet
+- Turnstile verification (Cloudflare test keys until the real widget exists),
+  per-IP rate limits, zod validation per type (names &lt;= 60, arwah &lt;= 20, text &lt;= 250)
+- GET /public/status/:code: status and schedule only; Terkunci/Dibacakan
+  computed from the mass times
+- Web: /layanan, 4-step form with review, /cek-status with Riwayat Kode Saya
