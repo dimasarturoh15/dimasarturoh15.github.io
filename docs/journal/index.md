@@ -7,6 +7,17 @@ hide:
 
 Catatan harian mengenai konsep yang dipelajari, kendala teknis, dan milestone. Entri terbaru berada di atas.
 
+<div class="log-day" data-date="2026-11-10">
+<h2 class="log-date"><time datetime="2026-11-10">10 November 2026</time></h2>
+<ol class="log">
+  <li>
+    <a class="log-title" href="2026-11-10-paroki-minomartani-commit/">Catatan commit Paroki Minomartani (1 commit)</a>
+    <span class="tags"><span>#paroki-minomartani</span><span>#commit</span><span>#otomatis</span></span>
+    <p>Dicatat otomatis dari Git: docs: backup retention 7/4/3, backups by Worker to R2, kolekte amounts allowed.</p>
+  </li>
+</ol>
+</div>
+
 <div class="log-day" data-date="2026-11-09">
 <h2 class="log-date"><time datetime="2026-11-09">9 November 2026</time></h2>
 <ol class="log">

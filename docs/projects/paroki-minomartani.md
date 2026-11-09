@@ -121,3 +121,4 @@ Diperbarui otomatis dari riwayat Git setiap kali ada commit.
 | 2026-11-09 23:30 | [`2c96bc4`](https://github.com/dimasarturoh15/paroki-minomartani/commit/2c96bc4902b0a904e3fbb5a030a9c06ff2a6fd61) | feat: daily purge of personal data with aggregated stats (week 5-6 package K) |
 | 2026-11-09 23:52 | [`d1d49ed`](https://github.com/dimasarturoh15/paroki-minomartani/commit/d1d49ede86940ec5407c83aef9b8644840070159) | feat: announcements and obituaries on the home page (week 5-6 package L) |
 | 2026-11-09 23:57 | [`a19de37`](https://github.com/dimasarturoh15/paroki-minomartani/commit/a19de37971e55294fad6a7dc1ce2fa5111885d9e) | docs: tick week 5-6 roadmap items |
+| 2026-11-10 02:09 | [`ce4b280`](https://github.com/dimasarturoh15/paroki-minomartani/commit/ce4b280685b0be1efc4601513eac9df1caff3ad0) | docs: backup retention 7/4/3, backups by Worker to R2, kolekte amounts allowed |
