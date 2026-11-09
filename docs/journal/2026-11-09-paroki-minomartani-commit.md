@@ -1,12 +1,12 @@
-# 9 November 2026: Catatan commit Paroki Minomartani (17 commit)
+# 9 November 2026: Catatan commit Paroki Minomartani (18 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 17
-- Perubahan: 369 berkas, +48131 / -166 baris
-- Rentang waktu: 17:39 sampai 21:29
+- Jumlah commit: 18
+- Perubahan: 388 berkas, +52016 / -170 baris
+- Rentang waktu: 17:39 sampai 21:42
 
 ## Yang dikerjakan
 
@@ -220,3 +220,20 @@ FR-JDW JDW-01..09, PERM-01
 - agenda_events: unit roles only create/edit/delete their own unit's rows
   (first endpoint-level wrong-unit tests); parish-wide roles default to Paroki
 - Fix: semicolons were not escaped in .ics text (caught by lint, now tested)
+
+### 21:42 · feat: Persembahan Kasih with two-person approval, approvals screen (week 3-4 package D)
+
+Commit [`fcffc4c`](https://github.com/dimasarturoh15/paroki-minomartani/commit/fcffc4cb0c7cf5ca9aac03a22cdabd9e31612b9b) · 19 berkas, +3885 / -4 baris
+
+FR-WEB DON-01..05, PERM-04, ADM-04
+- donation_accounts changed only by applying an approved approval_request;
+  the requester can never decide (policy + DB CHECK); the decision is claimed
+  atomically so a change is never applied twice; stale targets are refused
+- Only PGPM accounts (holder must contain PGPM), numeric account numbers, QRIS
+  only with an uploaded official image; nothing seeded
+- All Super Users are notified of pending and decided requests
+- Public page: approved accounts only, copy button, QRIS with 'Simpan ke
+  galeri', anti-fraud notice, empty state until Bendahara confirms
+- Dashboard: propose create/update/deactivate; Persetujuan with old vs new
+  comparison, approve/reject with reason
+- Design fix: amber is only for deadlines (removed from dashboard states)
