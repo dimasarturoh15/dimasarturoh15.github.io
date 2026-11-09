@@ -11,9 +11,9 @@ Catatan harian mengenai konsep yang dipelajari, kendala teknis, dan milestone. E
 <h2 class="log-date"><time datetime="2026-11-09">9 November 2026</time></h2>
 <ol class="log">
   <li>
-    <a class="log-title" href="2026-11-09-paroki-minomartani-commit/">Catatan commit Paroki Minomartani (25 commit)</a>
+    <a class="log-title" href="2026-11-09-paroki-minomartani-commit/">Catatan commit Paroki Minomartani (26 commit)</a>
     <span class="tags"><span>#paroki-minomartani</span><span>#commit</span><span>#otomatis</span></span>
-    <p>Dicatat otomatis dari Git: feat: public mass intention form, transfer proof upload, status lookup (week 5-6 package G); feat: Sekretariat intention inbox, replacement mass, copy text, lector print sheet (week 5-6 packages H and I); feat: sacramental services, form builder, registrations, SKR status (week 5-6 package J) dan 22 lainnya.</p>
+    <p>Dicatat otomatis dari Git: feat: Sekretariat intention inbox, replacement mass, copy text, lector print sheet (week 5-6 packages H and I); feat: sacramental services, form builder, registrations, SKR status (week 5-6 package J); feat: daily purge of personal data with aggregated stats (week 5-6 package K) dan 23 lainnya.</p>
   </li>
 </ol>
 </div>

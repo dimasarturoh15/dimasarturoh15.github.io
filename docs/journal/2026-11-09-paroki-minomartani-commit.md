@@ -1,12 +1,12 @@
-# 9 November 2026: Catatan commit Paroki Minomartani (25 commit)
+# 9 November 2026: Catatan commit Paroki Minomartani (26 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 25
-- Perubahan: 503 berkas, +69187 / -217 baris
-- Rentang waktu: 17:39 sampai 23:26
+- Jumlah commit: 26
+- Perubahan: 510 berkas, +73313 / -224 baris
+- Rentang waktu: 17:39 sampai 23:30
 
 ## Yang dikerjakan
 
@@ -329,3 +329,16 @@ FR-SKR SKR-01..18
   Dibatalkan with schedule only; answers and internal notes never public
 - purge_after = 3 months after Selesai/Dibatalkan; services with registrations can
   only be deactivated; detail views are audited
+
+### 23:30 · feat: daily purge of personal data with aggregated stats (week 5-6 package K)
+
+Commit [`2c96bc4`](https://github.com/dimasarturoh15/paroki-minomartani/commit/2c96bc4902b0a904e3fbb5a030a9c06ff2a6fd61) · 7 berkas, +4126 / -7 baris
+
+NFR-07, INT-29, SKR-18; CLAUDE.md Retention
+- stats_monthly (month, metric, dimension, value): counts recorded before deletion,
+  never names, numbers or codes
+- runPurge: intentions 3 months after the mass (rows and private R2 proofs),
+  registrations 3 months after Selesai/Dibatalkan (logs cascade), proofs never
+  sent within 2 days, expired OTP codes, old rate-limit windows (IP), used/expired
+  'Ini bukan saya' tokens, audit logs and notifications older than one year
+- Dispatcher records each job's result; two failures in a row notify Super Users
