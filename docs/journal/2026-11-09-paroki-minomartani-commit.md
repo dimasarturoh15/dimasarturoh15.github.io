@@ -1,12 +1,12 @@
-# 9 November 2026: Catatan commit Paroki Minomartani (14 commit)
+# 9 November 2026: Catatan commit Paroki Minomartani (15 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 14
-- Perubahan: 266 berkas, +33839 / -136 baris
-- Rentang waktu: 17:39 sampai 20:41
+- Jumlah commit: 15
+- Perubahan: 284 berkas, +36734 / -136 baris
+- Rentang waktu: 17:39 sampai 20:46
 
 ## Yang dikerjakan
 
@@ -171,3 +171,16 @@ entered by Sekretariat; two image sizes at upload; in-house block editor.
 ### 20:41 · docs: tidy decision list in OPEN-QUESTIONS
 
 Commit [`f341883`](https://github.com/dimasarturoh15/paroki-minomartani/commit/f3418839e9858d068f3b315bf3b68e3525657270) · 1 berkas, +2 / -2 baris
+
+### 20:46 · feat: photo uploads to R2 in two sizes, public image serving (week 3-4 package A)
+
+Commit [`8926cb1`](https://github.com/dimasarturoh15/paroki-minomartani/commit/8926cb19152973e215383dda4c878e50a71d5df2) · 18 berkas, +2895 / -0 baris
+
+CLAUDE.md Files/Images, NFR-07, POST-04 groundwork
+- media table; POST /media (organizers): two sizes re-encoded in the browser,
+  checked by content (JPEG/PNG/WebP magic bytes, pixel size), EXIF/GPS refused,
+  size limits, unguessable keys, unit and uploader recorded, audited
+- GET /media/public/... immutable and edge-cached; private keys never served
+- Web: prepareImage() (canvas re-encode, 1600/800 px, ~250 KB, WebP or JPEG),
+  ImageUpload component for the editor and slider
+- Actions media.upload / media.read in the matrix and role tests
