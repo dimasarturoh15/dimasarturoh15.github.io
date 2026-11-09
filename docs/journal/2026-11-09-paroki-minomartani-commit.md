@@ -1,12 +1,12 @@
-# 9 November 2026: Catatan commit Paroki Minomartani (21 commit)
+# 9 November 2026: Catatan commit Paroki Minomartani (22 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 21
-- Perubahan: 424 berkas, +56425 / -193 baris
-- Rentang waktu: 17:39 sampai 22:36
+- Jumlah commit: 22
+- Perubahan: 428 berkas, +56431 / -198 baris
+- Rentang waktu: 17:39 sampai 22:46
 
 ## Yang dikerjakan
 
@@ -272,3 +272,7 @@ Commit [`10f3f08`](https://github.com/dimasarturoh15/paroki-minomartani/commit/1
 
 Grouped by provider (Pastor/PGPM, Bendahara, Sekretariat, Komsos, content,
 trial, phase 2) with deadlines; mirrors the shareable checklist page.
+
+### 22:46 · docs: week 5-6 decisions (optional stipend proof, intention status model, Turnstile test keys)
+
+Commit [`1ad5fae`](https://github.com/dimasarturoh15/paroki-minomartani/commit/1ad5fae5c66a2f4aeeac0b2ffe92f96b3bea13c4) · 4 berkas, +6 / -5 baris

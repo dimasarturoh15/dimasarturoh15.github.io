@@ -11,9 +11,9 @@ Catatan harian mengenai konsep yang dipelajari, kendala teknis, dan milestone. E
 <h2 class="log-date"><time datetime="2026-11-09">9 November 2026</time></h2>
 <ol class="log">
   <li>
-    <a class="log-title" href="2026-11-09-paroki-minomartani-commit/">Catatan commit Paroki Minomartani (21 commit)</a>
+    <a class="log-title" href="2026-11-09-paroki-minomartani-commit/">Catatan commit Paroki Minomartani (22 commit)</a>
     <span class="tags"><span>#paroki-minomartani</span><span>#commit</span><span>#otomatis</span></span>
-    <p>Dicatat otomatis dari Git: feat: home slider, site search, loading skeleton, notification bell (week 3-4 packages E and F); docs: dark palette approved; drafts of Kebijakan Privasi and Pedoman Publikasi; docs: list of materials and decisions needed from the parish dan 18 lainnya.</p>
+    <p>Dicatat otomatis dari Git: docs: dark palette approved; drafts of Kebijakan Privasi and Pedoman Publikasi; docs: list of materials and decisions needed from the parish; docs: week 5-6 decisions (optional stipend proof, intention status model, Turnstile test keys) dan 19 lainnya.</p>
   </li>
 </ol>
 </div>
