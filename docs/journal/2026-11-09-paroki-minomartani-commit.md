@@ -1,12 +1,12 @@
-# 9 November 2026: Catatan commit Paroki Minomartani (23 commit)
+# 9 November 2026: Catatan commit Paroki Minomartani (24 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 23
-- Perubahan: 455 berkas, +61754 / -198 baris
-- Rentang waktu: 17:39 sampai 22:54
+- Jumlah commit: 24
+- Perubahan: 470 berkas, +63272 / -214 baris
+- Rentang waktu: 17:39 sampai 23:07
 
 ## Yang dikerjakan
 
@@ -296,3 +296,19 @@ FR-INT INT-01..11; CLAUDE.md Codes
 - GET /public/status/:code: status and schedule only; Terkunci/Dibacakan
   computed from the mass times
 - Web: /layanan, 4-step form with review, /cek-status with Riwayat Kode Saya
+
+### 23:07 · feat: Sekretariat intention inbox, replacement mass, copy text, lector print sheet (week 5-6 packages H and I)
+
+Commit [`24e6002`](https://github.com/dimasarturoh15/paroki-minomartani/commit/24e6002068d1df6a53e62b2526feafede9764e42) · 15 berkas, +1518 / -16 baris
+
+FR-INT INT-20..27; ADM-07
+- GET /admin/intentions/masses (window: Terbuka, Segera tutup, Ditutup,
+  Dibacakan) and /masses/:id (fixed type order, WhatsApp masked)
+- Reveal WhatsApp or a 5-minute signed proof link, each audited; proofs served
+  only with a session and a valid signature, private and no-store
+- Edit, verify, reject with reason (transfer -> perlu pengembalian, then sudah
+  dikembalikan with a date, no amounts), manual entry with a code
+- Move all intentions to a replacement mass with ready wa.me messages; masses
+  with intentions cannot be cancelled and are never changed by the generator
+- Copy text (INT-27) and an A4 lector sheet via the browser's print/save-as-PDF
+  (Belum final/Final, page numbers, empty types omitted)
