@@ -1,12 +1,12 @@
-# 9 November 2026: Catatan commit Paroki Minomartani (12 commit)
+# 9 November 2026: Catatan commit Paroki Minomartani (13 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 12
-- Perubahan: 261 berkas, +33828 / -126 baris
-- Rentang waktu: 17:39 sampai 20:13
+- Jumlah commit: 13
+- Perubahan: 265 berkas, +33837 / -134 baris
+- Rentang waktu: 17:39 sampai 20:40
 
 ## Yang dikerjakan
 
@@ -159,3 +159,11 @@ Commit [`a8e6342`](https://github.com/dimasarturoh15/paroki-minomartani/commit/a
   noindex, OTP login via the web proxy (code from wrangler tail), new-device
   alert link, role menu, POST /admin/mass-occurrences/generate (58 masses)
 - Web bundle 1129 KiB gzip, API 186 KiB gzip (free plan limit 3 MiB)
+
+### 20:40 · docs: Sekretariat hours (daily except Tuesday, 08.30-16.00), clergy names allowed
+
+Commit [`0231527`](https://github.com/dimasarturoh15/paroki-minomartani/commit/02315274a9027ecdb099ce79797b36cd84232140) · 4 berkas, +9 / -8 baris
+
+Decisions by Dimas for week 3-4: office hours replace the old 08.30-14.00 fact
+(DESIGN.md, PRD SKR-12/PAGE-07, Blueprint); clergy names may be shown when
+entered by Sekretariat; two image sizes at upload; in-house block editor.
