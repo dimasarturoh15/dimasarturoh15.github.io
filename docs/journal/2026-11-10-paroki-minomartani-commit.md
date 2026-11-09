@@ -1,12 +1,12 @@
-# 10 November 2026: Catatan commit Paroki Minomartani (4 commit)
+# 10 November 2026: Catatan commit Paroki Minomartani (5 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 4
-- Perubahan: 64 berkas, +13717 / -40 baris
-- Rentang waktu: 02:09 sampai 03:02
+- Jumlah commit: 5
+- Perubahan: 85 berkas, +15017 / -65 baris
+- Rentang waktu: 02:09 sampai 03:19
 
 ## Yang dikerjakan
 
@@ -51,3 +51,16 @@ password reminder. AUTH-09: adding or removing a Super User goes through
 approval_requests decided by another Super User, re-validated on apply; the last Super
 User can never be removed. ADM-05: audit log screen filtered by account, module and WIB
 date with paging.
+
+### 03:19 · feat: intention types, settings, dashboard summary, security headers (package P)
+
+Commit [`3fa003a`](https://github.com/dimasarturoh15/paroki-minomartani/commit/3fa003ac233e73651a239d356831b98cd40f3235) · 21 berkas, +1300 / -25 baris
+
+INT-28: Sekretariat and Super User add, edit, reorder and deactivate intention types
+(at least one stays active). ADM-06: settings page for photos per post, slide duration,
+lector opening/closing text, minimum app version (served at /public/app-config for
+APP-11) and the daily manual push limit (PRD suggestion 3); Sekretariat sets the
+liturgical label from the schedule page. ADM-02: Ringkasan cards per role (nearest
+masses with intention counts and time left, new registrations, waiting approvals,
+recent posts, unit posts this month). NFR-06: CSP, HSTS, X-Frame-Options, nosniff,
+Referrer-Policy and Permissions-Policy on every web response.
