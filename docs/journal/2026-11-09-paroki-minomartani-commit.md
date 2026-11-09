@@ -1,12 +1,12 @@
-# 9 November 2026: Catatan commit Paroki Minomartani (24 commit)
+# 9 November 2026: Catatan commit Paroki Minomartani (25 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 24
-- Perubahan: 470 berkas, +63272 / -214 baris
-- Rentang waktu: 17:39 sampai 23:07
+- Jumlah commit: 25
+- Perubahan: 503 berkas, +69187 / -217 baris
+- Rentang waktu: 17:39 sampai 23:26
 
 ## Yang dikerjakan
 
@@ -312,3 +312,20 @@ FR-INT INT-20..27; ADM-07
   with intentions cannot be cancelled and are never changed by the generator
 - Copy text (INT-27) and an A4 lector sheet via the browser's print/save-as-PDF
   (Belum final/Final, page numbers, empty types omitted)
+
+### 23:26 · feat: sacramental services, form builder, registrations, SKR status (week 5-6 package J)
+
+Commit [`50cd456`](https://github.com/dimasarturoh15/paroki-minomartani/commit/50cd456c3724918ee3e49b4ad318f540722c93ce) · 33 berkas, +5915 / -3 baris
+
+FR-SKR SKR-01..18
+- service_types (requirements, fields, period, marriage flag), registrations with
+  fields_snapshot, status logs, marriage banns; examples seeded INACTIVE until
+  Sekretariat fills the document requirements (facts)
+- Shared field schema (text, textarea, date, select, lingkungan, phone) used by the
+  builder, the live preview, the public form and API validation
+- Public: requirements before the form, Turnstile, SKR- code, success screen with
+  physical-document reminder, office hours, address and phone
+- Status line Terdaftar -> Berkas diterima -> Lengkap -> Terjadwal -> Selesai or
+  Dibatalkan with schedule only; answers and internal notes never public
+- purge_after = 3 months after Selesai/Dibatalkan; services with registrations can
+  only be deactivated; detail views are audited
