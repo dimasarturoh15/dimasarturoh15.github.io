@@ -1,0 +1,1698 @@
+
+<!doctype html>
+<html lang="id" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Proyek otomasi Python dan jurnal belajar saya.">
+      
+      
+        <meta name="author" content="Dimas Arturoh">
+      
+      
+        <link rel="canonical" href="https://dimasarturoh15.github.io/projects/paroki-minomartani/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../choralestudio/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+    
+    
+      
+        <title>Paroki Minomartani - Dokumentasi GitHub</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css?v=2026-11-08b">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#paroki-minomartani" class="md-skip">
+          Lewati ke isi
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Dokumentasi GitHub" class="md-header__button md-logo" aria-label="Dokumentasi GitHub" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Dokumentasi GitHub
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Paroki Minomartani
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Ganti ke mode gelap"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Ganti ke mode gelap" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Ganti ke mode terang"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Ganti ke mode terang" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    <a href="https://github.com/dimasarturoh15" class="md-header__button md-icon" title="GitHub" aria-label="GitHub dimasarturoh15">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tab" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Beranda
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Proyek
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../journal/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Jurnal Belajar
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigasi" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Dokumentasi GitHub" class="md-nav__button md-logo" aria-label="Dokumentasi GitHub" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Dokumentasi GitHub
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Beranda
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyek
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Proyek
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paroki Minomartani
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paroki Minomartani
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#target" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Target
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#masalah-yang-diselesaikan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Masalah yang diselesaikan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yang-dibangun" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Yang dibangun
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arsitektur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arsitektur
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keputusan-rancangan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keputusan rancangan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#status-terkini" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status terkini
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rencana-kerja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rencana kerja
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#log-pengerjaan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Log Pengerjaan
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../choralestudio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ChoraleStudio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../liturgy-slides-automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Liturgy Slides Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../livestream-to-shorts-automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Livestream to Shorts Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../journal/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jurnal Belajar
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jurnal Belajar
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-10-paroki-minomartani-commit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 Nov 2026: Commit Paroki Minomartani
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-09-paroki-minomartani-commit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9 Nov 2026: Commit Paroki Minomartani
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-08-choralestudio-commit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8 Nov 2026: Commit ChoraleStudio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-07-choralestudio-commit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7 Nov 2026: Commit ChoraleStudio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-06-choralestudio-commit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6 Nov 2026: Commit ChoraleStudio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-06-pemaketan-dan-uji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6 Nov 2026: Pemaketan dan uji
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-06-audio-realtime-dan-mastering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6 Nov 2026: Audio real-time dan mastering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-06-chorale-dari-prd-ke-installer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6 Nov 2026: ChoraleStudio dari PRD ke installer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 Nov 2026: Hari pertama
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-05-proyek-pertama/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 Nov 2026: Proyek pertama
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-05-proyek-kedua/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 Nov 2026: Proyek kedua
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-05-merapikan-portofolio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 Nov 2026: Merapikan portofolio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#target" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Target
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#masalah-yang-diselesaikan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Masalah yang diselesaikan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#yang-dibangun" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Yang dibangun
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arsitektur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arsitektur
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keputusan-rancangan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keputusan rancangan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#status-terkini" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status terkini
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rencana-kerja" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rencana kerja
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#log-pengerjaan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Log Pengerjaan
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="paroki-minomartani">Paroki Minomartani</h1>
+<blockquote>
+<p>Website, dashboard pengurus, dan aplikasi Android resmi Paroki St. Petrus &amp; Paulus Minomartani (Keuskupan Agung Semarang) di parokiminomartani.or.id. Satu backend melayani umat tanpa login, Sekretariat, Komsos, dan pengurus lingkungan serta kategorial di dua gereja: Minomartani dan Condongcatur.</p>
+</blockquote>
+<p class="page-meta">TypeScript / Hono / Next.js / Cloudflare Workers + D1 / Flutter · Dalam pengerjaan · 2026–2027</p>
+
+<p>Kode sumber disimpan di repositori privat milik paroki. Halaman ini mencatat rancangan dan kemajuannya.</p>
+<h2 id="target">Target</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Sekarang</th>
+<th>Setelah rilis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Informasi resmi</td>
+<td>Situs lama bukan milik paroki dan isinya tidak bisa diperbaiki</td>
+<td>Satu sumber resmi milik PGPM untuk jadwal, warta, dan rekening</td>
+</tr>
+<tr>
+<td>Intensi misa</td>
+<td>Disalin manual oleh Sekretariat setiap minggu</td>
+<td>Umat mengirim online; daftar per misa, PDF lektor, dan teks salin terbentuk otomatis</td>
+</tr>
+<tr>
+<td>Kegiatan unit</td>
+<td>Tidak punya kanal publikasi resmi</td>
+<td>Lingkungan dan kategorial memposting sendiri, langsung tayang, diawasi Super User</td>
+</tr>
+<tr>
+<td>Akses pengurus</td>
+<td>Hilang setiap kali pengurus berganti</td>
+<td>Akun melekat pada jabatan; serah terima cukup satu langkah</td>
+</tr>
+</tbody>
+</table>
+<p>Tenggat: website publik rilis paling lambat <strong>31 Januari 2027</strong>, aplikasi Android menyusul setelah lolos review Play Store.</p>
+<h2 id="masalah-yang-diselesaikan">Masalah yang diselesaikan</h2>
+<p>Paroki tidak memegang situs yang selama ini muncul di Google, sehingga informasi seperti nomor rekening tidak bisa dijamin benar. Pekerjaan rutin Sekretariat, terutama intensi misa, dikerjakan dengan menyalin ulang dari kertas dan pesan WhatsApp. Proyek ini membangun sistem resmi dengan satu prinsip:</p>
+<blockquote>
+<p>Paroki memegang penuh domain, data, dan akun digitalnya atas nama PGPM, dan sistem tetap bisa dirawat walau pengembangnya berganti.</p>
+</blockquote>
+<h2 id="yang-dibangun">Yang dibangun</h2>
+<ul>
+<li><strong>Situs publik</strong>: jadwal misa kedua gereja, banner live streaming, warta mingguan, kegiatan unit, profil dan sejarah paroki, persembahan kasih.</li>
+<li><strong>Layanan tanpa login</strong>: intensi misa dalam 4 langkah dengan batas waktu per jenis misa dan toleransi 15 menit, pendaftaran sakramentalia, cek status dengan kode acak.</li>
+<li><strong>Dashboard pengurus</strong>: kotak masuk intensi per misa, pembuat formulir sakramentalia, penyusun warta yang terbit otomatis Sabtu 15.00 WIB, moderasi postingan, persetujuan dua orang untuk rekening.</li>
+<li><strong>Aplikasi Android (Flutter)</strong>: lima tab untuk umat, mode offline, notifikasi live dan warta, serta mode pengurus untuk mengunggah kegiatan saat sinyal lemah.</li>
+</ul>
+<h2 id="arsitektur">Arsitektur</h2>
+<pre class="mermaid"><code>flowchart LR
+  U[Browser umat &amp; pengurus] --&gt; W[Next.js di Cloudflare Workers]
+  W -- service binding --&gt; A[API Worker - Hono]
+  M[Aplikasi Android] -- HTTPS + token --&gt; A
+  A --&gt; D[(Cloudflare D1)]
+  A --&gt; R[(Cloudflare R2)]
+  A --&gt; E[Email OTP]
+  A --&gt; F[Push FCM]
+  A --&gt; Y[YouTube Data API]</code></pre>
+<table>
+<thead>
+<tr>
+<th>Bagian</th>
+<th>Teknologi</th>
+<th>Alasan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API</td>
+<td>Cloudflare Worker dengan Hono</td>
+<td>Satu backend untuk web dan aplikasi; aturan akses dan tugas terjadwal di satu tempat</td>
+</tr>
+<tr>
+<td>Database</td>
+<td>Cloudflare D1 (SQLite) + Drizzle ORM</td>
+<td>Migrasi SQL di repositori, biaya rendah</td>
+</tr>
+<tr>
+<td>Web + dashboard</td>
+<td>Next.js (App Router) lewat OpenNext</td>
+<td>Dirender di server agar mudah ditemukan Google; satu aplikasi, dibedakan menurut host</td>
+</tr>
+<tr>
+<td>File</td>
+<td>Cloudflare R2</td>
+<td>Foto publik dan bukti transfer privat</td>
+</tr>
+<tr>
+<td>Aplikasi</td>
+<td>Flutter</td>
+<td>Satu kode untuk Android, iOS menyusul</td>
+</tr>
+<tr>
+<td>Monorepo</td>
+<td>pnpm workspace: <code>apps/api</code>, <code>apps/web</code>, <code>apps/mobile</code>, <code>packages/shared</code></td>
+<td>Tipe, skema validasi, dan matriks peran dipakai bersama</td>
+</tr>
+</tbody>
+</table>
+<p>Biaya operasional ditargetkan di bawah Rp2 juta per tahun, hanya dengan layanan gratis atau paket dasar Cloudflare.</p>
+<h2 id="keputusan-rancangan">Keputusan rancangan</h2>
+<ul>
+<li><strong>Login tanpa password.</strong> Pengurus masuk dengan kode OTP ke email paroki. Kode disimpan dalam bentuk hash, dibatasi jumlah percobaan dan permintaannya, dan respons tidak membocorkan apakah sebuah email terdaftar.</li>
+<li><strong>Aturan akses ditulis sendiri dan diuji.</strong> Setiap endpoint API wajib mendeklarasikan izinnya lewat satu modul kebijakan, dan setiap kombinasi peran × endpoint punya uji otomatis, termasuk tanpa sesi dan unit yang salah.</li>
+<li><strong>Waktu paroki selalu WIB.</strong> Disimpan dalam UTC, dihitung dan ditampilkan dalam Asia/Jakarta. Setiap pasangan hari dan tanggal diuji.</li>
+<li><strong>Privasi sesuai UU PDP 27/2022.</strong> Data pribadi dari formulir dihapus otomatis 3 bulan setelah selesai, termasuk file di R2. Laporan hanya menyimpan angka gabungan.</li>
+<li><strong>Rekening dijaga dua orang.</strong> Perubahan rekening dan QRIS harus disetujui Super User yang berbeda dari pengaju.</li>
+<li><strong>Ramah lansia.</strong> Teks dasar 18px, tidak ada teks penting di bawah 16px, tombol minimal 48px, satu huruf (Plus Jakarta Sans) dan satu warna aksen.</li>
+</ul>
+<h2 id="status-terkini">Status terkini</h2>
+<p>Diperbarui 10 November 2026. Minggu 1–8 dari rencana sudah selesai, ditambah warta dan cadangan data dari Minggu 9–10.</p>
+<ul>
+<li><strong>Fondasi:</strong> login pengurus dengan kode OTP, sesi per perangkat, aturan akses per peran yang ditegakkan di API, dan lebih dari 1.100 uji otomatis, termasuk uji setiap peran di setiap endpoint dan uji "unit yang salah".</li>
+<li><strong>Situs publik inti:</strong> jadwal misa kedua gereja (dibuat otomatis 30 hari ke depan), Sakramen Tobat, agenda, halaman profil dengan editor dan riwayat revisi, Persembahan Kasih dengan persetujuan dua orang, slider, pencarian, dan pengumuman.</li>
+<li><strong>Intensi misa online:</strong> formulir 4 langkah dengan batas waktu per misa dan toleransi 15 menit yang diputuskan server, kode acak INT-, bukti transfer di penyimpanan privat, kotak masuk Sekretariat, pemindahan ke misa pengganti dengan pesan WhatsApp siap kirim, teks salin, dan lembar lektor A4.</li>
+<li><strong>Sakramentalia:</strong> pembuat formulir dengan pratinjau langsung, pendaftaran awal dengan kode SKR-, dan garis proses yang bisa dicek umat tanpa membuka data pribadi.</li>
+<li><strong>Pelindungan data:</strong> data pribadi dari formulir dihapus otomatis 3 bulan setelah selesai, termasuk file; laporan hanya menyimpan angka gabungan.</li>
+<li><strong>Kegiatan dan unit:</strong> lingkungan dan kategorial memposting kegiatan yang langsung tayang, dengan moderasi pasca-tayang dan tombol Urungkan; halaman Kegiatan dengan filter; Direktori Unit, halaman profil tiap unit, dan Cari Lingkungan Saya.</li>
+<li><strong>Struktur dan akun:</strong> pohon unit, jabatan, dan masa bakti; serah terima dengan konfirmasi "SERAH TERIMA" yang mengeluarkan akun dari semua perangkat; penambahan atau pencabutan Super User harus disetujui Super User lain; log audit dengan filter.</li>
+<li><strong>Warta mingguan:</strong> penyusun dengan simpan otomatis, terbit otomatis Sabtu 15.00 WIB, pengumuman perkawinan tiga kali dan agenda yang terisi sendiri, laporan kolekte, cetak PDF, teks WhatsApp, dan arsip yang bisa dicari.</li>
+<li><strong>Keamanan dan cadangan:</strong> header keamanan (CSP, HSTS) di semua halaman; cadangan database harian ke penyimpanan privat (7 harian, 4 mingguan, 3 bulanan) yang sudah diuji pulih di staging.</li>
+<li><strong>Berikutnya:</strong> halaman Komsos dan live streaming, push notification, aplikasi Android.</li>
+</ul>
+<h2 id="rencana-kerja">Rencana kerja</h2>
+<table>
+<thead>
+<tr>
+<th>Minggu</th>
+<th>Isi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9–22 Nov 2026</td>
+<td>Fondasi: monorepo, skema struktur dan jadwal, login OTP, modul kebijakan akses, sistem desain, staging, CI</td>
+</tr>
+<tr>
+<td>23 Nov–6 Des</td>
+<td>Situs publik inti: beranda, jadwal, halaman statis, persembahan kasih</td>
+</tr>
+<tr>
+<td>7–20 Des</td>
+<td>Intensi misa lengkap, sakramentalia, penghapusan data otomatis</td>
+</tr>
+<tr>
+<td>21 Des–3 Jan</td>
+<td>Postingan kegiatan, agenda, halaman unit, serah terima akun</td>
+</tr>
+<tr>
+<td>4–17 Jan 2027</td>
+<td>Warta, Komsos dan live streaming, aplikasi Flutter</td>
+</tr>
+<tr>
+<td>18–24 Jan</td>
+<td>Mode pengurus di aplikasi, uji keamanan per peran, uji coba bersama Sekretariat</td>
+</tr>
+<tr>
+<td>25–31 Jan</td>
+<td>Pembekuan fitur dan rilis</td>
+</tr>
+</tbody>
+</table>
+<h2 id="log-pengerjaan">Log Pengerjaan</h2>
+<p>Diperbarui otomatis dari riwayat Git setiap kali ada commit.</p>
+<table>
+<thead>
+<tr>
+<th>Waktu</th>
+<th>Commit</th>
+<th>Ringkasan Perubahan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-11-09 17:39</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/af06ee4f61445d7c740a696eaa4244a15dcf4f8d"><code>af06ee4</code></a></td>
+<td>chore: paket awal proyek</td>
+</tr>
+<tr>
+<td>2026-11-09 17:39</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/7420b14252ca6e15b2d19318b03fdafc73a3e06f"><code>7420b14</code></a></td>
+<td>docs: catat keputusan orientasi (peran, sesi 90 hari, retensi)</td>
+</tr>
+<tr>
+<td>2026-11-09 17:43</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/c0eeb5544765eccf71807cb3d10ac3e089905a4d"><code>c0eeb55</code></a></td>
+<td>docs: label 16px sesuai aturan teks minimal 16px</td>
+</tr>
+<tr>
+<td>2026-11-09 18:03</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/dcaa2adbdbf3e6246704d82197abc0879e2a1cb4"><code>dcaa2ad</code></a></td>
+<td>chore: monorepo skeleton (api, web, shared) with lint, typecheck, test</td>
+</tr>
+<tr>
+<td>2026-11-09 18:09</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/28d02b33d8ba263fcf94f4fdadae2e16071a4e98"><code>28d02b3</code></a></td>
+<td>feat(api): schema modules A and B, official seed, mass occurrence generator</td>
+</tr>
+<tr>
+<td>2026-11-09 18:16</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/151d380df6c1279d25295cde9f2827e253cd4705"><code>151d380</code></a></td>
+<td>feat(api): OTP login, sessions, devices, new-device alert</td>
+</tr>
+<tr>
+<td>2026-11-09 18:22</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/e6831cf163403b8a9e02f1ac2a01d913a9e83aad"><code>e6831cf</code></a></td>
+<td>feat(api): policy module can(), declared route permissions, audit logs</td>
+</tr>
+<tr>
+<td>2026-11-09 18:35</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/bd8c77e9550ad6164dbf7763ea0e74cbf8787bf8"><code>bd8c77e</code></a></td>
+<td>feat(web): design tokens, local fonts, public layout, home skeleton, 404</td>
+</tr>
+<tr>
+<td>2026-11-09 18:51</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/908bdfa8aa869c7a3fbfc53c7b6c025257fdb0c6"><code>908bdfa</code></a></td>
+<td>feat(web): admin host routing, API proxy, OTP login, dashboard shell, my devices</td>
+</tr>
+<tr>
+<td>2026-11-09 18:53</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/d9ba6a0358b76a660f5459d6062b79fc797be933"><code>d9ba6a0</code></a></td>
+<td>feat(api): POST /admin/mass-occurrences/generate for Sekretariat (JDW-03)</td>
+</tr>
+<tr>
+<td>2026-11-09 18:56</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/b461b1fe43c6c578dad179caf15365752069c772"><code>b461b1f</code></a></td>
+<td>chore: staging configuration on workers.dev and GitHub Actions CI</td>
+</tr>
+<tr>
+<td>2026-11-09 20:13</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/a8e6342727a03959e80072f371aafcb9984437a3"><code>a8e6342</code></a></td>
+<td>chore: staging deployed on parokiminomartani.workers.dev</td>
+</tr>
+<tr>
+<td>2026-11-09 20:40</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/02315274a9027ecdb099ce79797b36cd84232140"><code>0231527</code></a></td>
+<td>docs: Sekretariat hours (daily except Tuesday, 08.30-16.00), clergy names allowed</td>
+</tr>
+<tr>
+<td>2026-11-09 20:41</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/f3418839e9858d068f3b315bf3b68e3525657270"><code>f341883</code></a></td>
+<td>docs: tidy decision list in OPEN-QUESTIONS</td>
+</tr>
+<tr>
+<td>2026-11-09 20:46</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/8926cb19152973e215383dda4c878e50a71d5df2"><code>8926cb1</code></a></td>
+<td>feat: photo uploads to R2 in two sizes, public image serving (week 3-4 package A)</td>
+</tr>
+<tr>
+<td>2026-11-09 21:06</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/150580912436c643402d85069c826ef017560ef0"><code>1505809</code></a></td>
+<td>feat: static pages with block editor and revisions, Profil, Sejarah, Gereja Kami, Struktur, Kontak (week 3-4 package B)</td>
+</tr>
+<tr>
+<td>2026-11-09 21:29</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/8354ef7c6cd0b12d0fa23533b3a0cb2ef114829f"><code>8354ef7</code></a></td>
+<td>feat: schedule page (masses, confession, agenda), calendar export, schedule admin (week 3-4 package C)</td>
+</tr>
+<tr>
+<td>2026-11-09 21:42</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/fcffc4cb0c7cf5ca9aac03a22cdabd9e31612b9b"><code>fcffc4c</code></a></td>
+<td>feat: Persembahan Kasih with two-person approval, approvals screen (week 3-4 package D)</td>
+</tr>
+<tr>
+<td>2026-11-09 22:01</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/7c48036258d343463e9e21e29576a4e144bbaf42"><code>7c48036</code></a></td>
+<td>feat: home slider, site search, loading skeleton, notification bell (week 3-4 packages E and F)</td>
+</tr>
+<tr>
+<td>2026-11-09 22:14</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/293b5f19d7e9e335dcfd82ea7bb3f2ca423c7509"><code>293b5f1</code></a></td>
+<td>docs: dark palette approved; drafts of Kebijakan Privasi and Pedoman Publikasi</td>
+</tr>
+<tr>
+<td>2026-11-09 22:36</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/10f3f08804e1363a25d81d259aefd10fc7dd3596"><code>10f3f08</code></a></td>
+<td>docs: list of materials and decisions needed from the parish</td>
+</tr>
+<tr>
+<td>2026-11-09 22:46</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/1ad5fae5c66a2f4aeeac0b2ffe92f96b3bea13c4"><code>1ad5fae</code></a></td>
+<td>docs: week 5-6 decisions (optional stipend proof, intention status model, Turnstile test keys)</td>
+</tr>
+<tr>
+<td>2026-11-09 22:54</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/113ddd1184b62d1b243ccfc6b225d4defef54c44"><code>113ddd1</code></a></td>
+<td>feat: public mass intention form, transfer proof upload, status lookup (week 5-6 package G)</td>
+</tr>
+<tr>
+<td>2026-11-09 23:07</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/24e6002068d1df6a53e62b2526feafede9764e42"><code>24e6002</code></a></td>
+<td>feat: Sekretariat intention inbox, replacement mass, copy text, lector print sheet (week 5-6 packages H and I)</td>
+</tr>
+<tr>
+<td>2026-11-09 23:26</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/50cd456c3724918ee3e49b4ad318f540722c93ce"><code>50cd456</code></a></td>
+<td>feat: sacramental services, form builder, registrations, SKR status (week 5-6 package J)</td>
+</tr>
+<tr>
+<td>2026-11-09 23:30</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/2c96bc4902b0a904e3fbb5a030a9c06ff2a6fd61"><code>2c96bc4</code></a></td>
+<td>feat: daily purge of personal data with aggregated stats (week 5-6 package K)</td>
+</tr>
+<tr>
+<td>2026-11-09 23:52</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/d1d49ede86940ec5407c83aef9b8644840070159"><code>d1d49ed</code></a></td>
+<td>feat: announcements and obituaries on the home page (week 5-6 package L)</td>
+</tr>
+<tr>
+<td>2026-11-09 23:57</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/a19de37971e55294fad6a7dc1ce2fa5111885d9e"><code>a19de37</code></a></td>
+<td>docs: tick week 5-6 roadmap items</td>
+</tr>
+<tr>
+<td>2026-11-10 02:09</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/ce4b280685b0be1efc4601513eac9df1caff3ad0"><code>ce4b280</code></a></td>
+<td>docs: backup retention 7/4/3, backups by Worker to R2, kolekte amounts allowed</td>
+</tr>
+<tr>
+<td>2026-11-10 02:27</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/da5a91efc841d49494856b35500d9a8ac5e7182e"><code>da5a91e</code></a></td>
+<td>feat: activity posts with post-publish moderation and undo (week 7-8 package M)</td>
+</tr>
+<tr>
+<td>2026-11-10 02:43</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/3be0f1e7d43fc0747ecb768018178ba0c6efd7d6"><code>3be0f1e</code></a></td>
+<td>feat: unit directory, unit profile pages, Cari Lingkungan Saya (week 7-8 package N)</td>
+</tr>
+<tr>
+<td>2026-11-10 03:02</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/a43358d62269292cf5eb80ad48cf4fa1d772700a"><code>a43358d</code></a></td>
+<td>feat: structure, accounts, handover, Super User approvals, audit log (week 7-8 package O)</td>
+</tr>
+<tr>
+<td>2026-11-10 03:19</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/3fa003ac233e73651a239d356831b98cd40f3235"><code>3fa003a</code></a></td>
+<td>feat: intention types, settings, dashboard summary, security headers (package P)</td>
+</tr>
+<tr>
+<td>2026-11-10 03:39</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/4d8980a763f8183f960cc1e534d15d1a874e5238"><code>4d8980a</code></a></td>
+<td>feat: weekly warta with autosave, Saturday 15.00 WIB publishing, PDF and WhatsApp text (package Q)</td>
+</tr>
+<tr>
+<td>2026-11-10 03:58</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/e2834f255aecc790155a5449a9667b2b7e378fc8"><code>e2834f2</code></a></td>
+<td>feat: daily D1 backups to private R2 with 7/4/3 rotation and a tested restore (package R)</td>
+</tr>
+<tr>
+<td>2026-11-10 07:15</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/ebc64ca9e87847b6ec99ccd8cc35123d6bf5b3c2"><code>ebc64ca</code></a></td>
+<td>feat: remove marriage banns from the warta archive 3 months after publishing</td>
+</tr>
+<tr>
+<td>2026-11-10 07:33</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/8ead6b531cb1e79ccf9f9d7f91aaf1dcc700e551"><code>8ead6b5</code></a></td>
+<td>docs: one per-minute cron, Sapaan Gembala by any Super User, live only from YouTube detection</td>
+</tr>
+<tr>
+<td>2026-11-10 12:54</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/7a7e564f802e80c4dd8666696bd56cd5139a6061"><code>7a7e564</code></a></td>
+<td>feat: broadcast schedule and quota-safe YouTube live detection, one per-minute cron (package S)</td>
+</tr>
+<tr>
+<td>2026-11-10 13:06</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/348799f93e156e407221cd16dd4256eb816a0787"><code>348799f</code></a></td>
+<td>feat: live banner, header Live pill, Tonton Live page with countdown and chat (package T)</td>
+</tr>
+<tr>
+<td>2026-11-10 13:26</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/9049ef8501aafb48da88f34ec25711e44e85a56f"><code>9049ef8</code></a></td>
+<td>feat: Komsos page, playlists, Komsos-edited text pages, Gabung relawan (package U)</td>
+</tr>
+<tr>
+<td>2026-11-10 13:46</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/60bf3f4790ce047834f8b26a5076616cc401690c"><code>60bf3f4</code></a></td>
+<td>feat: Sapaan Gembala with archive, home card, and an automatic warta section (package V)</td>
+</tr>
+<tr>
+<td>2026-11-10 13:49</td>
+<td><a href="https://github.com/dimasarturoh15/paroki-minomartani/commit/49033ef34da4ca47e88b71430eeab231f6e4c4bb"><code>49033ef</code></a></td>
+<td>docs: YouTube channel id and playlists needed for live detection</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Kembali ke atas
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Sebelumnya: Proyek">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Sebelumnya
+              </span>
+              <div class="md-ellipsis">
+                Proyek
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../choralestudio/" class="md-footer__link md-footer__link--next" aria-label="Selanjutnya: ChoraleStudio">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Selanjutnya
+              </span>
+              <div class="md-ellipsis">
+                ChoraleStudio
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026 Dimas Arturoh
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/dimasarturoh15" target="_blank" rel="noopener" title="GitHub saya" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.sections", "navigation.indexes", "navigation.instant", "navigation.tracking", "navigation.footer", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Tersalin ke clipboard", "clipboard.copy": "Salin ke clipboard", "search.result.more.one": "1 lagi di halaman ini", "search.result.more.other": "# lagi di halaman ini", "search.result.none": "Tidak ada dokumen yang sesuai", "search.result.one": "1 dokumen ditemukan", "search.result.other": "# dokumen ditemukan", "search.result.placeholder": "Ketik untuk mulai pencarian", "search.result.term.missing": "Tidak ada", "select.version": "Pilih versi"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>

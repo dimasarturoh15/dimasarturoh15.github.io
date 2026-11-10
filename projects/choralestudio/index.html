@@ -1,0 +1,1836 @@
+
+<!doctype html>
+<html lang="id" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Proyek otomasi Python dan jurnal belajar saya.">
+      
+      
+        <meta name="author" content="Dimas Arturoh">
+      
+      
+        <link rel="canonical" href="https://dimasarturoh15.github.io/projects/choralestudio/">
+      
+      
+        <link rel="prev" href="../paroki-minomartani/">
+      
+      
+        <link rel="next" href="../liturgy-slides-automation/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
+    
+    
+      
+        <title>ChoraleStudio - Dokumentasi GitHub</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css?v=2026-11-08b">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#choralestudio" class="md-skip">
+          Lewati ke isi
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Dokumentasi GitHub" class="md-header__button md-logo" aria-label="Dokumentasi GitHub" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Dokumentasi GitHub
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ChoraleStudio
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Ganti ke mode gelap"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Ganti ke mode gelap" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Ganti ke mode terang"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Ganti ke mode terang" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    <a href="https://github.com/dimasarturoh15" class="md-header__button md-icon" title="GitHub" aria-label="GitHub dimasarturoh15">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tab" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Beranda
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Proyek
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../journal/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Jurnal Belajar
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigasi" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Dokumentasi GitHub" class="md-nav__button md-logo" aria-label="Dokumentasi GitHub" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Dokumentasi GitHub
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Beranda
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyek
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Proyek
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paroki-minomartani/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Paroki Minomartani
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ChoraleStudio
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ChoraleStudio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dampak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dampak
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#masalah-yang-diselesaikan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Masalah yang diselesaikan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hasil-yang-dibuat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hasil yang dibuat
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hasil-di-aplikasi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hasil di aplikasi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alur-kerja-pengguna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alur kerja pengguna
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rantai-pascaproduksi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rantai pascaproduksi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fitur-utama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fitur utama
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pengujian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pengujian
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teknologi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teknologi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arsitektur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arsitektur
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cara-menjalankan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cara menjalankan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batasan-yang-diketahui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Batasan yang diketahui
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lisensi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lisensi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#log-pengerjaan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Log Pengerjaan
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../liturgy-slides-automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Liturgy Slides Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../livestream-to-shorts-automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Livestream to Shorts Automation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../journal/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jurnal Belajar
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Jurnal Belajar
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-10-paroki-minomartani-commit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 Nov 2026: Commit Paroki Minomartani
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-09-paroki-minomartani-commit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9 Nov 2026: Commit Paroki Minomartani
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-08-choralestudio-commit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8 Nov 2026: Commit ChoraleStudio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-07-choralestudio-commit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7 Nov 2026: Commit ChoraleStudio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-06-choralestudio-commit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6 Nov 2026: Commit ChoraleStudio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-06-pemaketan-dan-uji/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6 Nov 2026: Pemaketan dan uji
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-06-audio-realtime-dan-mastering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6 Nov 2026: Audio real-time dan mastering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-06-chorale-dari-prd-ke-installer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6 Nov 2026: ChoraleStudio dari PRD ke installer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 Nov 2026: Hari pertama
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-05-proyek-pertama/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 Nov 2026: Proyek pertama
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-05-proyek-kedua/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 Nov 2026: Proyek kedua
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../journal/2026-11-05-merapikan-portofolio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 Nov 2026: Merapikan portofolio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Daftar isi">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Daftar isi
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dampak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dampak
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#masalah-yang-diselesaikan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Masalah yang diselesaikan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hasil-yang-dibuat" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hasil yang dibuat
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hasil-di-aplikasi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hasil di aplikasi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alur-kerja-pengguna" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alur kerja pengguna
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rantai-pascaproduksi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rantai pascaproduksi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fitur-utama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fitur utama
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pengujian" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pengujian
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teknologi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Teknologi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arsitektur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arsitektur
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cara-menjalankan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cara menjalankan
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#batasan-yang-diketahui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Batasan yang diketahui
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lisensi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lisensi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#log-pengerjaan" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Log Pengerjaan
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="choralestudio">ChoraleStudio</h1>
+<blockquote>
+<p>Aplikasi desktop Windows untuk merekam paduan suara empat suara (Sopran, Alto, Tenor, Bass) bersama piano secara bergiliran, lalu membuat master audio siap YouTube dengan satu klik. Nama aplikasinya <strong>HarmoniSATB Studio</strong>. Dibuat untuk paduan suara gereja, komunitas vokal, dan sekolah yang tidak punya studio maupun teknisi audio.</p>
+</blockquote>
+<p class="page-meta">Python / PySide6 / pedalboard / FFmpeg · Aktif · 2026</p>
+
+<p><a class="md-button md-button--primary" href="https://github.com/dimasarturoh15/ChoraleStudio">Lihat kode di GitHub</a></p>
+<h2 id="dampak">Dampak</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Tanpa aplikasi ini</th>
+<th>Dengan ChoraleStudio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Menyiapkan master siap YouTube</td>
+<td>Perlu pengetahuan mixing dan mastering di aplikasi audio umum</td>
+<td>Satu klik. Lagu 4 menit dengan 5 track selesai dalam 34 detik (target maksimal 60 detik)</td>
+</tr>
+<tr>
+<td>Antarmuka rekaman</td>
+<td>Puluhan tombol dan parameter</td>
+<td>5 tombol rekam (Piano, Bass, Tenor, Alto, Sopran) dan 1 tombol produksi</td>
+</tr>
+<tr>
+<td>Pemasangan</td>
+<td>Python dan pustaka dipasang satu per satu</td>
+<td>Satu berkas Setup.exe (87 MB), tanpa Python dan tanpa hak admin</td>
+</tr>
+</tbody>
+</table>
+<h2 id="masalah-yang-diselesaikan">Masalah yang diselesaikan</h2>
+<p>Merekam paduan suara empat suara biasanya membutuhkan studio, banyak mikrofon, dan orang yang paham audio. Sebagian besar paduan suara gereja hanya punya satu sound card USB, satu mikrofon, dan beberapa headphone.</p>
+<p>Aplikasi ini mengubah peralatan sederhana itu menjadi studio rekaman bergiliran (overdub): piano direkam lebih dulu sebagai panduan, lalu setiap kelompok suara bernyanyi sambil mendengar rekaman sebelumnya di headphone. Setelah kelima track terekam, satu tombol menjalankan seluruh pengolahan sampai menjadi berkas yang memenuhi standar YouTube. Satu aturan dipegang sejak awal:</p>
+<blockquote>
+<p>Pengguna tidak perlu mengatur satu pun parameter audio untuk mendapat hasil yang layak diunggah.</p>
+</blockquote>
+<h2 id="hasil-yang-dibuat">Hasil yang dibuat</h2>
+<p>Setiap kali Proses Produksi dijalankan, tiga berkas baru tersimpan di folder <code>master/</code> proyek. Berkas lama tidak pernah ditimpa.</p>
+<table>
+<thead>
+<tr>
+<th>Berkas</th>
+<th>Format</th>
+<th>Kegunaan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&lt;Judul&gt;_&lt;tanggal-jam&gt;_Master.wav</code></td>
+<td>PCM 24-bit, 48 kHz, stereo, dither TPDF</td>
+<td>Arsip kualitas penuh dan bahan unggahan YouTube</td>
+</tr>
+<tr>
+<td><code>&lt;Judul&gt;_&lt;tanggal-jam&gt;_Master.mp3</code></td>
+<td>320 kbps CBR dengan tag judul</td>
+<td>Dibagikan lewat WhatsApp atau diputar di ponsel</td>
+</tr>
+<tr>
+<td><code>&lt;Judul&gt;_&lt;tanggal-jam&gt;_Laporan.txt</code></td>
+<td>Teks berbahasa Indonesia</td>
+<td>Kelantangan, True Peak, LRA, durasi, pengaturan ruang, hasil verifikasi FFmpeg, dan peringatan</td>
+</tr>
+</tbody>
+</table>
+<p>Ekor reverb tidak dipotong: berkas diperpanjang sampai ekor turun di bawah -60 dB, ditambah 1 detik hening.</p>
+<h2 id="hasil-di-aplikasi">Hasil di aplikasi</h2>
+<div class="figure-grid">
+<figure>
+  <img alt="Layar utama perekaman dengan lima track: Piano, Bass, Tenor, Alto, Sopran" loading="lazy" src="../../assets/img/chorale-layar-rekam.png" />
+<br />
+<figcaption>Layar perekaman: lima track dengan bentuk gelombang dari audio asli, metronom, serta pilihan ruang dan jumlah reverb.</figcaption>
+</figure>
+<figure>
+  <img alt="Daftar take pada track vokal dengan stempel waktu" loading="lazy" src="../../assets/img/chorale-pilih-take.png" />
+<br />
+<figcaption>Rekam ulang tidak menghapus take lama. Take terbaik dipilih dari daftar.</figcaption>
+</figure>
+<figure>
+  <img alt="Dialog Persiapan Rekam Vokal langkah 2: pemantauan level mikrofon" loading="lazy" src="../../assets/img/chorale-persiapan-vokal.png" />
+<br />
+<figcaption>Persiapan Rekam Vokal: posisi penyanyi, gain mikrofon dengan meter berwarna, dan headphone, dituntun dalam tiga langkah.</figcaption>
+</figure>
+<figure>
+  <img alt="Dialog Sound card terputus yang menyatakan rekaman Alto sampai detik 00:03 sudah tersimpan" loading="lazy" src="../../assets/img/chorale-sound-card-terputus.png" />
+<br />
+<figcaption>Bila kabel USB tercabut saat merekam, audio yang sudah masuk tetap tersimpan dan pengguna diberi tahu sampai detik ke berapa.</figcaption>
+</figure>
+<figure>
+  <img alt="Dialog Memproses Produksi dengan tujuh tahap" loading="lazy" src="../../assets/img/chorale-memproses.png" />
+<br />
+<figcaption>Proses produksi dalam tujuh tahap yang bisa dibatalkan kapan saja.</figcaption>
+</figure>
+<figure>
+  <img alt="Layar Hasil Produksi berisi hasil pengukuran dan pembanding mentah dengan master" loading="lazy" src="../../assets/img/chorale-hasil.png" />
+<br />
+<figcaption>Hasil Produksi: angka kelantangan dan puncak, serta pemutar Mentah dan Master dengan volume yang disamakan.</figcaption>
+</figure>
+</div>
+<h2 id="alur-kerja-pengguna">Alur kerja pengguna</h2>
+<ol>
+<li><strong>Buat proyek</strong>: isi judul lagu, tempo, birama, dan hitungan awal. Satu proyek berisi satu lagu.</li>
+<li><strong>Kalibrasi latensi</strong> (sekali per sound card): kabel output dihubungkan ke input, lalu aplikasi mengukur jeda rekam-putar dan menyimpannya.</li>
+<li><strong>Rekam piano</strong> sebagai panduan, dengan metronom dan hitungan awal 0 sampai 2 bar.</li>
+<li><strong>Rekam vokal berurutan</strong>, disarankan Bass, Tenor, Alto, lalu Sopran. Setiap kelompok mendengar piano dan suara yang sudah direkam di headphone, sedangkan suara sendiri didengar lewat tombol direct monitor di sound card.</li>
+<li><strong>Pilih take terbaik</strong> untuk setiap track.</li>
+<li><strong>Proses Produksi &amp; Master</strong> dengan satu klik.</li>
+<li><strong>Dengarkan dan sesuaikan</strong>: bandingkan Mentah dan Master, geser volume track atau ganti ruang bila perlu, lalu proses ulang tanpa merekam ulang.</li>
+</ol>
+<h2 id="rantai-pascaproduksi">Rantai pascaproduksi</h2>
+<p>Setiap track vokal melewati tahap berikut. Piano hanya melewati penyaringan, reverb, dan mastering.</p>
+<table>
+<thead>
+<tr>
+<th>Tahap</th>
+<th>Proses</th>
+<th>Pengaturan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Peredam derau (DeepFilterNet)</td>
+<td>Opsional, saat ini ditunda sampai diuji dengan rekaman nyanyian asli</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Penyaring frekuensi rendah</td>
+<td>Piano 35 Hz, Bass dan Tenor 75 Hz, Alto dan Sopran 90 Hz, 12 dB per oktaf</td>
+</tr>
+<tr>
+<td>3</td>
+<td>EQ anti-boxiness dan kompresor</td>
+<td>-2 dB di 400 Hz; kompresor 2,5:1, attack 25 ms, release 140 ms, reduksi maksimal 4 dB</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Penyeimbang volume antar-suara</td>
+<td>Setiap vokal disamakan ke -23 LUFS, piano 2 LU di bawahnya, lalu ditambah posisi slider volume</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Posisi stereo</td>
+<td>Tenor 25% kiri, Sopran 12% kiri, Bass 12% kanan, Alto 25% kanan, piano di tengah dengan lebar 65%</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Reverb konvolusi</td>
+<td>Respons impuls sintetis (bebas masalah lisensi), pre-delay 32 ms, redaman di atas 5 kHz. Ruang: Gereja Kecil 1,6 s, Aula 2,0 s, Katedral 2,4 s. Jumlah: Sedikit 12%, Normal 20%, Banyak 30%</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Mastering YouTube</td>
+<td>Kompresor bus 1,5:1 (maksimal 2 dB), lalu limiter True Peak dengan oversampling 4 kali</td>
+</tr>
+</tbody>
+</table>
+<p>Prioritas mastering ditetapkan berurutan agar tidak saling bertabrakan:</p>
+<ol>
+<li><strong>True Peak ≤ -1,0 dBTP</strong>, mutlak. Limiter membidik 0,15 dB di bawah batas agar pengukur lain juga membaca di bawah -1,0.</li>
+<li><strong>Kelantangan -14 LUFS ±1</strong>, diusahakan. Bila untuk mencapainya limiter harus menekan lebih dari 6 dB, aplikasi berhenti di level yang lebih pelan dan menuliskannya di laporan.</li>
+<li><strong>Rentang dinamika (LRA)</strong>, hanya diukur dan dilaporkan.</li>
+</ol>
+<p>Semua angka diukur menurut ITU-R BS.1770-4 dan EBU R128, lalu diukur ulang secara independen dengan filter <code>ebur128</code> di FFmpeg. MP3 hasil encoding juga diukur ulang; bila puncaknya naik melewati batas, MP3 dibuat ulang sedikit lebih pelan.</p>
+<h2 id="fitur-utama">Fitur utama</h2>
+<ul>
+<li><strong>Engine rekam yang tidak tersendat.</strong> Callback audio hanya menyalin data ke ring buffer: tanpa alokasi memori besar, tanpa akses disk, tanpa logging, dan tanpa menyentuh antarmuka. Antarmuka membaca keadaan engine lewat timer 30 kali per detik.</li>
+<li><strong>Rekaman tahan listrik padam.</strong> Thread terpisah menulis WAV 24-bit ke disk terus-menerus dan memperbarui header setiap detik, sehingga paling banyak 1 detik hilang.</li>
+<li><strong>Driver sesuai prioritas.</strong> ASIO bila tersedia, lalu WASAPI Exclusive, lalu WASAPI Shared. Sample rate dikunci 48 kHz dan pemrosesan internal memakai float 32-bit.</li>
+<li><strong>Kompensasi latensi otomatis.</strong> Rekaman baru digeser sesuai hasil kalibrasi agar sejajar sampel demi sampel dengan track sebelumnya.</li>
+<li><strong>Metronom yang tidak ikut terekam.</strong> Tempo 40 sampai 240 BPM, birama 2/4, 3/4, 4/4, dan 6/8, volume terpisah dari musik, dan bisa dimatikan setelah hitungan awal untuk lagu bertempo bebas.</li>
+<li><strong>Meter level berwarna.</strong> Hijau, kuning, dan merah, dengan lampu clip yang tetap menyala sampai diklik.</li>
+<li><strong>Penanganan kesalahan untuk orang awam.</strong> Sound card dicabut, sample rate bukan 48 kHz, atau disk hampir penuh dijelaskan beserta langkah perbaikannya. Detail teknis hanya masuk ke berkas log berotasi, sedangkan pengguna melihat pesan singkat dengan tombol "Buka Folder Log".</li>
+<li><strong>Pembanding Mentah dan Master.</strong> Kelantangan keduanya disamakan, sehingga yang terdengar adalah perbedaan pengolahan, bukan perbedaan keras.</li>
+<li><strong>Bisa dijalankan tanpa antarmuka.</strong> Mesin pengolah dapat dipanggil dari baris perintah, dan <code>HarmoniSATB Studio.exe --uji-mandiri</code> memeriksa seluruh rantai tanpa sound card.</li>
+<li><strong>Sepenuhnya offline.</strong> Tidak ada kode jaringan di aplikasi.</li>
+</ul>
+<h2 id="pengujian">Pengujian</h2>
+<table>
+<thead>
+<tr>
+<th>Uji</th>
+<th>Hasil</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tes otomatis (pytest)</td>
+<td>241 tes lulus</td>
+</tr>
+<tr>
+<td>Kecepatan proses lagu 4 menit, 5 track (Core i5-13500H)</td>
+<td>34,4 detik, target maksimal 60 detik</td>
+</tr>
+<tr>
+<td>Stabilitas rekam dan putar, buffer 256 sampel (5,3 ms)</td>
+<td>3 kali 60 menit tanpa satu pun dropout, beban callback rata-rata 7,3%</td>
+</tr>
+<tr>
+<td>Standar YouTube pada sinyal uji ekstrem</td>
+<td>True Peak ≤ -1,0 dBTP pada semua berkas uji</td>
+</tr>
+<tr>
+<td>Rekaman paduan suara asli: 16 penyanyi, dataset terbuka Universitat Pompeu Fabra (CC BY-NC)</td>
+<td>-14,0 LUFS, -1,2 dBTP, selisih dengan FFmpeg 0,04 LU, limiter hanya 0,7 dB, diproses 15 detik</td>
+</tr>
+<tr>
+<td>Pemasangan</td>
+<td>Setup.exe terpasang di laptop dan aplikasinya berjalan dengan PATH tanpa Python</td>
+</tr>
+</tbody>
+</table>
+<h2 id="teknologi">Teknologi</h2>
+<table>
+<thead>
+<tr>
+<th>Bagian</th>
+<th>Yang dipakai</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bahasa</td>
+<td>Python 3.12</td>
+</tr>
+<tr>
+<td>Audio masuk dan keluar</td>
+<td><code>sounddevice</code> (PortAudio dengan ASIO dan WASAPI), <code>soundfile</code>, NumPy</td>
+</tr>
+<tr>
+<td>Pengolahan audio</td>
+<td><code>pedalboard</code> (filter, EQ, kompresor, konvolusi), SciPy, limiter True Peak buatan sendiri</td>
+</tr>
+<tr>
+<td>Pengukuran</td>
+<td><code>pyloudnorm</code> serta modul True Peak dan LRA sendiri, diverifikasi dengan FFmpeg <code>ebur128</code></td>
+</tr>
+<tr>
+<td>Ekspor</td>
+<td><code>soundfile</code> untuk WAV, FFmpeg dan LAME lewat <code>imageio-ffmpeg</code> untuk MP3</td>
+</tr>
+<tr>
+<td>Antarmuka</td>
+<td>PySide6 (Qt 6), font Inter dan JetBrains Mono</td>
+</tr>
+<tr>
+<td>Pengujian</td>
+<td>pytest</td>
+</tr>
+<tr>
+<td>Paket</td>
+<td>PyInstaller dan Inno Setup</td>
+</tr>
+</tbody>
+</table>
+<p>Kebutuhan perangkat: Windows 10 atau 11 64-bit, CPU quad-core, RAM 8 GB, sound card USB (dirancang untuk SPL Audio SC202HD), mikrofon condenser, dan headphone closed-back.</p>
+<h2 id="arsitektur">Arsitektur</h2>
+<div class="highlight"><span class="filename">Tiga lapisan yang terpisah</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>chorale.ui (PySide6)
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  daftar proyek · layar rekam · persiapan vokal · proses · hasil · Tentang
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>      │ timer 30 fps (membaca keadaan)        │ thread pekerja (proses produksi)
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>      ▼                                       ▼
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>chorale.audio (real-time)                 chorale.dsp (offline)
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  device ─► session ─► callback             chain: saring ─► EQ &amp; kompresor
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>                         ├─► ring buffer ─► thread penulis WAV      ─► seimbang ─► stereo ─► reverb
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>                         ├─► player + metronom                master: kompresor bus ─► limiter 4x
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>                         └─► meter                            measure: LUFS · True Peak · LRA
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>      │                                     export: WAV · MP3 · laporan
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>      ▼                                       │
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>chorale.project  ◄────────────────────────────┘
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>  proyek.json · takes/ · master/
+</code></pre></div>
+<h2 id="cara-menjalankan">Cara menjalankan</h2>
+<p>Pemasangan lengkap ada di README repositori. Dari kode sumber:</p>
+<div class="highlight"><span class="filename">Menjalankan dari kode sumber</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">py</span> <span class="p">-</span><span class="n">3</span><span class="p">.</span><span class="n">12</span> <span class="n">-m</span> <span class="n">venv</span> <span class="p">.</span><span class="n">venv</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">python</span> <span class="n">-m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">-r</span> <span class="n">requirements</span><span class="p">.</span><span class="n">txt</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="p">.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">python</span> <span class="n">-m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">-e</span> <span class="p">.</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">python</span> <span class="n">-m</span> <span class="n">chorale</span>
+</code></pre></div>
+<p>Mesin pengolah tanpa antarmuka:</p>
+<div class="highlight"><span class="filename">Memproses proyek dari baris perintah</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">python</span> <span class="n">tools</span><span class="p">\</span><span class="n">process_project</span><span class="p">.</span><span class="n">py</span> <span class="p">-</span><span class="n">-proyek</span> <span class="s2">"D:\Proyek\Nama Lagu"</span> <span class="p">-</span><span class="n">-ruang</span> <span class="n">katedral</span> <span class="p">-</span><span class="n">-reverb</span> <span class="n">normal</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">python</span> <span class="n">tools</span><span class="p">\</span><span class="n">benchmark</span><span class="p">.</span><span class="n">py</span>
+</code></pre></div>
+<p>Membuat installer (butuh Inno Setup 6):</p>
+<div class="highlight"><span class="filename">Membuat Setup.exe</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">python</span> <span class="n">-m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">-r</span> <span class="n">requirements-build</span><span class="p">.</span><span class="n">txt</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">python</span> <span class="n">tools</span><span class="p">\</span><span class="n">build_installer</span><span class="p">.</span><span class="n">py</span>
+</code></pre></div>
+<p>Skrip build juga menjalankan aplikasi hasil build tanpa Python di PATH, termasuk uji mandirinya.</p>
+<h2 id="batasan-yang-diketahui">Batasan yang diketahui</h2>
+<ul>
+<li>Uji dengan sound card utama, SPL Audio SC202HD, belum dilakukan: kalibrasi latensi, selisih antar-track (target ≤ 1 ms), stress test di perangkat itu, dan rekaman nyanyian asli. Uji stabilitas sejauh ini memakai sound card Realtek bawaan laptop.</li>
+<li>Kualitas vokal belum dinilai pendengar, dan uji kegunaan dengan anggota baru belum dilakukan. Daftar ujinya sudah tersedia di repositori.</li>
+<li>Peredam derau DeepFilterNet belum dipakai. Peredam derau untuk suara bicara berisiko meninggalkan artefak pada nada panjang.</li>
+<li>Tidak ada koreksi nada. Nada meleset diatasi dengan merekam ulang.</li>
+<li>SC202HD hanya punya tombol direct monitor ON/OFF, sehingga keseimbangan suara sendiri dan musik di headphone tidak bisa diatur halus di perangkat.</li>
+<li>Peluncuran pertama setelah pemasangan bisa lambat (20 sampai 50 detik) karena Windows Defender memindai berkas baru.</li>
+<li>Hanya untuk Windows.</li>
+</ul>
+<h2 id="lisensi">Lisensi</h2>
+<p>Aplikasi membawa pedalboard dan build FFmpeg yang berlisensi GPL v3, PySide6 berlisensi LGPL v3, dan font berlisensi SIL OFL. Daftar lengkap beserta teks lisensinya ada di halaman Tentang Aplikasi dan folder <code>licenses</code> hasil instalasi. Lisensi untuk kode proyek ini sendiri belum ditetapkan.</p>
+<h2 id="log-pengerjaan">Log Pengerjaan</h2>
+<p>Diperbarui otomatis dari riwayat Git setiap kali ada commit.</p>
+<table>
+<thead>
+<tr>
+<th>Waktu</th>
+<th>Commit</th>
+<th>Ringkasan Perubahan</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-11-06 14:11</td>
+<td><a href="https://github.com/dimasarturoh15/ChoraleStudio/commit/d3fe60e93fabb5e51f42ee4dda3a723aed86c4ee"><code>d3fe60e</code></a></td>
+<td>Tambah PRD v1.1 dan desain UI</td>
+</tr>
+<tr>
+<td>2026-11-06 14:38</td>
+<td><a href="https://github.com/dimasarturoh15/ChoraleStudio/commit/e9c34ce0c140867638d749a7bd317ad2aaca0d38"><code>e9c34ce</code></a></td>
+<td>Segmen 0: fondasi proyek</td>
+</tr>
+<tr>
+<td>2026-11-06 16:29</td>
+<td><a href="https://github.com/dimasarturoh15/ChoraleStudio/commit/37d370f3e464e2e6ba98b3f0eb0d740849fd0d8c"><code>37d370f</code></a></td>
+<td>Segmen 5: mastering dan ekspor</td>
+</tr>
+<tr>
+<td>2026-11-06 16:53</td>
+<td><a href="https://github.com/dimasarturoh15/ChoraleStudio/commit/7a0fd9e4cc7428e91db26365d1b61dd529ee70de"><code>7a0fd9e</code></a></td>
+<td>Segmen 6: kerangka UI, daftar proyek, pengaturan</td>
+</tr>
+<tr>
+<td>2026-11-06 18:26</td>
+<td><a href="https://github.com/dimasarturoh15/ChoraleStudio/commit/72421746d5d64fab02552a4464feb292e6b64dad"><code>7242174</code></a></td>
+<td>Segmen 7: layar utama perekaman</td>
+</tr>
+<tr>
+<td>2026-11-06 20:26</td>
+<td><a href="https://github.com/dimasarturoh15/ChoraleStudio/commit/4574a162a3b4b4805239c67d6bd6bc264f7c5d7a"><code>4574a16</code></a></td>
+<td>Segmen 8: proses produksi dan hasil</td>
+</tr>
+<tr>
+<td>2026-11-06 21:56</td>
+<td><a href="https://github.com/dimasarturoh15/ChoraleStudio/commit/7fdccd723cc12926b779ae12859002d6ba115368"><code>7fdccd7</code></a></td>
+<td>Segmen 9: installer dan dokumen uji lapangan</td>
+</tr>
+<tr>
+<td>2026-11-06 22:07</td>
+<td><a href="https://github.com/dimasarturoh15/ChoraleStudio/commit/3cc0519d200e02e8ba97056d83f69d99608d8f26"><code>3cc0519</code></a></td>
+<td>Segmen 9: Setup.exe dibuat dan diuji di laptop</td>
+</tr>
+<tr>
+<td>2026-11-06 23:39</td>
+<td><a href="https://github.com/dimasarturoh15/ChoraleStudio/commit/fba9626e7184c24574cdee5bedab0c0b1be69493"><code>fba9626</code></a></td>
+<td>Dokumentasi repositori lengkap untuk rilis publik</td>
+</tr>
+<tr>
+<td>2026-11-07 18:51</td>
+<td><a href="https://github.com/dimasarturoh15/ChoraleStudio/commit/2a0a9d5034b46d121eb55a3887baf82c8905f1f5"><code>2a0a9d5</code></a></td>
+<td>Uji hardware SC202HD: kalibrasi dan sinkronisasi</td>
+</tr>
+<tr>
+<td>2026-11-07 19:12</td>
+<td><a href="https://github.com/dimasarturoh15/ChoraleStudio/commit/8f2e19c935b21d4bc752b8c6983f1518149b1981"><code>8f2e19c</code></a></td>
+<td>Pilihan 1 SC202HD: target sinkron 3 ms, pemanasan, deteksi lompatan</td>
+</tr>
+<tr>
+<td>2026-11-07 19:37</td>
+<td><a href="https://github.com/dimasarturoh15/ChoraleStudio/commit/ac46829b712e8c72311d6257b825b4799d9b8069"><code>ac46829</code></a></td>
+<td>Kanal acuan sinkronisasi untuk take vokal</td>
+</tr>
+<tr>
+<td>2026-11-07 20:25</td>
+<td><a href="https://github.com/dimasarturoh15/ChoraleStudio/commit/8f58c090f36dc0e612c01e213aac08228bbf19f6"><code>8f58c09</code></a></td>
+<td>Uji hardware kanal acuan di SC202HD dan perbaikan ambang lompatan</td>
+</tr>
+<tr>
+<td>2026-11-07 23:31</td>
+<td><a href="https://github.com/dimasarturoh15/ChoraleStudio/commit/8a0f888d6fec6d332b7ca64c1ab10a85e942e857"><code>8a0f888</code></a></td>
+<td>Rilis 1.2.0: tampilan kalibrasi untuk SC202HD dan installer baru</td>
+</tr>
+<tr>
+<td>2026-11-08 00:46</td>
+<td><a href="https://github.com/dimasarturoh15/ChoraleStudio/commit/6df99f8a49b750966cba141ece7e1bb0fadf46a9"><code>6df99f8</code></a></td>
+<td>Cek gain untuk setiap kelompok suara vokal</td>
+</tr>
+<tr>
+<td>2026-11-08 01:02</td>
+<td><a href="https://github.com/dimasarturoh15/ChoraleStudio/commit/7b3f2beda292c6378d33ae89ce03bbcb7031c543"><code>7b3f2be</code></a></td>
+<td>Rilis 1.3.0: cek gain per kelompok suara</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Kembali ke atas
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../paroki-minomartani/" class="md-footer__link md-footer__link--prev" aria-label="Sebelumnya: Paroki Minomartani">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Sebelumnya
+              </span>
+              <div class="md-ellipsis">
+                Paroki Minomartani
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../liturgy-slides-automation/" class="md-footer__link md-footer__link--next" aria-label="Selanjutnya: Liturgy Slides Automation">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Selanjutnya
+              </span>
+              <div class="md-ellipsis">
+                Liturgy Slides Automation
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2026 Dimas Arturoh
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/dimasarturoh15" target="_blank" rel="noopener" title="GitHub saya" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.top", "navigation.sections", "navigation.indexes", "navigation.instant", "navigation.tracking", "navigation.footer", "toc.follow", "content.code.copy"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Tersalin ke clipboard", "clipboard.copy": "Salin ke clipboard", "search.result.more.one": "1 lagi di halaman ini", "search.result.more.other": "# lagi di halaman ini", "search.result.none": "Tidak ada dokumen yang sesuai", "search.result.one": "1 dokumen ditemukan", "search.result.other": "# dokumen ditemukan", "search.result.placeholder": "Ketik untuk mulai pencarian", "search.result.term.missing": "Tidak ada", "select.version": "Pilih versi"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+    
+  </body>
+</html>
