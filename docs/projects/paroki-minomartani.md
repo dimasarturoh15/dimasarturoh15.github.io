@@ -66,14 +66,18 @@ Biaya operasional ditargetkan di bawah Rp2 juta per tahun, hanya dengan layanan 
 
 ## Status terkini
 
-Diperbarui 9 November 2026. Minggu 1–6 dari rencana sudah selesai, sekitar sebulan lebih cepat dari jadwal.
+Diperbarui 10 November 2026. Minggu 1–8 dari rencana sudah selesai, ditambah warta dan cadangan data dari Minggu 9–10.
 
-- **Fondasi:** login pengurus dengan kode OTP, sesi per perangkat, aturan akses per peran yang ditegakkan di API, dan lebih dari 790 uji otomatis, termasuk uji setiap peran di setiap endpoint dan uji "unit yang salah".
+- **Fondasi:** login pengurus dengan kode OTP, sesi per perangkat, aturan akses per peran yang ditegakkan di API, dan lebih dari 1.100 uji otomatis, termasuk uji setiap peran di setiap endpoint dan uji "unit yang salah".
 - **Situs publik inti:** jadwal misa kedua gereja (dibuat otomatis 30 hari ke depan), Sakramen Tobat, agenda, halaman profil dengan editor dan riwayat revisi, Persembahan Kasih dengan persetujuan dua orang, slider, pencarian, dan pengumuman.
 - **Intensi misa online:** formulir 4 langkah dengan batas waktu per misa dan toleransi 15 menit yang diputuskan server, kode acak INT-, bukti transfer di penyimpanan privat, kotak masuk Sekretariat, pemindahan ke misa pengganti dengan pesan WhatsApp siap kirim, teks salin, dan lembar lektor A4.
 - **Sakramentalia:** pembuat formulir dengan pratinjau langsung, pendaftaran awal dengan kode SKR-, dan garis proses yang bisa dicek umat tanpa membuka data pribadi.
 - **Pelindungan data:** data pribadi dari formulir dihapus otomatis 3 bulan setelah selesai, termasuk file; laporan hanya menyimpan angka gabungan.
-- **Berikutnya:** postingan kegiatan unit, halaman unit, Cari Lingkungan, serah terima akun.
+- **Kegiatan dan unit:** lingkungan dan kategorial memposting kegiatan yang langsung tayang, dengan moderasi pasca-tayang dan tombol Urungkan; halaman Kegiatan dengan filter; Direktori Unit, halaman profil tiap unit, dan Cari Lingkungan Saya.
+- **Struktur dan akun:** pohon unit, jabatan, dan masa bakti; serah terima dengan konfirmasi "SERAH TERIMA" yang mengeluarkan akun dari semua perangkat; penambahan atau pencabutan Super User harus disetujui Super User lain; log audit dengan filter.
+- **Warta mingguan:** penyusun dengan simpan otomatis, terbit otomatis Sabtu 15.00 WIB, pengumuman perkawinan tiga kali dan agenda yang terisi sendiri, laporan kolekte, cetak PDF, teks WhatsApp, dan arsip yang bisa dicari.
+- **Keamanan dan cadangan:** header keamanan (CSP, HSTS) di semua halaman; cadangan database harian ke penyimpanan privat (7 harian, 4 mingguan, 3 bulanan) yang sudah diuji pulih di staging.
+- **Berikutnya:** halaman Komsos dan live streaming, push notification, aplikasi Android.
 
 ## Rencana kerja
 
@@ -128,3 +132,4 @@ Diperbarui otomatis dari riwayat Git setiap kali ada commit.
 | 2026-11-10 03:19 | [`3fa003a`](https://github.com/dimasarturoh15/paroki-minomartani/commit/3fa003ac233e73651a239d356831b98cd40f3235) | feat: intention types, settings, dashboard summary, security headers (package P) |
 | 2026-11-10 03:39 | [`4d8980a`](https://github.com/dimasarturoh15/paroki-minomartani/commit/4d8980a763f8183f960cc1e534d15d1a874e5238) | feat: weekly warta with autosave, Saturday 15.00 WIB publishing, PDF and WhatsApp text (package Q) |
 | 2026-11-10 03:58 | [`e2834f2`](https://github.com/dimasarturoh15/paroki-minomartani/commit/e2834f255aecc790155a5449a9667b2b7e378fc8) | feat: daily D1 backups to private R2 with 7/4/3 rotation and a tested restore (package R) |
+| 2026-11-10 07:15 | [`ebc64ca`](https://github.com/dimasarturoh15/paroki-minomartani/commit/ebc64ca9e87847b6ec99ccd8cc35123d6bf5b3c2) | feat: remove marriage banns from the warta archive 3 months after publishing |

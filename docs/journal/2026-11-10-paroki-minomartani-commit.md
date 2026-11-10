@@ -1,12 +1,12 @@
-# 10 November 2026: Catatan commit Paroki Minomartani (7 commit)
+# 10 November 2026: Catatan commit Paroki Minomartani (8 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 7
-- Perubahan: 132 berkas, +21872 / -74 baris
-- Rentang waktu: 02:09 sampai 03:58
+- Jumlah commit: 8
+- Perubahan: 140 berkas, +21981 / -77 baris
+- Rentang waktu: 02:09 sampai 07:15
 
 ## Yang dikerjakan
 
@@ -93,3 +93,13 @@ restore-backup.ts turns a backup into SQL for a fresh D1 and scripts/
 verify-restore.ts compares row counts. Restore tested in Vitest (empty and restore,
 identical rows, no FK violations) and for real on staging: 38 tables, 162 rows,
 contents identical (docs/RESTORE.md). External copy deferred.
+
+### 07:15 · feat: remove marriage banns from the warta archive 3 months after publishing
+
+Commit [`ebc64ca`](https://github.com/dimasarturoh15/paroki-minomartani/commit/ebc64ca9e87847b6ec99ccd8cc35123d6bf5b3c2) · 8 berkas, +109 / -3 baris
+
+WRT-10, SKR-17: decision of 10 Nov 2026. The daily purge empties the banns section
+(names and note) of editions published more than 3 months ago and recomputes their
+search text; a banns row is deleted once it had its three editions and no archived
+edition shows it anymore. PRD, Blueprint, CLAUDE.md, the privacy policy draft and
+OPEN-QUESTIONS updated.
