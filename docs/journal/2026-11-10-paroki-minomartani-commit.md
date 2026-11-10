@@ -1,12 +1,12 @@
-# 10 November 2026: Catatan commit Paroki Minomartani (8 commit)
+# 10 November 2026: Catatan commit Paroki Minomartani (9 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 8
-- Perubahan: 140 berkas, +21981 / -77 baris
-- Rentang waktu: 02:09 sampai 07:15
+- Jumlah commit: 9
+- Perubahan: 143 berkas, +21987 / -80 baris
+- Rentang waktu: 02:09 sampai 07:33
 
 ## Yang dikerjakan
 
@@ -103,3 +103,7 @@ WRT-10, SKR-17: decision of 10 Nov 2026. The daily purge empties the banns secti
 search text; a banns row is deleted once it had its three editions and no archived
 edition shows it anymore. PRD, Blueprint, CLAUDE.md, the privacy policy draft and
 OPEN-QUESTIONS updated.
+
+### 07:33 · docs: one per-minute cron, Sapaan Gembala by any Super User, live only from YouTube detection
+
+Commit [`8ead6b5`](https://github.com/dimasarturoh15/paroki-minomartani/commit/8ead6b531cb1e79ccf9f9d7f91aaf1dcc700e551) · 3 berkas, +6 / -3 baris
