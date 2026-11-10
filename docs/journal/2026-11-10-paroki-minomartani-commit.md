@@ -1,12 +1,12 @@
-# 10 November 2026: Catatan commit Paroki Minomartani (12 commit)
+# 10 November 2026: Catatan commit Paroki Minomartani (13 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 12
-- Perubahan: 206 berkas, +33898 / -127 baris
-- Rentang waktu: 02:09 sampai 13:26
+- Jumlah commit: 13
+- Perubahan: 234 berkas, +39462 / -132 baris
+- Rentang waktu: 02:09 sampai 13:46
 
 ## Yang dikerjakan
 
@@ -147,3 +147,15 @@ Komuni Batin (live.write, slug whitelist) and manages playlists, without pages.w
 KMS-10: Gabung relawan with Turnstile, rate limit and consent (new public action
 volunteers.submit); Komsos and Super Users are notified and follow up in Relawan
 Komsos; rows are deleted 3 months after the first follow-up, keeping only counts.
+
+### 13:46 · feat: Sapaan Gembala with archive, home card, and an automatic warta section (package V)
+
+Commit [`60bf3f4`](https://github.com/dimasarturoh15/paroki-minomartani/commit/60bf3f4790ce047834f8b26a5076616cc401690c) · 28 berkas, +5564 / -5 baris
+
+SG-01: any Super User types the greeting (new action greetings.write, decision 10 Nov
+2026); the author is a Pastor position of the parish unit with a current holder, and
+the holder's name, title and photo are copied at publish so the archive survives a
+handover. Drafts, publish, unpublish, delete draft. SG-02: home card with the author
+(photo from Struktur or initials), excerpt and link; /sapaan-gembala archive and detail;
+new warta section kind 'greeting' filled with the latest greeting published before the
+edition's Saturday 15.00 and frozen at publish; it replaces the default text section.

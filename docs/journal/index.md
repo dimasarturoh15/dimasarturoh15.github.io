@@ -11,9 +11,9 @@ Catatan harian mengenai konsep yang dipelajari, kendala teknis, dan milestone. E
 <h2 class="log-date"><time datetime="2026-11-10">10 November 2026</time></h2>
 <ol class="log">
   <li>
-    <a class="log-title" href="2026-11-10-paroki-minomartani-commit/">Catatan commit Paroki Minomartani (12 commit)</a>
+    <a class="log-title" href="2026-11-10-paroki-minomartani-commit/">Catatan commit Paroki Minomartani (13 commit)</a>
     <span class="tags"><span>#paroki-minomartani</span><span>#commit</span><span>#otomatis</span></span>
-    <p>Dicatat otomatis dari Git: feat: broadcast schedule and quota-safe YouTube live detection, one per-minute cron (package S); feat: live banner, header Live pill, Tonton Live page with countdown and chat (package T); feat: Komsos page, playlists, Komsos-edited text pages, Gabung relawan (package U) dan 9 lainnya.</p>
+    <p>Dicatat otomatis dari Git: feat: live banner, header Live pill, Tonton Live page with countdown and chat (package T); feat: Komsos page, playlists, Komsos-edited text pages, Gabung relawan (package U); feat: Sapaan Gembala with archive, home card, and an automatic warta section (package V) dan 10 lainnya.</p>
   </li>
 </ol>
 </div>

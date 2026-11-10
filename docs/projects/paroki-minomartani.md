@@ -137,3 +137,4 @@ Diperbarui otomatis dari riwayat Git setiap kali ada commit.
 | 2026-11-10 12:54 | [`7a7e564`](https://github.com/dimasarturoh15/paroki-minomartani/commit/7a7e564f802e80c4dd8666696bd56cd5139a6061) | feat: broadcast schedule and quota-safe YouTube live detection, one per-minute cron (package S) |
 | 2026-11-10 13:06 | [`348799f`](https://github.com/dimasarturoh15/paroki-minomartani/commit/348799f93e156e407221cd16dd4256eb816a0787) | feat: live banner, header Live pill, Tonton Live page with countdown and chat (package T) |
 | 2026-11-10 13:26 | [`9049ef8`](https://github.com/dimasarturoh15/paroki-minomartani/commit/9049ef8501aafb48da88f34ec25711e44e85a56f) | feat: Komsos page, playlists, Komsos-edited text pages, Gabung relawan (package U) |
+| 2026-11-10 13:46 | [`60bf3f4`](https://github.com/dimasarturoh15/paroki-minomartani/commit/60bf3f4790ce047834f8b26a5076616cc401690c) | feat: Sapaan Gembala with archive, home card, and an automatic warta section (package V) |
