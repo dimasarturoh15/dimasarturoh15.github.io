@@ -11,9 +11,9 @@ Catatan harian mengenai konsep yang dipelajari, kendala teknis, dan milestone. E
 <h2 class="log-date"><time datetime="2026-11-10">10 November 2026</time></h2>
 <ol class="log">
   <li>
-    <a class="log-title" href="2026-11-10-paroki-minomartani-commit/">Catatan commit Paroki Minomartani (9 commit)</a>
+    <a class="log-title" href="2026-11-10-paroki-minomartani-commit/">Catatan commit Paroki Minomartani (10 commit)</a>
     <span class="tags"><span>#paroki-minomartani</span><span>#commit</span><span>#otomatis</span></span>
-    <p>Dicatat otomatis dari Git: feat: daily D1 backups to private R2 with 7/4/3 rotation and a tested restore (package R); feat: remove marriage banns from the warta archive 3 months after publishing; docs: one per-minute cron, Sapaan Gembala by any Super User, live only from YouTube detection dan 6 lainnya.</p>
+    <p>Dicatat otomatis dari Git: feat: remove marriage banns from the warta archive 3 months after publishing; docs: one per-minute cron, Sapaan Gembala by any Super User, live only from YouTube detection; feat: broadcast schedule and quota-safe YouTube live detection, one per-minute cron (package S) dan 7 lainnya.</p>
   </li>
 </ol>
 </div>

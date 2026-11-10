@@ -1,12 +1,12 @@
-# 10 November 2026: Catatan commit Paroki Minomartani (9 commit)
+# 10 November 2026: Catatan commit Paroki Minomartani (10 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 9
-- Perubahan: 143 berkas, +21987 / -80 baris
-- Rentang waktu: 02:09 sampai 07:33
+- Jumlah commit: 10
+- Perubahan: 168 berkas, +27635 / -94 baris
+- Rentang waktu: 02:09 sampai 12:54
 
 ## Yang dikerjakan
 
@@ -107,3 +107,19 @@ OPEN-QUESTIONS updated.
 ### 07:33 · docs: one per-minute cron, Sapaan Gembala by any Super User, live only from YouTube detection
 
 Commit [`8ead6b5`](https://github.com/dimasarturoh15/paroki-minomartani/commit/8ead6b531cb1e79ccf9f9d7f91aaf1dcc700e551) · 3 berkas, +6 / -3 baris
+
+### 12:54 · feat: broadcast schedule and quota-safe YouTube live detection, one per-minute cron (package S)
+
+Commit [`7a7e564`](https://github.com/dimasarturoh15/paroki-minomartani/commit/7a7e564f802e80c4dd8666696bd56cd5139a6061) · 25 berkas, +5648 / -14 baris
+
+KMS-01: live_streams follow streamed mass occurrences (synced daily and whenever
+special masses change; removed with a deleted future mass) plus special broadcasts
+added by Komsos, which can also cancel and restore. KMS-02: YouTube is polled only
+inside a window (15 min before to 2 h after the planned start, or while live), every
+2 minutes, with playlistItems.list on the uploads playlist plus videos.list (2 units,
+never search.list), a daily cap of 8000 units, and matching to the nearest broadcast
+within an hour; unseen broadcasts close by themselves. Detection stays off until
+YOUTUBE_API_KEY and YOUTUBE_CHANNEL_ID are set; no manual live flag (decision 10 Nov
+2026). The dispatcher now runs from a single * * * * * cron: daily jobs at 01.00 WIB,
+warta on the hour and from Saturday 15.00, live only in windows. Dashboard Live
+streaming screen; /public/live and home expose the live and next broadcast.
