@@ -1,12 +1,12 @@
-# 10 November 2026: Catatan commit Paroki Minomartani (11 commit)
+# 10 November 2026: Catatan commit Paroki Minomartani (12 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 11
-- Perubahan: 179 berkas, +27964 / -101 baris
-- Rentang waktu: 02:09 sampai 13:06
+- Jumlah commit: 12
+- Perubahan: 206 berkas, +33898 / -127 baris
+- Rentang waktu: 02:09 sampai 13:26
 
 ## Yang dikerjakan
 
@@ -134,3 +134,16 @@ appears only while live. KMS-04/05: /live with the click-to-load video, YouTube 
 chat on request (CSP frame-src adds www.youtube.com), Open in YouTube and WhatsApp
 share, Doa Komuni Batin from an editable page (empty until the parish provides the
 text), the 7-day schedule and recent recordings. Push reminders follow with FCM.
+
+### 13:26 · feat: Komsos page, playlists, Komsos-edited text pages, Gabung relawan (package U)
+
+Commit [`9049ef8`](https://github.com/dimasarturoh15/paroki-minomartani/commit/9049ef8501aafb48da88f34ec25711e44e85a56f) · 27 berkas, +5934 / -26 baris
+
+KMS-07..09: /komsos in Blueprint order: live or next broadcast, broadcasts recorded
+this year, Tentang/Karya/Panduan text pages (hidden until written), playlists that
+open in YouTube, the team from Struktur, publication guidelines, the volunteer form
+and contact through Sekretariat. KMS-11: Komsos edits its own text pages and Doa
+Komuni Batin (live.write, slug whitelist) and manages playlists, without pages.write.
+KMS-10: Gabung relawan with Turnstile, rate limit and consent (new public action
+volunteers.submit); Komsos and Super Users are notified and follow up in Relawan
+Komsos; rows are deleted 3 months after the first follow-up, keeping only counts.
