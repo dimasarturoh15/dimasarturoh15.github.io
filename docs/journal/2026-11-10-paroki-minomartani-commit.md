@@ -1,12 +1,12 @@
-# 10 November 2026: Catatan commit Paroki Minomartani (13 commit)
+# 10 November 2026: Catatan commit Paroki Minomartani (14 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 13
-- Perubahan: 234 berkas, +39462 / -132 baris
-- Rentang waktu: 02:09 sampai 13:46
+- Jumlah commit: 14
+- Perubahan: 235 berkas, +39463 / -133 baris
+- Rentang waktu: 02:09 sampai 13:49
 
 ## Yang dikerjakan
 
@@ -159,3 +159,7 @@ handover. Drafts, publish, unpublish, delete draft. SG-02: home card with the au
 (photo from Struktur or initials), excerpt and link; /sapaan-gembala archive and detail;
 new warta section kind 'greeting' filled with the latest greeting published before the
 edition's Saturday 15.00 and frozen at publish; it replaces the default text section.
+
+### 13:49 · docs: YouTube channel id and playlists needed for live detection
+
+Commit [`49033ef`](https://github.com/dimasarturoh15/paroki-minomartani/commit/49033ef34da4ca47e88b71430eeab231f6e4c4bb) · 1 berkas, +1 / -1 baris
