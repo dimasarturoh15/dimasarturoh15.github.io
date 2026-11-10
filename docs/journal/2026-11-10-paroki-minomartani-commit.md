@@ -1,12 +1,12 @@
-# 10 November 2026: Catatan commit Paroki Minomartani (10 commit)
+# 10 November 2026: Catatan commit Paroki Minomartani (11 commit)
 
 Halaman ini dibuat otomatis dari riwayat Git [Paroki Minomartani](../projects/paroki-minomartani.md) setiap kali ada commit. Isinya adalah pesan commit apa adanya.
 
 ## Ringkasan
 
-- Jumlah commit: 10
-- Perubahan: 168 berkas, +27635 / -94 baris
-- Rentang waktu: 02:09 sampai 12:54
+- Jumlah commit: 11
+- Perubahan: 179 berkas, +27964 / -101 baris
+- Rentang waktu: 02:09 sampai 13:06
 
 ## Yang dikerjakan
 
@@ -123,3 +123,14 @@ YOUTUBE_API_KEY and YOUTUBE_CHANNEL_ID are set; no manual live flag (decision 10
 2026). The dispatcher now runs from a single * * * * * cron: daily jobs at 01.00 WIB,
 warta on the hour and from Saturday 15.00, live only in windows. Dashboard Live
 streaming screen; /public/live and home expose the live and next broadcast.
+
+### 13:06 · feat: live banner, header Live pill, Tonton Live page with countdown and chat (package T)
+
+Commit [`348799f`](https://github.com/dimasarturoh15/paroki-minomartani/commit/348799f93e156e407221cd16dd4256eb816a0787) · 11 berkas, +329 / -7 baris
+
+KMS-03: home shows a red banner with viewers and Tonton while YouTube reports a
+broadcast, otherwise the next broadcast with a countdown; the header Live pill
+appears only while live. KMS-04/05: /live with the click-to-load video, YouTube live
+chat on request (CSP frame-src adds www.youtube.com), Open in YouTube and WhatsApp
+share, Doa Komuni Batin from an editable page (empty until the parish provides the
+text), the 7-day schedule and recent recordings. Push reminders follow with FCM.
